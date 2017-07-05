@@ -1,0 +1,255 @@
+@shorttitle(Ooogles)
+@title(Ooogles - Object Oriented OpenGL-ES 2.0)
+
+Ooogles is a ultra-thin object oriented wrapper around OpenGL-ES 2.0 with
+near-zero impact on performance. It can also be used to create OpenGL
+applications for desktop platforms using the OpenGL-ES subset of OpenGL.
+
+This wrapper is still pretty low-level. It is not a "rendering engine" or
+high-level framework, so you still need OpenGL knowledge.
+
+@section(1 _Features Features)
+
+Ooogles has the following features:
+* Encapsulates OpenGL "objects" into Delphi records+methods for a better
+  organized and easier to use interface to OpenGL.
+* Provides type-safe access to most OpenGL constructs. For example:
+  * In OpenGL, every "object" is just an integer (or Handle), and nothing
+    prevents you to call a texture API on a shader object. This wrapper wraps
+    the API into classes (actually records) like TGLTexture and TGLShader,
+    preventing these types of errors.
+  * Another big source of common OpenGL errors is to use incorrect enumeration
+    values, resulting in GL_INVALID_ENUM errors. This wrapper uses true Delphi
+    enums instead, preventing most of these errors.
+* The wrapper is very thin. OpenGL handles are not wrapped into Delphi classes
+  or object interfaces, but in records instead. Most methods are inlined and
+  wrap just a single OpenGL API. So the overhead of the wrapper is mostly
+  zero.
+* A few methods perform multiple OpenGL calls for convenience. For example,
+  when compiling a shader, the wrapper not only calls the compile API, but
+  also checks for compilation errors. In DEBUG mode, it will expose those
+  errors through exceptions, and it will also log any warnings to the debug
+  console.
+* OpenGL APIs that are not tied to an OpenGL "object" are wrapped in the
+  static @code(gl) class (which acts more like a namespace). For example,
+  the OpenGL API @code(glClear) is wrapped in the method @code(gl.Clear).
+* The wrapper provides some features to make OpenGL-ES specific constructs
+  compatible with (desktop) OpenGL. For example, OpenGL-ES requires the use
+  of precision qualifiers in fragment shaders, but these are not supported
+  by OpenGL. This wrapper will modify the shader source so it will work with
+  OpenGL as well.
+* The wrapper only exposes methods that are OpenGL-ES compliant, so you cannot
+  accidentially use APIs that only work with OpenGL, but not with OpenGL-ES.
+  However, you always have access to the underlying OpenGL handle and so you
+  can use it directly with the OpenGL API if you want to.
+* The wrapper handles the sometimes slightly different API names on different
+  platforms.
+* When compiling with the DEBUG conditional define, and assertions enabled
+  (the default configuration for Debug builds), every OpenGL call is checked
+  for errors, and an exception is raised when an error occurs, indicating the
+  type of error and in which method it occurred. When DEBUG is not defined,
+  or assertions are disabled, all error checking code is removed from the
+  build so it has zero impact on performance.
+* Also, when compiling in DEBUG mode with assertions enabled, warnings will be
+  logged to the debug console if you forget to bind an object before you use
+  it (or when a different object than the one you are using is currently
+  bound).
+* The wrapper is well documented. Each record and method contains
+  documentation from the official OpenGL-ES 2.0 reference, as well as custom
+  documentation where needed. The documentation also shows which original
+  OpenGL API call(s) are used in the implementation, to make it easier to find
+  some method if you already know the API equivalent.
+* Comes with various samples that show how to use this wrapper. These samples
+  work on Windows, macOS, iOS and Android. However, they do @bold(not) use the
+  FireMonkey framework, but a custom light-weight (and limited) framework that
+  you can find in the "Examples\Common" directory.
+
+@section(1 _NonFeatures Non-features)
+
+The wrapper does @bold(not) provide higher-level features such as automatic
+OpenGL resource managment. You need to release OpenGL resources yourself when
+you no longer need them. Resources are usually created using a method called
+@code(New) and released using a methods called @code(Delete). For example:
+
+<source>
+var
+  Texture: TGLTexture;
+begin
+  Texture.New;
+  // Do something with texture
+  Texture.Delete;
+end;
+</source>
+
+I may add automatic resource management in the future if and when Delphi
+gets support for record finalizers.
+
+@section(1 _Dependencies Dependencies)
+
+This wrapper has no dependencies other than requiring the FastMath library
+(https://github.com/neslib/FastMath). This library offers (among other things)
+very fast vector and matrix math calculations, which makes it ideal for use
+in high performance (OpenGL) applications.
+
+@section(1 _GettingStarted Getting Started)
+
+To get started:
+* Make sure the FastMath directory is at the same level as the Ooogles
+  directory.
+* You usually want to add the FM_COLUMN_MAJOR conditional define to your
+  project (for All configurations - All platforms). This enables column-major
+  storage of matrices, which makes more sense for OpenGL applications.
+* @bold(After) you have created and activated your OpenGL context, call
+  InitOoogles. This is needed to emulate OpenGL-ES on OpenGL platforms. If
+  your application uses multiple contexts, you must call InitOoogles once for
+  each context (after making it current). Take a look at the Sample.Platform.*
+  unit for examples of when to call this.
+* When using Ooogles in your unit, you may get compiler hints saying something
+  like "H2443 Inline function X has not been expanded because unit Y is not
+  specified in USES list". This is because Ooogles inlines most functions and
+  Delphi requires you use the OpenGL units for inlining to work.
+  Unfortunately, the names of those units differ by platform (eg.
+  Winapi.OpenGL, iOSapi.OpenGLES etc). To make it easier to use the correct
+  OpenGL units, it is easiest if you include the 'OpenGL.inc' file in your
+  uses clauses instead, as in:
+    <source>
+    uses
+      {$INCLUDE 'OpenGL.inc'}
+      Neslib.Ooogles;
+    </source>
+  Just make sure you "use" at least one other unit after the include file.
+
+@section(1 _MainClasses Main Classes)
+
+The following is a list of the main classes (actually records) used in
+Ooogles:
+* gl: static class (or namespace) for OpenGL APIs that are not tied to a
+  specific object.
+* TGLShader: a vertex or fragment shader.
+* TGLProgram: a program that combines a vertex shader and a fragment shader.
+* TGLVertexAttrib: represents a single vertex attribute in a TGLProgram.
+  These are variables marked with @code(attribute) in a vertex shader.
+* TGLUniform: represents a uniform in a TGLProgram. These are variables marked
+  with @code(uniform) in a vertex or fragment shader.
+* TGLBuffer: a (vertex) array buffer or element array (index) buffer.
+* TGLTexture: a 2D texture or cubemap texture.
+* TGLFramebuffer: a framebuffer.
+* TGLRenderbuffer: a renderbuffer. Serves as storage for a TGLFramebuffer.
+
+Mapping from OpenGL to Ooogles
+
+If you are fluent in OpenGL, the you may find the following table helpful to
+translate from a OpenGL API to an Ooogles method. It should all be pretty
+straightforward.
+
+@table(
+@rowHead(@cell(OpenGL)                                 @cell(Ooogles)             )
+@row(    @cell(glActiveTexture)                        @cell(TGLTexture.BindToTextureUnit) )
+@row(    @cell(glAttachShader)                         @cell(TGLProgram.AttachShader) )
+@row(    @cell(glBindAttribLocation)                   @cell(TGLVertexAttrib.Bind) )
+@row(    @cell(glBindBuffer)                           @cell(TGLBuffer.Bind) )
+@row(    @cell(glBindFramebuffer)                      @cell(TGLFramebuffer.Bind) )
+@row(    @cell(glBindTexture)                          @cell(TGLTexture.Bind) )
+@row(    @cell(glBlendColor)                           @cell(gl.BlendColor) )
+@row(    @cell(glBlendEquation)                        @cell(gl.BlendEquation) )
+@row(    @cell(glBlendEquationSeparate)                @cell(gl.BlendEquationSeparate) )
+@row(    @cell(glBlendFunc)                            @cell(gl.BlendFunc) )
+@row(    @cell(glBlendFuncSeparate)                    @cell(gl.BlendFuncSeparate) )
+@row(    @cell(glBufferData)                           @cell(TGLBuffer.Data) )
+@row(    @cell(glBufferSubData)                        @cell(TGLBuffer.SubData) )
+@row(    @cell(glCheckFramebufferStatus)               @cell(TGLFramebuffer.Status) )
+@row(    @cell(glClear)                                @cell(gl.Clear) )
+@row(    @cell(glClearColor)                           @cell(gl.ClearColor) )
+@row(    @cell(glClearDepthf)                          @cell(gl.ClearDepth) )
+@row(    @cell(glClearStencil)                         @cell(gl.ClearStencil) )
+@row(    @cell(glColorMask)                            @cell(gl.ColorMask) )
+@row(    @cell(glCompileShader)                        @cell(TGLShader.Compile) )
+@row(    @cell(glCompressedTexImage2D)                 @cell(TGLTexture.UploadCompressed) )
+@row(    @cell(glCompressedTexSubImage2D)              @cell(TGLTexture.SubUploadCompressed) )
+@row(    @cell(glCopyTexImage2D)                       @cell(TGLTexture.Copy) )
+@row(    @cell(glCopyTexSubImage2D)                    @cell(TGLTexture.SubCopy) )
+@row(    @cell(glCreateProgram)                        @cell(TGLProgram.New) )
+@row(    @cell(glCreateShader)                         @cell(TGLShader.New) )
+@row(    @cell(glCullFace)                             @cell(gl.CullFace) )
+@row(    @cell(glDeleteBuffers)                        @cell(TGLBuffer.Delete) )
+@row(    @cell(glDeleteFramebuffers)                   @cell(TGLFramebuffer.Delete) )
+@row(    @cell(glDeleteProgram)                        @cell(TGLProgram.Delete) )
+@row(    @cell(glDeleteRenderbuffers)                  @cell(TGLRenderbuffer.Delete) )
+@row(    @cell(glDeleteShader)                         @cell(TGLShader.Delete) )
+@row(    @cell(glDeleteTextures)                       @cell(TGLTexture.Delete) )
+@row(    @cell(glDepthFunc)                            @cell(gl.DepthFunc) )
+@row(    @cell(glDepthMask)                            @cell(gl.DepthMask) )
+@row(    @cell(glDepthRangef)                          @cell(gl.DepthRange) )
+@row(    @cell(glDetachShader)                         @cell(TGLProgram.DetachShader) )
+@row(    @cell(glDisable)                              @cell(gl.Disable) )
+@row(    @cell(glDisableVertexAttribArray)             @cell(TGLVertexAttrib.Disable) )
+@row(    @cell(glDrawArrays)                           @cell(gl.DrawArrays) )
+@row(    @cell(glDrawElements)                         @cell(gl.DrawElements) )
+@row(    @cell(glEnable)                               @cell(gl.Enable) )
+@row(    @cell(glEnableVertexAttribArray)              @cell(TGLVertexAttrib.Enable) )
+@row(    @cell(glFinish)                               @cell(gl.Finish) )
+@row(    @cell(glFlush)                                @cell(gl.Flush) )
+@row(    @cell(glFramebufferRenderbuffer)              @cell(TGLFramebuffer.AttachRenderbuffer) )
+@row(    @cell(glFramebufferTexture2D)                 @cell(TGLFramebuffer.AttachTexture) )
+@row(    @cell(glFrontFace)                            @cell(gl.FrontFace) )
+@row(    @cell(glGenBuffers)                           @cell(TGLBuffer.New) )
+@row(    @cell(glGenFramebuffers)                      @cell(TGLFramebuffer.New) )
+@row(    @cell(glGenRenderbuffers)                     @cell(TGLRenderbuffer.New) )
+@row(    @cell(glGenTextures)                          @cell(TGLTexture.New) )
+@row(    @cell(glGenerateMipmap)                       @cell(TGLTexture.GenerateMipmap) )
+@row(    @cell(glGetBooleanv)                          @cell(various Get* methods) )
+@row(    @cell(glGetFloatv)                            @cell(various Get* methods) )
+@row(    @cell(glGetIntegerv)                          @cell(various Get* methods) )
+@row(    @cell(glGetActiveAttrib)                      @cell(TGLProgram.GetAttributeInfo) )
+@row(    @cell(glGetActiveUniform)                     @cell(TGLProgram.GetUniformInfo) )
+@row(    @cell(glGetAttachedShaders)                   @cell(TGLProgram.GetAttachedShaders) )
+@row(    @cell(glGetAttribLocation)                    @cell(TGLVertexAttrib.Init) )
+@row(    @cell(glGetBufferParameteriv)                 @cell(TGLBuffer.Get*) )
+@row(    @cell(glGetError)                             @cell(gl.GetError) )
+@row(    @cell(glGetFramebufferAttachmentParameteriv)  @cell(TGLFramebuffer.Get*) )
+@row(    @cell(glGetProgramInfoLog)                    @cell(TGLProgram (in DEBUG mode)) )
+@row(    @cell(glGetProgramiv)                         @cell(TGLProgram.Get*) )
+@row(    @cell(glGetRenderbufferParameteriv)           @cell(TGLRenderbuffer.Get*) )
+@row(    @cell(glGetShaderInfoLog)                     @cell(TGLShader (in DEBUG mode)) )
+@row(    @cell(glGetShaderSource)                      @cell(TGLShader.GetSource) )
+@row(    @cell(glGetShaderiv)                          @cell(TGLShader.Get*) )
+@row(    @cell(glGetString)                            @cell(gl.Get*) )
+@row(    @cell(glGetTexParameter*)                     @cell(TGLTexture.Get*) )
+@row(    @cell(glGetUniform)                           @cell(TGLUniform.GetValue) )
+@row(    @cell(glGetUniformLocation)                   @cell(TGLUniform.Init) )
+@row(    @cell(glGetVertexAttrib*)                     @cell(TGLVertexAttrib.Get*) )
+@row(    @cell(glGetVertexAttribPointerv)              @cell(TGLVertexAttrib.GetOffset/GetData) )
+@row(    @cell(glHint)                                 @cell(TGLTexture.MipmapHint) )
+@row(    @cell(glIsBuffer)                             @cell(not needed) )
+@row(    @cell(glIsEnabled)                            @cell(gl.IsEnabled) )
+@row(    @cell(glIsFramebuffer)                        @cell(not needed) )
+@row(    @cell(glIsProgram)                            @cell(not needed) )
+@row(    @cell(glIsRenderbuffer)                       @cell(not needed) )
+@row(    @cell(glIsShader )                            @cell(not needed) )
+@row(    @cell(glIsTexture)                            @cell(not needed) )
+@row(    @cell(glLineWidth)                            @cell(gl.LineWidth) )
+@row(    @cell(glLinkProgram)                          @cell(TGLProgram.Link) )
+@row(    @cell(glPixelStorei)                          @cell(gl.PixelStore) )
+@row(    @cell(glPolygonOffset)                        @cell(gl.PolygonOffset) )
+@row(    @cell(glReadPixels)                           @cell(TGLFramebuffer.ReadPixels) )
+@row(    @cell(glReleaseShaderCompiler)                @cell(TGLShader.ReleaseCompiler) )
+@row(    @cell(glRenderbufferStorage)                  @cell(TGLRenderbuffer.Storage) )
+@row(    @cell(glSampleCoverage)                       @cell(gl.SampleCoverage) )
+@row(    @cell(glScissor)                              @cell(gl.Scissor) )
+@row(    @cell(glShaderSource)                         @cell(TGLShader.SetSource) )
+@row(    @cell(glStencilFunc)                          @cell(gl.StencilFunc) )
+@row(    @cell(glStencilFuncSeparate)                  @cell(gl.StencilFuncSeparate) )
+@row(    @cell(glStencilMask)                          @cell(gl.StencilMask) )
+@row(    @cell(glStencilMaskSeparate)                  @cell(gl.StencilMaskSeparate) )
+@row(    @cell(glStencilOp)                            @cell(gl.StencilOp) )
+@row(    @cell(glStencilOpSeparate)                    @cell(gl.StencilOpSeparate) )
+@row(    @cell(glTexImage2D)                           @cell(TGLTexture.Upload) )
+@row(    @cell(glTexParameter)                         @cell(TGLTexture.MinFilter/MagFilter/WrapS/WrapT) )
+@row(    @cell(glTexSubImage2D)                        @cell(TGLTexture.SubUpload) )
+@row(    @cell(glUniform*)                             @cell(TGLUniform.SetValue/SetValues) )
+@row(    @cell(glUseProgram)                           @cell(TGLProgram.Use) )
+@row(    @cell(glValidateProgram)                      @cell(TGLProgram.Validate) )
+@row(    @cell(glVertexAttrib*)                        @cell(TGLVertexAttrib.SetValue) )
+@row(    @cell(glVertexAttribPointer)                  @cell(TGLVertexAttrib.SetConfig/SetData) )
+@row(    @cell(glViewport)                             @cell(gl.Viewport) )
+)

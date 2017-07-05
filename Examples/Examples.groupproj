@@ -1,0 +1,288 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F8B5083C-A58E-47B7-BDAE-91E75651824E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="01.HelloTriangle\E01HelloTriangle.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02.SimpleVertexShader\E02SimpleVertexShader.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03.SimpleTexture2D\E03SimpleTexture2D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04.MipMap2D\E04MipMap2D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05.TextureWrap\E05TextureWrap.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06.SimpleTextureCubeMap\E06SimpleTextureCubeMap.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07.MultiTexture\E07MultiTexture.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08.StencilOperations\E08StencilOperations.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="09.ParticleSystem\E09ParticleSystem.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="10.Mandelbrot\E10Mandelbrot.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="11.CartoonSun\E11CartoonSun.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="12.StripedCubes\E12StripedCubes.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="13.CartoonTorus\E13CartoonTorus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="14.MetallicTorus\E14MetallicTorus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="15.NoiseTorus\E15NoiseTorus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="16.PhongTorus\E16PhongTorus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="17.Helium\E17Helium.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="18.CubeMapping\E18CubeMapping.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="19.ShadedObjects\E19ShadedObjects.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="20.Morphing\E20Morphing.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="21.ParallaxMap\E21ParallaxMap.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="22.RecursiveTexture\E22RecursiveTexture.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="E01HelloTriangle">
+        <MSBuild Projects="01.HelloTriangle\E01HelloTriangle.dproj"/>
+    </Target>
+    <Target Name="E01HelloTriangle:Clean">
+        <MSBuild Projects="01.HelloTriangle\E01HelloTriangle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E01HelloTriangle:Make">
+        <MSBuild Projects="01.HelloTriangle\E01HelloTriangle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E02SimpleVertexShader">
+        <MSBuild Projects="02.SimpleVertexShader\E02SimpleVertexShader.dproj"/>
+    </Target>
+    <Target Name="E02SimpleVertexShader:Clean">
+        <MSBuild Projects="02.SimpleVertexShader\E02SimpleVertexShader.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E02SimpleVertexShader:Make">
+        <MSBuild Projects="02.SimpleVertexShader\E02SimpleVertexShader.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E03SimpleTexture2D">
+        <MSBuild Projects="03.SimpleTexture2D\E03SimpleTexture2D.dproj"/>
+    </Target>
+    <Target Name="E03SimpleTexture2D:Clean">
+        <MSBuild Projects="03.SimpleTexture2D\E03SimpleTexture2D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E03SimpleTexture2D:Make">
+        <MSBuild Projects="03.SimpleTexture2D\E03SimpleTexture2D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E04MipMap2D">
+        <MSBuild Projects="04.MipMap2D\E04MipMap2D.dproj"/>
+    </Target>
+    <Target Name="E04MipMap2D:Clean">
+        <MSBuild Projects="04.MipMap2D\E04MipMap2D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E04MipMap2D:Make">
+        <MSBuild Projects="04.MipMap2D\E04MipMap2D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E05TextureWrap">
+        <MSBuild Projects="05.TextureWrap\E05TextureWrap.dproj"/>
+    </Target>
+    <Target Name="E05TextureWrap:Clean">
+        <MSBuild Projects="05.TextureWrap\E05TextureWrap.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E05TextureWrap:Make">
+        <MSBuild Projects="05.TextureWrap\E05TextureWrap.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E06SimpleTextureCubeMap">
+        <MSBuild Projects="06.SimpleTextureCubeMap\E06SimpleTextureCubeMap.dproj"/>
+    </Target>
+    <Target Name="E06SimpleTextureCubeMap:Clean">
+        <MSBuild Projects="06.SimpleTextureCubeMap\E06SimpleTextureCubeMap.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E06SimpleTextureCubeMap:Make">
+        <MSBuild Projects="06.SimpleTextureCubeMap\E06SimpleTextureCubeMap.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E07MultiTexture">
+        <MSBuild Projects="07.MultiTexture\E07MultiTexture.dproj"/>
+    </Target>
+    <Target Name="E07MultiTexture:Clean">
+        <MSBuild Projects="07.MultiTexture\E07MultiTexture.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E07MultiTexture:Make">
+        <MSBuild Projects="07.MultiTexture\E07MultiTexture.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E08StencilOperations">
+        <MSBuild Projects="08.StencilOperations\E08StencilOperations.dproj"/>
+    </Target>
+    <Target Name="E08StencilOperations:Clean">
+        <MSBuild Projects="08.StencilOperations\E08StencilOperations.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E08StencilOperations:Make">
+        <MSBuild Projects="08.StencilOperations\E08StencilOperations.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E09ParticleSystem">
+        <MSBuild Projects="09.ParticleSystem\E09ParticleSystem.dproj"/>
+    </Target>
+    <Target Name="E09ParticleSystem:Clean">
+        <MSBuild Projects="09.ParticleSystem\E09ParticleSystem.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E09ParticleSystem:Make">
+        <MSBuild Projects="09.ParticleSystem\E09ParticleSystem.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E10Mandelbrot">
+        <MSBuild Projects="10.Mandelbrot\E10Mandelbrot.dproj"/>
+    </Target>
+    <Target Name="E10Mandelbrot:Clean">
+        <MSBuild Projects="10.Mandelbrot\E10Mandelbrot.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E10Mandelbrot:Make">
+        <MSBuild Projects="10.Mandelbrot\E10Mandelbrot.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E11CartoonSun">
+        <MSBuild Projects="11.CartoonSun\E11CartoonSun.dproj"/>
+    </Target>
+    <Target Name="E11CartoonSun:Clean">
+        <MSBuild Projects="11.CartoonSun\E11CartoonSun.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E11CartoonSun:Make">
+        <MSBuild Projects="11.CartoonSun\E11CartoonSun.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E12StripedCubes">
+        <MSBuild Projects="12.StripedCubes\E12StripedCubes.dproj"/>
+    </Target>
+    <Target Name="E12StripedCubes:Clean">
+        <MSBuild Projects="12.StripedCubes\E12StripedCubes.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E12StripedCubes:Make">
+        <MSBuild Projects="12.StripedCubes\E12StripedCubes.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E13CartoonTorus">
+        <MSBuild Projects="13.CartoonTorus\E13CartoonTorus.dproj"/>
+    </Target>
+    <Target Name="E13CartoonTorus:Clean">
+        <MSBuild Projects="13.CartoonTorus\E13CartoonTorus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E13CartoonTorus:Make">
+        <MSBuild Projects="13.CartoonTorus\E13CartoonTorus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E14MetallicTorus">
+        <MSBuild Projects="14.MetallicTorus\E14MetallicTorus.dproj"/>
+    </Target>
+    <Target Name="E14MetallicTorus:Clean">
+        <MSBuild Projects="14.MetallicTorus\E14MetallicTorus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E14MetallicTorus:Make">
+        <MSBuild Projects="14.MetallicTorus\E14MetallicTorus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E15NoiseTorus">
+        <MSBuild Projects="15.NoiseTorus\E15NoiseTorus.dproj"/>
+    </Target>
+    <Target Name="E15NoiseTorus:Clean">
+        <MSBuild Projects="15.NoiseTorus\E15NoiseTorus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E15NoiseTorus:Make">
+        <MSBuild Projects="15.NoiseTorus\E15NoiseTorus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E16PhongTorus">
+        <MSBuild Projects="16.PhongTorus\E16PhongTorus.dproj"/>
+    </Target>
+    <Target Name="E16PhongTorus:Clean">
+        <MSBuild Projects="16.PhongTorus\E16PhongTorus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E16PhongTorus:Make">
+        <MSBuild Projects="16.PhongTorus\E16PhongTorus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E17Helium">
+        <MSBuild Projects="17.Helium\E17Helium.dproj"/>
+    </Target>
+    <Target Name="E17Helium:Clean">
+        <MSBuild Projects="17.Helium\E17Helium.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E17Helium:Make">
+        <MSBuild Projects="17.Helium\E17Helium.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E18CubeMapping">
+        <MSBuild Projects="18.CubeMapping\E18CubeMapping.dproj"/>
+    </Target>
+    <Target Name="E18CubeMapping:Clean">
+        <MSBuild Projects="18.CubeMapping\E18CubeMapping.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E18CubeMapping:Make">
+        <MSBuild Projects="18.CubeMapping\E18CubeMapping.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E19ShadedObjects">
+        <MSBuild Projects="19.ShadedObjects\E19ShadedObjects.dproj"/>
+    </Target>
+    <Target Name="E19ShadedObjects:Clean">
+        <MSBuild Projects="19.ShadedObjects\E19ShadedObjects.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E19ShadedObjects:Make">
+        <MSBuild Projects="19.ShadedObjects\E19ShadedObjects.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E20Morphing">
+        <MSBuild Projects="20.Morphing\E20Morphing.dproj"/>
+    </Target>
+    <Target Name="E20Morphing:Clean">
+        <MSBuild Projects="20.Morphing\E20Morphing.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E20Morphing:Make">
+        <MSBuild Projects="20.Morphing\E20Morphing.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E21ParallaxMap">
+        <MSBuild Projects="21.ParallaxMap\E21ParallaxMap.dproj"/>
+    </Target>
+    <Target Name="E21ParallaxMap:Clean">
+        <MSBuild Projects="21.ParallaxMap\E21ParallaxMap.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E21ParallaxMap:Make">
+        <MSBuild Projects="21.ParallaxMap\E21ParallaxMap.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="E22RecursiveTexture">
+        <MSBuild Projects="22.RecursiveTexture\E22RecursiveTexture.dproj"/>
+    </Target>
+    <Target Name="E22RecursiveTexture:Clean">
+        <MSBuild Projects="22.RecursiveTexture\E22RecursiveTexture.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="E22RecursiveTexture:Make">
+        <MSBuild Projects="22.RecursiveTexture\E22RecursiveTexture.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="E01HelloTriangle;E02SimpleVertexShader;E03SimpleTexture2D;E04MipMap2D;E05TextureWrap;E06SimpleTextureCubeMap;E07MultiTexture;E08StencilOperations;E09ParticleSystem;E10Mandelbrot;E11CartoonSun;E12StripedCubes;E13CartoonTorus;E14MetallicTorus;E15NoiseTorus;E16PhongTorus;E17Helium;E18CubeMapping;E19ShadedObjects;E20Morphing;E21ParallaxMap;E22RecursiveTexture"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="E01HelloTriangle:Clean;E02SimpleVertexShader:Clean;E03SimpleTexture2D:Clean;E04MipMap2D:Clean;E05TextureWrap:Clean;E06SimpleTextureCubeMap:Clean;E07MultiTexture:Clean;E08StencilOperations:Clean;E09ParticleSystem:Clean;E10Mandelbrot:Clean;E11CartoonSun:Clean;E12StripedCubes:Clean;E13CartoonTorus:Clean;E14MetallicTorus:Clean;E15NoiseTorus:Clean;E16PhongTorus:Clean;E17Helium:Clean;E18CubeMapping:Clean;E19ShadedObjects:Clean;E20Morphing:Clean;E21ParallaxMap:Clean;E22RecursiveTexture:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="E01HelloTriangle:Make;E02SimpleVertexShader:Make;E03SimpleTexture2D:Make;E04MipMap2D:Make;E05TextureWrap:Make;E06SimpleTextureCubeMap:Make;E07MultiTexture:Make;E08StencilOperations:Make;E09ParticleSystem:Make;E10Mandelbrot:Make;E11CartoonSun:Make;E12StripedCubes:Make;E13CartoonTorus:Make;E14MetallicTorus:Make;E15NoiseTorus:Make;E16PhongTorus:Make;E17Helium:Make;E18CubeMapping:Make;E19ShadedObjects:Make;E20Morphing:Make;E21ParallaxMap:Make;E22RecursiveTexture:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
