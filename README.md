@@ -19,7 +19,7 @@ Ooogles has the following features:
 * The wrapper handles the sometimes slightly different API names on different platforms.
 * When compiling with the `DEBUG` conditional define, and assertions enabled (the default configuration for Debug builds), every OpenGL call is checked for errors, and an exception is raised when an error occurs, indicating the type of error and in which method it occurred. When `DEBUG` is not defined, or assertions are disabled, all error checking code is removed from the build so it has zero impact on performance.
 * Also, when compiling in `DEBUG` mode with assertions enabled, warnings will be logged to the debug console if you forget to bind an object before you use it (or when a different object than the one you are using is currently bound).
-* The wrapper is well documented. Each record and method contains documentation from the official OpenGL-ES 2.0 reference, as well as custom documentation where needed. The documentation also shows which original OpenGL API call(s) are used in the implementation, to make it easier to find some method if you already know the API equivalent.
+* The wrapper is [well documented](https://neslib.github.io/Ooogles/). Each record and method contains documentation from the official OpenGL-ES 2.0 reference, as well as custom documentation where needed. The documentation also shows which original OpenGL API call(s) are used in the implementation, to make it easier to find some method if you already know the API equivalent.
 * Comes with various samples that show how to use this wrapper. These samples work on Windows, macOS, iOS and Android. However, they do *not* use the FireMonkey framework, but a custom light-weight (and limited) framework that you can find in the `Examples\Common` directory.
 
 ## Non-features
@@ -56,18 +56,18 @@ uses
 ```
 Just make sure you "use" at least one other unit after the include file.
 
-## Main Classes
+## Main Classes and Documentation
 
-The following is a list of the main classes (actually records) used in Ooogles:
-* gl: static class (or namespace) for OpenGL APIs that are not tied to a specific object.
-* TGLShader: a vertex or fragment shader.
-* TGLProgram: a program that combines a vertex shader and a fragment shader.
-* TGLVertexAttrib: represents a single vertex attribute in a TGLProgram. These are variables marked with `attribute` in a vertex shader.
-* TGLUniform: represents a uniform in a TGLProgram. These are variables marked with `uniform` in a vertex or fragment shader.
-* TGLBuffer: a (vertex) array buffer or element array (index) buffer.
-* TGLTexture: a 2D texture or cubemap texture.
-* TGLFramebuffer: a framebuffer.
-* TGLRenderbuffer: a renderbuffer. Serves as storage for a TGLFramebuffer.
+The following is a list of the main classes (actually records) used in Ooogles, along with links to their documentation:
+* [gl](https://neslib.github.io/Ooogles/Neslib.Ooogles.gl.html): static class (or namespace) for OpenGL APIs that are not tied to a specific object.
+* [TGLShader](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLShader.html): a vertex or fragment shader.
+* [TGLProgram](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLProgram.html): a program that combines a vertex shader and a fragment shader.
+* [TGLVertexAttrib](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLVertexAttrib.html): represents a single vertex attribute in a TGLProgram. These are variables marked with `attribute` in a vertex shader.
+* [TGLUniform](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLUniform.html): represents a uniform in a TGLProgram. These are variables marked with `uniform` in a vertex or fragment shader.
+* [TGLBuffer](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLBuffer.html): a (vertex) array buffer or element array (index) buffer.
+* [TGLTexture](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLTexture.html): a 2D texture or cubemap texture.
+* [TGLFramebuffer](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLFramebuffer.html): a framebuffer.
+* [TGLRenderbuffer](https://neslib.github.io/Ooogles/Neslib.Ooogles.TGLRenderbuffer.html): a renderbuffer. Serves as storage for a TGLFramebuffer.
 
 ## Mapping from OpenGL to Ooogles
 
