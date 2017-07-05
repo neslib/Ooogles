@@ -1,0 +1,3139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: Class gl</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="gl"></a><h1 class="cio">Class gl</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type gl = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Static class (or namespace) for OpenGL APIs that are not tied to a specific object.</p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">gl</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetError">GetError</a></b>: <a  href="Neslib.Ooogles.html#TGLError">TGLError</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Viewport">Viewport</a></b>(const ALeft, ABottom, AWidth, AHeight: Integer); overload; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Viewport">Viewport</a></b>(const AWidth, AHeight: Integer); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetViewport">GetViewport</a></b>(out ALeft, ABottom, AWidth, AHeight: Integer); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetMaxViewportDimensions">GetMaxViewportDimensions</a></b>(out AMaxWidth, AMaxHeight: Integer); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DepthRange">DepthRange</a></b>(const ANearVal, AFarVal: Single); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetDepthRange">GetDepthRange</a></b>(out ANearVal, AFarVal: Single); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#ClearColor">ClearColor</a></b>(const ARed, AGreen, ABlue, AAlpha: Single); overload; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#ClearColor">ClearColor</a></b>(const AColor: TVector4); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetClearColor">GetClearColor</a></b>: TVector4; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#ColorMask">ColorMask</a></b>(const ARed, AGreen, ABlue, AAlpha: Boolean); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetColorMask">GetColorMask</a></b>(out ARed, AGreen, ABlue, AAlpha: Boolean); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#ClearDepth">ClearDepth</a></b>(const ADepth: Single); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetClearDepth">GetClearDepth</a></b>: Single; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DepthMask">DepthMask</a></b>(const AEnable: Boolean); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetDepthMask">GetDepthMask</a></b>: Boolean; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#ClearStencil">ClearStencil</a></b>(const AIndex: Integer); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetClearStencil">GetClearStencil</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></b>(const AMask: Cardinal); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></b>(const AFace: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; const AMask: Cardinal); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilWriteMask">GetStencilWriteMask</a></b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackWriteMask">GetStencilBackWriteMask</a></b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Clear">Clear</a></b>(const ABuffers: <a  href="Neslib.Ooogles.html#TGLClearBuffers">TGLClearBuffers</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></b>(const ASrcFactor, ADstFactor: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></b>(const ASrcRgb, ADstRgb, ASrcAlpha, ADstAlpha: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendSrcRgb">GetBlendSrcRgb</a></b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendSrcAlpha">GetBlendSrcAlpha</a></b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendDstRgb">GetBlendDstRgb</a></b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendDstAlpha">GetBlendDstAlpha</a></b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></b>(const AEquation: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#BlendEquationSeparate">BlendEquationSeparate</a></b>(const AEquationRgb, AEquationAlpha: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendEquationRgb">GetBlendEquationRgb</a></b>: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendEquationAlpha">GetBlendEquationAlpha</a></b>: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></b>(const ARed, AGreen, ABlue, AAlpha: Single); overload; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></b>(const AColor: TVector4); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetBlendColor">GetBlendColor</a></b>: TVector4; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></b>(const AFunc: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; const ARef: Integer = 0; const AMask: Cardinal = $FFFFFFFF); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></b>(const AFace: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; const AFunc: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; const ARef: Integer = 0; const AMask: Cardinal = $FFFFFFFF); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilFunc">GetStencilFunc</a></b>: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilValueMask">GetStencilValueMask</a></b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilRef">GetStencilRef</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackFunc">GetStencilBackFunc</a></b>: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackValueMask">GetStencilBackValueMask</a></b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackRef">GetStencilBackRef</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></b>( const AStencilFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ADepthFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ABothPass: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></b>( const AFace: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; const AStencilFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ADepthFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ABothPass: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilFail">GetStencilFail</a></b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilPassDepthPass">GetStencilPassDepthPass</a></b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilPassDepthFail">GetStencilPassDepthFail</a></b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackFail">GetStencilBackFail</a></b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackPassDepthPass">GetStencilBackPassDepthPass</a></b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetStencilBackPassDepthFail">GetStencilBackPassDepthFail</a></b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></b>(const AFunc: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetDepthFunc">GetDepthFunc</a></b>: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Scissor">Scissor</a></b>(const ALeft, ABottom, AWidth, AHeight: Integer); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetScissor">GetScissor</a></b>(out ALeft, ABottom, AWidth, AHeight: Integer); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#SampleCoverage">SampleCoverage</a></b>(const AValue: Single; const AInvert: Boolean = False); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetSampleCoverageValue">GetSampleCoverageValue</a></b>: Single; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetSampleCoverageInvert">GetSampleCoverageInvert</a></b>: Boolean; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetSampleCoverage">GetSampleCoverage</a></b>: Boolean; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetSampleAlphaToCoverage">GetSampleAlphaToCoverage</a></b>: Boolean; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const ACount: Integer); overload; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AFirst, ACount: Integer); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: array of UInt8; const AFirst: Integer = 0; const ACount: Integer = 0); overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: TArray&lt;UInt8&gt;; const AFirst: Integer = 0; const ACount: Integer = 0); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: array of UInt16; const AFirst: Integer = 0; const ACount: Integer = 0); overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: TArray&lt;UInt16&gt;; const AFirst: Integer = 0; const ACount: Integer = 0); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const ACount: Integer; const AIndexType: <a  href="Neslib.Ooogles.html#TGLIndexType">TGLIndexType</a>); overload; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#CullFace">CullFace</a></b>(const AMode: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetCullFace">GetCullFace</a></b>: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#FrontFace">FrontFace</a></b>(const AOrientation: <a  href="Neslib.Ooogles.html#TGLFaceOrientation">TGLFaceOrientation</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetFrontFace">GetFrontFace</a></b>: <a  href="Neslib.Ooogles.html#TGLFaceOrientation">TGLFaceOrientation</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#LineWidth">LineWidth</a></b>(const AWidth: Single); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetLineWidth">GetLineWidth</a></b>: Single; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></b>(const AFactor, AUnits: Single); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetPolygonOffsetFactor">GetPolygonOffsetFactor</a></b>: Single; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetPolygonOffsetUnits">GetPolygonOffsetUnits</a></b>: Single; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#PixelStore">PixelStore</a></b>(const AMode: <a  href="Neslib.Ooogles.html#TGLPixelStoreMode">TGLPixelStoreMode</a>; const AValue: <a  href="Neslib.Ooogles.html#TGLPixelStoreValue">TGLPixelStoreValue</a>); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetPixelStore">GetPixelStore</a></b>(const AMode: <a  href="Neslib.Ooogles.html#TGLPixelStoreMode">TGLPixelStoreMode</a>): <a  href="Neslib.Ooogles.html#TGLPixelStoreValue">TGLPixelStoreValue</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetAliasedLineWidthRange">GetAliasedLineWidthRange</a></b>(out AMin, AMax: Single); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#GetAliasedPointSizeRange">GetAliasedPointSizeRange</a></b>(out AMin, AMax: Single); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Enable">Enable</a></b>(const ACapability: <a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a>); inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Disable">Disable</a></b>(const ACapability: <a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a></b>(const ACapability: <a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a>): Boolean; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Finish">Finish</a></b>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.gl.html#Flush">Flush</a></b>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetSubpixelBits">GetSubpixelBits</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetVendor">GetVendor</a></b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetRenderer">GetRenderer</a></b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetVersion">GetVersion</a></b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetShadingLanguageVersion">GetShadingLanguageVersion</a></b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.gl.html#GetExtensions">GetExtensions</a></b>: RawByteString; inline; static;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetError"></a><code>class function <b>GetError</b>: <a  href="Neslib.Ooogles.html#TGLError">TGLError</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the last error that happened. You usually don't need to call this method yourself since all OpenGL calls are error checked automatically when compiling in DEBUG mode with Assertions enabled.
+
+<p> <b>OpenGL API</b>: glGetError</p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The last error that happened.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Viewport"></a><code>class procedure <b>Viewport</b>(const ALeft, ABottom, AWidth, AHeight: Integer); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Viewport"></a><code>class procedure <b>Viewport</b>(const AWidth, AHeight: Integer); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>.
+
+<p>   
+
+<p> When a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> context is first attached to a window, width and height are set to the dimensions of that window.
+
+<p>This method specifies the affine transformation of X and Y from normalized device coordinates to window coordinates.
+
+<p><a class="normal" href="Neslib.Ooogles.gl.html#Viewport">Viewport</a> width and height are silently clamped to a range that depends on the implementation. To query this range, call <a class="normal" href="Neslib.Ooogles.gl.html#GetMaxViewportDimensions">GetMaxViewportDimensions</a>.
+
+<p><b>OpenGL API</b>: glViewport
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ALeft</dt>
+<dd>(optional) X-coordinate of the lower left corner of the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a> rectangle, in pixels. The initial value is 0.</dd>
+<dt>ABottom</dt>
+<dd>(optional) Y-coordinate of the lower left corner of the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a> rectangle, in pixels. The initial value is 0.</dd>
+<dt>AWidth</dt>
+<dd>width of the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>.</dd>
+<dt>AHeight</dt>
+<dd>height of the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if either AWidth or AHeight is negative.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetViewport">GetViewport</a></dt>
+  <dd>Returns the current <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetMaxViewportDimensions">GetMaxViewportDimensions</a></dt>
+  <dd>Returns the maximum supported width and height of the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetViewport"></a><code>class procedure <b>GetViewport</b>(out ALeft, ABottom, AWidth, AHeight: Integer); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the current <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>. Initially the ALeft and ABottom window coordinates are both set to 0, and AWidth and AHeight are set to the width and height of the window into which the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> will do its rendering.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_VIEWPORT)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Viewport">Viewport</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetMaxViewportDimensions"></a><code>class procedure <b>GetMaxViewportDimensions</b>(out AMaxWidth, AMaxHeight: Integer); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the maximum supported width and height of the <a class="normal" href="Neslib.Ooogles.gl.html#Viewport">viewport</a>. These must be at least as large as the visible dimensions of the display being rendered to.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_VIEWPORT_DIMS)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Viewport">Viewport</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DepthRange"></a><code>class procedure <b>DepthRange</b>(const ANearVal, AFarVal: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify mapping of depth values from normalized device coordinates to window coordinates.
+
+<p> 
+
+<p>After clipping and division by W, depth coordinates range from -1 to 1, corresponding to the near and far clipping planes. This method specifies a linear mapping of the normalized depth coordinates in this range to window depth coordinates. Regardless of the actual depth buffer implementation, window coordinate depth values are treated as though they range from 0 through 1 (like color components). Thus, the values accepted by <code>DepthRange</code> are both clamped to this range before they are accepted.
+
+<p>The setting of (0, 1) maps the near plane to 0 and the far plane to 1. With this mapping, the depth buffer range is fully utilized.
+
+<p><b>Note</b>: it is not necessary that ANearVal be less than AFarVal. Reverse mappings such as ANearVal = 1, and AFarVal = 0 are acceptable.
+
+<p><b>OpenGL API</b>: glDepthRangef
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ANearValue</dt>
+<dd>specifies the mapping of the near clipping plane to window coordinates. The initial value is 0.</dd>
+<dt>AFarValue</dt>
+<dd>specifies the mapping of the far clipping plane to window coordinates. The initial value is 1.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetDepthRange">GetDepthRange</a></dt>
+  <dd>Gets the near and far clipping planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Viewport">Viewport</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDepthRange"></a><code>class procedure <b>GetDepthRange</b>(out ANearVal, AFarVal: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the near and far clipping planes.
+
+<p> 
+
+<p><b>OpenGL API</b>: glGetFloatv(GL_DEPTH_RANGE)
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ANearValue</dt>
+<dd>is set to the mapping of the near clipping plane.</dd>
+<dt>AFarValue</dt>
+<dd>is set to the mapping of the far clipping plane.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthRange">DepthRange</a></dt>
+  <dd>Specify mapping of depth values from normalized device coordinates to window coordinates.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearColor"></a><code>class procedure <b>ClearColor</b>(const ARed, AGreen, ABlue, AAlpha: Single); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> values used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.
+
+<p>   
+
+<p>All values are clamped to the range 0..1.
+
+<p><b>OpenGL API</b>: glClearColor
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ARed</dt>
+<dd>red component.</dd>
+<dt>AGreen</dt>
+<dd>green component.</dd>
+<dt>ABlue</dt>
+<dd>blue component.</dd>
+<dt>AAlpha</dt>
+<dd>alpha component.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearColor">GetClearColor</a></dt>
+  <dd>Returns the current color used to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearColor"></a><code>class procedure <b>ClearColor</b>(const AColor: TVector4); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> values used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.
+
+<p>
+
+<p>The R, G, B and A values in AColor are clamped to the range 0..1.
+
+<p><b>OpenGL API</b>: glClearColor
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AColor</dt>
+<dd>the <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> color.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearColor">GetClearColor</a></dt>
+  <dd>Returns the current color used to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetClearColor"></a><code>class function <b>GetClearColor</b>: TVector4; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the current color used to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.
+
+<p><b>OpenGL API</b>: glGetFloatv(GL_COLOR_CLEAR_VALUE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ClearColor">ClearColor</a></dt>
+  <dd>Specify <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> values used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ColorMask"></a><code>class procedure <b>ColorMask</b>(const ARed, AGreen, ABlue, AAlpha: Boolean); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of frame buffer color components.
+
+<p>   
+
+<p>The initial values of the parameters are all True, indicating that the color components can be written.
+
+<p>This method specifies whether the individual color components in the frame buffer can or cannot be written. If red is False, for example, no change is made to the red component of any pixel in any of the color buffers, regardless of the drawing operation attempted.
+
+<p>Changes to individual bits of components cannot be controlled. Rather, changes are either enabled or disabled for entire color components.
+
+<p><b>OpenGL API</b>: glColorMask
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ARed</dt>
+<dd>whether red can or cannot be written into the frame buffer.</dd>
+<dt>AGreen</dt>
+<dd>whether green can or cannot be written into the frame buffer.</dd>
+<dt>ABlue</dt>
+<dd>whether blue can or cannot be written into the frame buffer.</dd>
+<dt>AAlpha</dt>
+<dd>whether alpha can or cannot be written into the frame buffer.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetColorMask">GetColorMask</a></dt>
+  <dd>Get whether writing of frame buffer color components is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthMask">DepthMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> or <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing into the depth buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetColorMask"></a><code>class procedure <b>GetColorMask</b>(out ARed, AGreen, ABlue, AAlpha: Boolean); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get whether writing of frame buffer color components is enabled.
+
+<p>   
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_COLOR_WRITEMASK)
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ARed</dt>
+<dd>is set to True of red can be written. False otherwise.</dd>
+<dt>AGreen</dt>
+<dd>is set to True of green can be written. False otherwise.</dd>
+<dt>ABlue</dt>
+<dd>is set to True of blue can be written. False otherwise.</dd>
+<dt>AAlpha</dt>
+<dd>is set to True of alpha can be written. False otherwise.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ColorMask">ColorMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of frame buffer color components.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearDepth"></a><code>class procedure <b>ClearDepth</b>(const ADepth: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify the <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> value used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the depth buffer.
+
+<p>
+
+<p><b>OpenGL API</b>: glClearDepthf/glClearDepth
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ADepth</dt>
+<dd>the depth value used when the depth buffer is cleared. The initial value is 1. The value is clamped to the range 0..1.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearDepth">GetClearDepth</a></dt>
+  <dd>Gets the current <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> depth value.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetClearDepth"></a><code>class function <b>GetClearDepth</b>: Single; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> depth value.
+
+<p> <b>OpenGL API</b>: glGetFloatv(GL_DEPTH_CLEAR_VALUE)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> depth value.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ClearDepth">ClearDepth</a></dt>
+  <dd>Specify the <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> value used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the depth buffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DepthMask"></a><code>class procedure <b>DepthMask</b>(const AEnable: Boolean); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> or <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing into the depth buffer.
+
+<p>
+
+<p><b>OpenGL API</b>: glDepthMask
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AEnable</dt>
+<dd>specifies whether the depth buffer is enabled for writing. If False, depth buffer writing is disabled. Otherwise, it is enabled. Initially, depth buffer writing is enabled.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetDepthMask">GetDepthMask</a></dt>
+  <dd>Checks whether writing into the depth buffer is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ColorMask">ColorMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of frame buffer color components.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthRange">DepthRange</a></dt>
+  <dd>Specify mapping of depth values from normalized device coordinates to window coordinates.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDepthMask"></a><code>class function <b>GetDepthMask</b>: Boolean; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks whether writing into the depth buffer is enabled.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_DEPTH_WRITEMASK)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if writing into the depth buffer is enabled. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthMask">DepthMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> or <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing into the depth buffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearStencil"></a><code>class procedure <b>ClearStencil</b>(const AIndex: Integer); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify the index value used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the stencil buffer.
+
+<p>
+
+<p><b>OpenGL API</b>: glClearStencil
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AIndex</dt>
+<dd>the index used when the stencil buffer is cleared. The initial value is 0. Only the lowest <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a> bits of the index are used.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearStencil">GetClearStencil</a></dt>
+  <dd>Returns the index to which the stencil bitplanes are cleared.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetClearStencil"></a><code>class function <b>GetClearStencil</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the index to which the stencil bitplanes are cleared. The initial value is 0.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_CLEAR_VALUE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ClearStencil">ClearStencil</a></dt>
+  <dd>Specify the index value used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the stencil buffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StencilMask"></a><code>class procedure <b>StencilMask</b>(const AMask: Cardinal); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Control the front and back writing of individual bits in the stencil planes.
+
+<p>
+
+<p><code>StencilMask</code> controls the writing of individual bits in the stencil planes. The least significant n bits of AMask, where n is the number of bits in the stencil buffer, specify a mask. Where a 1 appears in the mask, it's possible to write to the corresponding bit in the stencil buffer. Where a 0 appears, the corresponding bit is write-protected. Initially, all bits are enabled for writing.
+
+<p>There can be two separate mask writemasks; one affects back-facing polygons, and the other affects front-facing polygons as well as other non-polygon primitives. <code>StencilMask</code> sets both front and back stencil writemasks to the same values. Use <a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a> to set front and back stencil writemasks to different values.
+
+<p><b>Note</b>: <code>StencilMask</code> is the same as calling <a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">gl.StencilMaskSeparate</a> with face set to FrontAndBack.
+
+<p><b>OpenGL API</b>: glStencilMask
+
+<p>         </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMask</dt>
+<dd>specifies a bit mask to <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of individual bits in the stencil planes. Initially, the mask is all 1's.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilWriteMask">GetStencilWriteMask</a></dt>
+  <dd>Get the mask that controls writing of the stencil bitplanes for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackWriteMask">GetStencilBackWriteMask</a></dt>
+  <dd>Get the mask that controls writing of the stencil bitplanes for back-facing polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ColorMask">ColorMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of frame buffer color components.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthMask">DepthMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> or <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing into the depth buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StencilMaskSeparate"></a><code>class procedure <b>StencilMaskSeparate</b>(const AFace: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; const AMask: Cardinal); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Control the front and/or back writing of individual bits in the stencil planes.
+
+<p> 
+
+<p>See <a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a> for more details.
+
+<p><b>OpenGL API</b>: glStencilMaskSeparate
+
+<p>         </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFace</dt>
+<dd>specifies whether front and/or back stencil writemask is updated.</dd>
+<dt>AMask</dt>
+<dd>specifies a bit mask to <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of individual bits in the stencil planes. Initially, the mask is all 1's.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilWriteMask">GetStencilWriteMask</a></dt>
+  <dd>Get the mask that controls writing of the stencil bitplanes for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackWriteMask">GetStencilBackWriteMask</a></dt>
+  <dd>Get the mask that controls writing of the stencil bitplanes for back-facing polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ColorMask">ColorMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of frame buffer color components.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthMask">DepthMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> or <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing into the depth buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilWriteMask"></a><code>class function <b>GetStencilWriteMask</b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the mask that controls writing of the stencil bitplanes for front-facing polygons and non-polygons. The initial value is all 1's.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_WRITEMASK)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackWriteMask"></a><code>class function <b>GetStencilBackWriteMask</b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the mask that controls writing of the stencil bitplanes for back-facing polygons. The initial value is all 1's.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BACK_WRITEMASK)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>class procedure <b>Clear</b>(const ABuffers: <a  href="Neslib.Ooogles.html#TGLClearBuffers">TGLClearBuffers</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Clear</code> buffers to preset values.
+
+<p>
+
+<p>The value to which each buffer is cleared depends on the setting of the <code>clear</code> value for that buffer, as set by <a class="normal" href="Neslib.Ooogles.gl.html#ClearColor">ClearColor</a>, <a class="normal" href="Neslib.Ooogles.gl.html#ClearStencil">ClearStencil</a> and <a class="normal" href="Neslib.Ooogles.gl.html#ClearDepth">ClearDepth</a>.
+
+<p>The pixel ownership test, the <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> test, dithering, and the buffer writemasks affect the operation of <code>Clear</code>. The <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box bounds the cleared region. Blend function, stenciling, fragment shading, and depth-buffering are ignored by <code>Clear</code>.
+
+<p><b>OpenGL API</b>: glClear
+
+<p>         </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ABuffers</dt>
+<dd>the buffers to be cleared.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ClearColor">ClearColor</a></dt>
+  <dd>Specify <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> values used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearColor">GetClearColor</a></dt>
+  <dd>Returns the current color used to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the color buffers.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ClearStencil">ClearStencil</a></dt>
+  <dd>Specify the index value used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the stencil buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearStencil">GetClearStencil</a></dt>
+  <dd>Returns the index to which the stencil bitplanes are cleared.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ClearDepth">ClearDepth.</a></dt>
+  <dd>Specify the <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> value used by <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a> to <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> the depth buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetClearDepth">GetClearDepth</a></dt>
+  <dd>Gets the current <a class="normal" href="Neslib.Ooogles.gl.html#Clear">clear</a> depth value.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#ColorMask">ColorMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing of frame buffer color components.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthMask">DepthMask</a></dt>
+  <dd><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> or <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> writing into the depth buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Scissor">Scissor</a></dt>
+  <dd>Define the <code>scissor</code> box.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlendFunc"></a><code>class procedure <b>BlendFunc</b>(const ASrcFactor, ADstFactor: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify pixel arithmetic using blend functions.
+
+<p> 
+
+<p>Pixels can be drawn using a function that blends the incoming (source) RGBA values with the RGBA values that are already in the frame buffer (the destination values). Blending is initially disabled. Use <a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a> with argument TGLCapability.Blend to <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> blending.
+
+<p><code>BlendFunc</code> defines the operation of blending when it is enabled. ASrcFactor specifies which method is used to scale the source color components. ADstFactor specifies which method is used to scale the destination color components. See <a class="normal" href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a> for a description of the possible operations.
+
+<p><b>Note</b>: incoming (source) alpha is correctly thought of as a material opacity, ranging from 1.0, representing complete opacity, to 0.0, representing complete transparency.
+
+<p><b>Note</b>: transparency is best implemented using blend function (SrcAlpha, OneMinusSrcAlpha) with primitives sorted from farthest to nearest. Note that this transparency calculation does not require the presence of alpha bitplanes in the frame buffer.
+
+<p><b>OpenGL API</b>: glBlendFunc
+
+<p>          </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ASrcFactor</dt>
+<dd>specifies how the red, green, blue, and alpha source blending factors are computed. The initial value is One.</dd>
+<dt>ADstFactor</dt>
+<dd>specifies how the red, green, blue, and alpha destination blending factors are computed. The initial value is Zero.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendSrcRgb">GetBlendSrcRgb</a></dt>
+  <dd>Gets the current RGB source blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendSrcAlpha">GetBlendSrcAlpha</a></dt>
+  <dd>Gets the current alpha source blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendDstRgb">GetBlendDstRgb</a></dt>
+  <dd>Gets the current RGB destination blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendDstAlpha">GetBlendDstAlpha</a></dt>
+  <dd>Gets the current alpha destination blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></dt>
+  <dd>Set the blend color.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">BlendEquationSeparate</a></dt>
+  <dd>Set the RGB blend equation and the alpha blend equation separately.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlendFuncSeparate"></a><code>class procedure <b>BlendFuncSeparate</b>(const ASrcRgb, ADstRgb, ASrcAlpha, ADstAlpha: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify pixel arithmetic for RGB and alpha components separately.
+
+<p>   
+
+<p>Pixels can be drawn using a function that blends the incoming (source) RGBA values with the RGBA values that are already in the frame buffer (the destination values). Blending is initially disabled. Use <a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a> with argument TGLCapability.Blend to <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> blending.
+
+<p><code>BlendFuncSeparate</code> defines the operation of blending when it is enabled. ASrcRgb specifies which method is used to scale the source RGB-color components. ADstRGB specifies which method is used to scale the destination RGB-color components. Likewise, ASrcAlpha specifies which method is used to scale the source alpha color component, and ADstAlpha specifies which method is used to scale the destination alpha component. See <a class="normal" href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a> for a description of the possible operations.
+
+<p><b>Note</b>: incoming (source) alpha is correctly thought of as a material opacity, ranging from 1.0, representing complete opacity, to 0.0, representing complete transparency.
+
+<p><b>OpenGL API</b>: glBlendFuncSeparate
+
+<p>          </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ASrcRgb</dt>
+<dd>specifies how the red, green and blue source blending factors are computed. The initial value is One.</dd>
+<dt>ADstRgb</dt>
+<dd>specifies how the red, green and blue destination blending factors are computed. The initial value is Zero.</dd>
+<dt>ASrcAlpha</dt>
+<dd>specifies how the alpha source blending factor is computed. The initial value is One.</dd>
+<dt>ADstAlpha</dt>
+<dd>specifies how the alpha destination blending factor is computed. The initial value is Zero.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendSrcRgb">GetBlendSrcRgb</a></dt>
+  <dd>Gets the current RGB source blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendSrcAlpha">GetBlendSrcAlpha</a></dt>
+  <dd>Gets the current alpha source blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendDstRgb">GetBlendDstRgb</a></dt>
+  <dd>Gets the current RGB destination blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendDstAlpha">GetBlendDstAlpha</a></dt>
+  <dd>Gets the current alpha destination blend function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></dt>
+  <dd>Set the blend color.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">BlendEquationSeparate</a></dt>
+  <dd>Set the RGB blend equation and the alpha blend equation separately.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Clear">Clear</a></dt>
+  <dd><code>Clear</code> buffers to preset values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendSrcRgb"></a><code>class function <b>GetBlendSrcRgb</b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current RGB source blend function.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_BLEND_SRC_RGB)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend function.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendSrcAlpha"></a><code>class function <b>GetBlendSrcAlpha</b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current alpha source blend function.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_BLEND_SRC_ALPHA)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend function.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendDstRgb"></a><code>class function <b>GetBlendDstRgb</b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current RGB destination blend function.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_BLEND_DST_RGB)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend function.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendDstAlpha"></a><code>class function <b>GetBlendDstAlpha</b>: <a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current alpha destination blend function.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_BLEND_DST_ALPHA)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend function.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlendEquation"></a><code>class procedure <b>BlendEquation</b>(const AEquation: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify the equation used for both the RGB blend equation and the Alpha blend equation.
+
+<p>
+
+<p>The blend equations determine how a new pixel (the &quot;source&quot; color) is combined with a pixel already in the framebuffer (the &quot;destination&quot; color). This function sets both the RGB blend equation and the alpha blend equation to a single equation.
+
+<p>These equations use the source and destination blend factors specified by either <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a> or <a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a>. See <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a> or <a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a> for a description of the various blend factors.
+
+<p>See <a class="normal" href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a> for a description of the available options. The results of these equations are clamped to the range 0..1.
+
+<p>The Add equation is useful for antialiasing and transparency, among other things.
+
+<p>Initially, both the RGB blend equation and the alpha blend equation are set to Add.
+
+<p><b>OpenGL API</b>: glBlendEquation
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AEquation</dt>
+<dd>specifies how source and destination colors are combined.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendEquationRgb">GetBlendEquationRgb</a></dt>
+  <dd>Gets the current RGB blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendEquationAlpha">GetBlendEquationAlpha</a></dt>
+  <dd>Gets the current alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></dt>
+  <dd>Set the blend color.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">BlendEquationSeparate</a></dt>
+  <dd>Set the RGB blend equation and the alpha blend equation separately.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlendEquationSeparate"></a><code>class procedure <b>BlendEquationSeparate</b>(const AEquationRgb, AEquationAlpha: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the RGB blend equation and the alpha blend equation separately.
+
+<p> 
+
+<p>The blend equations determine how a new pixel (the &quot;source&quot; color) is combined with a pixel already in the framebuffer (the &quot;destination&quot; color). This function specifies one blend equation for the RGB-color components and one blend equation for the alpha component.
+
+<p>These equations use the source and destination blend factors specified by either <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a> or <a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a>. See <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a> or <a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a> for a description of the various blend factors.
+
+<p>See <a class="normal" href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a> for a description of the available options. The results of these equations are clamped to the range 0..1.
+
+<p>The Add equation is useful for antialiasing and transparency, among other things.
+
+<p>Initially, both the RGB blend equation and the alpha blend equation are set to Add.
+
+<p><b>OpenGL API</b>: glBlendEquation
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AEquationRgb</dt>
+<dd>specifies how the red, green, and blue components of the source and destination colors are combined.</dd>
+<dt>AEquationAlpha</dt>
+<dd>specifies how the alpha component of the source and destination colors are combined</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendEquationRgb">GetBlendEquationRgb</a></dt>
+  <dd>Gets the current RGB blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendEquationAlpha">GetBlendEquationAlpha</a></dt>
+  <dd>Gets the current alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></dt>
+  <dd>Set the blend color.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">BlendFuncSeparate</a></dt>
+  <dd>Specify pixel arithmetic for RGB and alpha components separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendEquationRgb"></a><code>class function <b>GetBlendEquationRgb</b>: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current RGB blend equation.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_BLEND_EQUATION_RGB)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend equation.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">BlendEquationSeparate</a></dt>
+  <dd>Set the RGB blend equation and the alpha blend equation separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendEquationAlpha"></a><code>class function <b>GetBlendEquationAlpha</b>: <a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current alpha blend equation.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_BLEND_EQUATION_ALPHA)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend equation.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">BlendEquationSeparate</a></dt>
+  <dd>Set the RGB blend equation and the alpha blend equation separately.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlendColor"></a><code>class procedure <b>BlendColor</b>(const ARed, AGreen, ABlue, AAlpha: Single); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the blend color.
+
+<p>   
+
+<p>The blend color may be used to calculate the source and destination blending factors. The color components are clamped to the range 0..1 before being stored. See <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a> for a complete description of the blending operations. Initially the blend color is set to (0, 0, 0, 0).
+
+<p><b>OpenGL API</b>: glBlendColor
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ARed</dt>
+<dd>red component.</dd>
+<dt>AGreen</dt>
+<dd>green component.</dd>
+<dt>ABlue</dt>
+<dd>blue component.</dd>
+<dt>AAlpha</dt>
+<dd>alpha component.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendColor">GetBlendColor</a></dt>
+  <dd>Gets the current blend color.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BlendColor"></a><code>class procedure <b>BlendColor</b>(const AColor: TVector4); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the blend color.
+
+<p>
+
+<p>The blend color may be used to calculate the source and destination blending factors. The color components are clamped to the range 0..1 before being stored. See <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a> for a complete description of the blending operations. Initially the blend color is set to (0, 0, 0, 0).
+
+<p><b>OpenGL API</b>: glBlendColor
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AColor</dt>
+<dd>the blend color.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetBlendColor">GetBlendColor</a></dt>
+  <dd>Gets the current blend color.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">BlendEquation</a></dt>
+  <dd>Specify the equation used for both the RGB blend equation and the Alpha blend equation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetBlendColor"></a><code>class function <b>GetBlendColor</b>: TVector4; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current blend color.
+
+<p> <b>OpenGL API</b>: glGetFloatv(GL_BLEND_COLOR)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The blend color.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">BlendColor</a></dt>
+  <dd>Set the blend color.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StencilFunc"></a><code>class procedure <b>StencilFunc</b>(const AFunc: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; const ARef: Integer = 0; const AMask: Cardinal = $FFFFFFFF); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set front and back function and reference value for stencil testing.
+
+<p>  
+
+<p>Stenciling, like depth-buffering, enables and disables drawing on a per-pixel basis. Stencil planes are first drawn into using <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> drawing primitives, then geometry and images are rendered using the stencil planes to mask out portions of the screen. Stenciling is typically used in multipass rendering algorithms to achieve special effects, such as decals, outlining, and constructive solid geometry rendering.
+
+<p>The stencil test conditionally eliminates a pixel based on the outcome of a comparison between the reference value and the value in the stencil buffer. To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> the test, call <a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a> with argument TGLCapability.StencilTest. To specify actions based on the outcome of the stencil test, call <a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">gl.StencilOp</a> or <a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">gl.StencilOpSeparate</a>.
+
+<p>There can be two separate sets of AFunc, ARef, and AMask parameters; one affects back-facing polygons, and the other affects front-facing polygons as well as other non-polygon primitives. <code>StencilFunc</code> sets both front and back stencil state to the same values. Use <a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a> to set front and back stencil state to different values.
+
+<p>AFunc is an enum that determines the stencil comparison function. It accepts one of eight values (see <a class="normal" href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>).
+
+<p>ARef is an integer reference value that is used in the stencil comparison. It is clamped to the range [0, 2n - 1], where n is the number of bitplanes in the stencil buffer.
+
+<p>AMask is bitwise ANDed with both the reference value and the stored stencil value, with the ANDed values participating in the comparison.
+
+<p><b>Note</b>: initially, the stencil test is disabled. If there is no stencil buffer, no stencil modification can occur and it is as if the stencil test always passes.
+
+<p><b>Note</b>: <code>StencilFunc</code> is the same as calling <a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a> with AFace set to FrontAndBack.
+
+<p><b>OpenGL API</b>: glStencilFunc
+
+<p>              </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFunc</dt>
+<dd>the test function. Initial value is TGLCompareFunc.Always.</dd>
+<dt>ARef</dt>
+<dd>(optional) value that specifies the reference value for the stencil test. ARef is clamped to the range [0, 2n - 1], where n is the number of bitplanes in the stencil buffer. The initial value is 0.</dd>
+<dt>AMask</dt>
+<dd>(optional) value that specifies a mask that is ANDed with both the reference value and the stored stencil value when the test is done. The initial value is all 1's.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilFunc">GetStencilFunc</a></dt>
+  <dd>Get what function is used to compare the stencil reference value with the stencil buffer value for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilValueMask">GetStencilValueMask</a></dt>
+  <dd>Get the mask that is used to mask both the stencil reference value and the stencil buffer value before they are compared for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilRef">GetStencilRef</a></dt>
+  <dd>Get the reference value that is compared with the contents of the stencil buffer for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackFunc">GetStencilBackFunc</a></dt>
+  <dd>Get what function is used for back-facing polygons to compare the stencil reference value with the stencil buffer value.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackValueMask">GetStencilBackValueMask</a></dt>
+  <dd>Get the mask that is used for back-facing polygons to mask both the stencil reference value and the stencil buffer value before they are compared.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackRef">GetStencilBackRef</a></dt>
+  <dd>Get the reference value that is compared with the contents of the stencil buffer for back-facing polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StencilFuncSeparate"></a><code>class procedure <b>StencilFuncSeparate</b>(const AFace: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; const AFunc: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; const ARef: Integer = 0; const AMask: Cardinal = $FFFFFFFF); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set front and/or back function and reference value for stencil testing.
+
+<p>   
+
+<p>See <a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a> for more details.
+
+<p><b>OpenGL API</b>: glStencilFuncSeparate
+
+<p>              </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFace</dt>
+<dd>specifies whether front and/or back stencil state is updated.</dd>
+<dt>AFunc</dt>
+<dd>the test function. Initial value is TGLCompareFunc.Always.</dd>
+<dt>ARef</dt>
+<dd>(optional) value that specifies the reference value for the stencil test. ARef is clamped to the range [0, 2n - 1], where n is the number of bitplanes in the stencil buffer. The initial value is 0.</dd>
+<dt>AMask</dt>
+<dd>(optional) value that specifies a mask that is ANDed with both the reference value and the stored stencil value when the test is done. The initial value is all 1's.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilFunc">GetStencilFunc</a></dt>
+  <dd>Get what function is used to compare the stencil reference value with the stencil buffer value for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilValueMask">GetStencilValueMask</a></dt>
+  <dd>Get the mask that is used to mask both the stencil reference value and the stencil buffer value before they are compared for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilRef">GetStencilRef</a></dt>
+  <dd>Get the reference value that is compared with the contents of the stencil buffer for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackFunc">GetStencilBackFunc</a></dt>
+  <dd>Get what function is used for back-facing polygons to compare the stencil reference value with the stencil buffer value.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackValueMask">GetStencilBackValueMask</a></dt>
+  <dd>Get the mask that is used for back-facing polygons to mask both the stencil reference value and the stencil buffer value before they are compared.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackRef">GetStencilBackRef</a></dt>
+  <dd>Get the reference value that is compared with the contents of the stencil buffer for back-facing polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilFunc"></a><code>class function <b>GetStencilFunc</b>: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what function is used to compare the stencil reference value with the stencil buffer value for front-facing polygons and non-polygons. The initial value is Always.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_FUNC)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilValueMask"></a><code>class function <b>GetStencilValueMask</b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the mask that is used to mask both the stencil reference value and the stencil buffer value before they are compared for front-facing polygons and non-polygons. The initial value is all 1's.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_VALUE_MASK)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilRef"></a><code>class function <b>GetStencilRef</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the reference value that is compared with the contents of the stencil buffer for front-facing polygons and non-polygons. The initial value is 0.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_REF)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackFunc"></a><code>class function <b>GetStencilBackFunc</b>: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what function is used for back-facing polygons to compare the stencil reference value with the stencil buffer value. The initial value is Always.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BACK_FUNC)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackValueMask"></a><code>class function <b>GetStencilBackValueMask</b>: Cardinal; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the mask that is used for back-facing polygons to mask both the stencil reference value and the stencil buffer value before they are compared. The initial value is all 1's.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BACK_VALUE_MASK)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackRef"></a><code>class function <b>GetStencilBackRef</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the reference value that is compared with the contents of the stencil buffer for back-facing polygons. The initial value is 0.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_REF)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StencilOp"></a><code>class procedure <b>StencilOp</b>( const AStencilFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ADepthFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ABothPass: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set front and back stencil test actions.
+
+<p>  
+
+<p>Stenciling, like depth-buffering, enables and disables drawing on a per-pixel basis. You draw into the stencil planes using <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> drawing primitives, then render geometry and images, using the stencil planes to mask out portions of the screen. Stenciling is typically used in multipass rendering algorithms to achieve special effects, such as decals, outlining, and constructive solid geometry rendering.
+
+<p>The stencil test conditionally eliminates a pixel based on the outcome of a comparison between the value in the stencil buffer and a reference value. To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> the test, call <a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a> with argument TGLCapability.StencilTest; to control it, call <a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">gl.StencilFunc</a> or <a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">gl.StencilFuncSeparate</a>.
+
+<p>There can be two separate sets of AStencilFail, ADepthFail and ABothPass parameters; one affects back-facing polygons, and the other affects front-facing polygons as well as other non-polygon primitives. <code>StencilOp</code> sets both front and back stencil state to the same values. Use <a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">gl.StencilOpSeparate</a> to set front and back stencil state to different values.
+
+<p><code>StencilOp</code> takes three arguments that indicate what happens to the stored stencil value while stenciling is enabled. If the stencil test fails, no change is made to the pixel's color or depth buffers, and AStencilFail specifies what happens to the stencil buffer contents.
+
+<p>Stencil buffer values are treated as unsigned integers. When incremented and decremented, values are clamped to 0 and 2n - 1, where n is the value returned by <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a>.
+
+<p>The other two arguments to <code>StencilOp</code> specify stencil buffer actions that depend on whether subsequent depth buffer tests succeed (ABothPass) or fail (ADepthFail) (see <a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a>). Note that ADepthFail is ignored when there is no depth buffer, or when the depth buffer is not enabled. In these cases, AStencilFail and ABothPass specify stencil action when the stencil test fails and passes, respectively.
+
+<p><b>Note</b>: initially the stencil test is disabled. If there is no stencil buffer, no stencil modification can occur and it is as if the stencil tests always pass, regardless of any call to <code>StencilOp</code>.
+
+<p><b>Note</b>: <code>StencilOp</code> is the same as calling <a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">gl.StencilOpSeparate</a> with face set to FrontAndBack.
+
+<p><b>OpenGL API</b>: glStencilOp
+
+<p>              </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AStencilFail</dt>
+<dd>(optional) value that specifies the action to take when the stencil test fails. The initial value is Keep.</dd>
+<dt>ADepthFail</dt>
+<dd>(optional) value that specifies the action to take when the stencil test passes, but the depth test fails. The initial value is Keep.</dd>
+<dt>ABothPass</dt>
+<dd>(optional) value that specifies the action to take when both the stencil test and depth test pass, or when the stencil test passes and either there is no depth buffer or depth testing is not enabled. The initial value is Keep.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilFail">GetStencilFail</a></dt>
+  <dd>Get what action is taken when the stencil test fails for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilPassDepthPass">GetStencilPassDepthPass</a></dt>
+  <dd>Get what action is taken when the stencil test passes and the depth test passes for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilPassDepthFail">GetStencilPassDepthFail</a></dt>
+  <dd>Get what action is taken when the stencil test passes, but the depth test fails for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackFail">GetStencilBackFail</a></dt>
+  <dd>Get what action is taken for back-facing polygons when the stencil test fails.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackPassDepthPass">GetStencilBackPassDepthPass</a></dt>
+  <dd>Get what action is taken for back-facing polygons when the stencil test passes and the depth test passes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackPassDepthFail">GetStencilBackPassDepthFail</a></dt>
+  <dd>Get what action is taken for back-facing polygons when the stencil test passes, but the depth test fails.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StencilOpSeparate"></a><code>class procedure <b>StencilOpSeparate</b>( const AFace: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; const AStencilFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ADepthFail: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep; const ABothPass: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a> = TGLStencilOp.Keep); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set front and/or back stencil test actions.
+
+<p>   
+
+<p>See <a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a> for more details.
+
+<p><b>OpenGL API</b>: glStencilOpSeparate
+
+<p>              </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFace</dt>
+<dd>specifies whether front and/or back stencil state is updated.</dd>
+<dt>AStencilFail</dt>
+<dd>(optional) value that specifies the action to take when the stencil test fails. The initial value is Keep.</dd>
+<dt>ADepthFail</dt>
+<dd>(optional) value that specifies the action to take when the stencil test passes, but the depth test fails. The initial value is Keep.</dd>
+<dt>ABothPass</dt>
+<dd>(optional) value that specifies the action to take when both the stencil test and depth test pass, or when the stencil test passes and either there is no depth buffer or depth testing is not enabled. The initial value is Keep.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilFail">GetStencilFail</a></dt>
+  <dd>Get what action is taken when the stencil test fails for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilPassDepthPass">GetStencilPassDepthPass</a></dt>
+  <dd>Get what action is taken when the stencil test passes and the depth test passes for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilPassDepthFail">GetStencilPassDepthFail</a></dt>
+  <dd>Get what action is taken when the stencil test passes, but the depth test fails for front-facing polygons and non-polygons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackFail">GetStencilBackFail</a></dt>
+  <dd>Get what action is taken for back-facing polygons when the stencil test fails.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackPassDepthPass">GetStencilBackPassDepthPass</a></dt>
+  <dd>Get what action is taken for back-facing polygons when the stencil test passes and the depth test passes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetStencilBackPassDepthFail">GetStencilBackPassDepthFail</a></dt>
+  <dd>Get what action is taken for back-facing polygons when the stencil test passes, but the depth test fails.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">TGLFramebuffer.GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">StencilFuncSeparate</a></dt>
+  <dd>Set front and/or back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">StencilMask</a></dt>
+  <dd>Control the front and back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">StencilMaskSeparate</a></dt>
+  <dd>Control the front and/or back writing of individual bits in the stencil planes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilFail"></a><code>class function <b>GetStencilFail</b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what action is taken when the stencil test fails for front-facing polygons and non-polygons. The initial value is Keep.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_FAIL)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilPassDepthPass"></a><code>class function <b>GetStencilPassDepthPass</b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what action is taken when the stencil test passes and the depth test passes for front-facing polygons and non-polygons. The initial value is Keep.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_PASS_DEPTH_PASS)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilPassDepthFail"></a><code>class function <b>GetStencilPassDepthFail</b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what action is taken when the stencil test passes, but the depth test fails for front-facing polygons and non-polygons. The initial value is Keep.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_PASS_DEPTH_FAIL)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackFail"></a><code>class function <b>GetStencilBackFail</b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what action is taken for back-facing polygons when the stencil test fails. The initial value is Keep.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BACK_FAIL)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackPassDepthPass"></a><code>class function <b>GetStencilBackPassDepthPass</b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what action is taken for back-facing polygons when the stencil test passes and the depth test passes. The initial value is Keep.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BACK_PASS_DEPTH_PASS)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetStencilBackPassDepthFail"></a><code>class function <b>GetStencilBackPassDepthFail</b>: <a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get what action is taken for back-facing polygons when the stencil test passes, but the depth test fails. The initial value is Keep.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BACK_PASS_DEPTH_FAIL)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">StencilOpSeparate</a></dt>
+  <dd>Set front and/or back stencil test actions.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DepthFunc"></a><code>class procedure <b>DepthFunc</b>(const AFunc: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify the value used for depth buffer comparisons.
+
+<p>
+
+<p>This method specifies the function used to compare each incoming pixel depth value with the depth value present in the depth buffer. The comparison is performed only if depth testing is enabled. (See <a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a> of TGLCapability.DepthTest.)
+
+<p>Initially, depth testing is disabled. If depth testing is disabled or no depth buffer exists, it is as if the depth test always passes.
+
+<p><b>Note</b>: even if the depth buffer exists and the depth mask is non-zero, the depth buffer is not updated if the depth test is disabled.
+
+<p><b>OpenGL API</b>: glDepthFunc
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFunc</dt>
+<dd>specifies the depth comparison function. The initial value is TGLCompareFunc.Less.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetDepthFunc">GetDepthFunc</a></dt>
+  <dd>Gets the current depth function.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthRange">DepthRange</a></dt>
+  <dd>Specify mapping of depth values from normalized device coordinates to window coordinates.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDepthFunc"></a><code>class function <b>GetDepthFunc</b>: <a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current depth function.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_DEPTH_FUNC)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current depth function.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Scissor"></a><code>class procedure <b>Scissor</b>(const ALeft, ABottom, AWidth, AHeight: Integer); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Define the <code>scissor</code> box.
+
+<p>   
+
+<p> When a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> context is first attached to a window, the width and height are set to the dimensions of that window.
+
+<p>This method defines a rectangle, called the <code>scissor</code> box, in window coordinates. The first two arguments, ALeft and ABottom, specify the lower left corner of the box. AWidth and AHeight specify the width and height of the box.
+
+<p>To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> the <code>scissor</code> test, call <a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a> with TGLCapability.ScissorTest. The test is initially disabled. While the test is enabled, only pixels that lie within the <code>scissor</code> box can be modified by drawing commands. Window coordinates have integer values at the shared corners of frame buffer pixels. <code>Scissor</code>(0, 0, 1, 1) allows modification of only the lower left pixel in the window, and <code>Scissor</code>(0, 0, 0, 0) doesn't allow modification of any pixels in the window.
+
+<p>When the <code>scissor</code> test is disabled, it is as though the <code>scissor</code> box includes the entire window.
+
+<p><b>OpenGL API</b>: glScissor
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ALeft</dt>
+<dd>X-coordinate of the lower left corner of the <code>scissor</code> box. The initial value is 0.</dd>
+<dt>ABottom</dt>
+<dd>Y-coordinate of the lower left corner of the <code>scissor</code> box. The initial value is 0.</dd>
+<dt>AWidth</dt>
+<dd>width of the <code>scissor</code> box.</dd>
+<dt>AHeight</dt>
+<dd>height of the <code>scissor</code> box.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if either AWidth or AHeight is negative.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetScissor">GetScissor</a></dt>
+  <dd>Get the current <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Viewport">Viewport</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetScissor"></a><code>class procedure <b>GetScissor</b>(out ALeft, ABottom, AWidth, AHeight: Integer); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box.
+
+<p>   
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_SCISSOR_BOX)
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ALeft</dt>
+<dd>is set to the X-coordinate of the lower left corner of the <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box.</dd>
+<dt>ABottom</dt>
+<dd>is set to the Y-coordinate of the lower left corner of the <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box.</dd>
+<dt>AWidth</dt>
+<dd>is set to the width of the <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box.</dd>
+<dt>AHeight</dt>
+<dd>is set to the height of the <a class="normal" href="Neslib.Ooogles.gl.html#Scissor">scissor</a> box.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Scissor">Scissor</a></dt>
+  <dd>Define the <code>scissor</code> box.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SampleCoverage"></a><code>class procedure <b>SampleCoverage</b>(const AValue: Single; const AInvert: Boolean = False); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify multisample coverage parameters.
+
+<p> 
+
+<p>Multisampling samples a pixel multiple times at various implementation-dependent subpixel locations to generate antialiasing effects. Multisampling transparently antialiases points, lines, and polygons if it is enabled.
+
+<p>AValue is used in constructing a temporary mask used in determining which samples will be used in resolving the final fragment color. This mask is bitwise-anded with the coverage mask generated from the multisampling computation. If the AInvert flag is set, the temporary mask is inverted (all bits flipped) and then the bitwise-and is computed.
+
+<p>If an implementation does not have any multisample buffers available, or multisampling is disabled, rasterization occurs with only a single sample computing a pixel's final RGB color.
+
+<p>Provided an implementation supports multisample buffers, and multisampling is enabled, then a pixel's final color is generated by combining several samples per pixel. Each sample contains color, depth, and stencil information, allowing those operations to be performed on each sample.
+
+<p><b>OpenGL API</b>: glSampleCoverage
+
+<p>      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AValue</dt>
+<dd>sample coverage value. The value is clamped to the range 0..1. The initial value is 1.0.</dd>
+<dt>AInvert</dt>
+<dd>(optional) value representing if the coverage masks should be inverted. Defaults to False.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetSampleCoverageValue">GetSampleCoverageValue</a></dt>
+  <dd>Get the current sample coverage value.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetSampleCoverageInvert">GetSampleCoverageInvert</a></dt>
+  <dd>Get the current sample coverage invert flag.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetSampleAlphaToCoverage">GetSampleAlphaToCoverage</a></dt>
+  <dd>Get a boolean value indicating if the fragment coverage value should be ANDed with a temporary coverage value based on the fragment's alpha value.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetSampleCoverage">GetSampleCoverage</a></dt>
+  <dd>Get a boolean value indicating if the fragment coverage value should be ANDed with a temporary coverage value based on the current sample coverage value.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetSampleBuffers">TGLFramebuffer.GetSampleBuffers</a></dt>
+  <dd>Get the number of sample buffers associated with the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetSamples">TGLFramebuffer.GetSamples</a></dt>
+  <dd>Get the coverage mask size of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSampleCoverageValue"></a><code>class function <b>GetSampleCoverageValue</b>: Single; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current sample coverage value.
+
+<p> <b>OpenGL API</b>: glGetFloatv(GL_SAMPLE_COVERAGE_VALUE)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current sample coverage value.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">SampleCoverage</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetSampleCoverageInvert">GetSampleCoverageInvert</a></dt>
+  <dd>Get the current sample coverage invert flag.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSampleCoverageInvert"></a><code>class function <b>GetSampleCoverageInvert</b>: Boolean; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current sample coverage invert flag.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_SAMPLE_COVERAGE_INVERT)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current sample coverage invert flag.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">SampleCoverage</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetSampleCoverageValue">GetSampleCoverageValue</a></dt>
+  <dd>Get the current sample coverage value.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSampleCoverage"></a><code>class function <b>GetSampleCoverage</b>: Boolean; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a boolean value indicating if the fragment coverage value should be ANDed with a temporary coverage value based on the current sample coverage value. The initial value is False.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_SAMPLE_COVERAGE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">SampleCoverage</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSampleAlphaToCoverage"></a><code>class function <b>GetSampleAlphaToCoverage</b>: Boolean; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a boolean value indicating if the fragment coverage value should be ANDed with a temporary coverage value based on the fragment's alpha value. The initial value is False.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_SAMPLE_ALPHA_TO_COVERAGE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">SampleCoverage</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawArrays"></a><code>class procedure <b>DrawArrays</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const ACount: Integer); overload; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawArrays"></a><code>class procedure <b>DrawArrays</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AFirst, ACount: Integer); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render primitives from array data, <b>without</b> using indices.
+
+<p>  
+
+<p><a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a> specifies multiple geometric primitives with very few subroutine calls. Instead of calling a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> procedure to pass each individual vertex attribute, you can use <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a> to prespecify separate arrays of vertices, normals, and colors and use them to construct a sequence of primitives with a single call to <a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a>.
+
+<p>When <a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a> is called, it uses ACount sequential elements from each enabled array to construct a sequence of geometric primitives, beginning with element AFirst. AType specifies what kind of primitives are constructed and how the array elements construct those primitives.
+
+<p>To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> a generic vertex attribute array, call <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a> and <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a>.
+
+<p><b>Note</b>: if the current program object, as set by <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a>, is invalid, rendering results are undefined. However, no error is generated for this case.
+
+<p>  <b>OpenGL API</b>: glDrawArrays
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AType</dt>
+<dd>specifies what kind of primitives to render.</dd>
+<dt>AFirst</dt>
+<dd>(optional) the starting index in the enabled arrays.</dd>
+<dt>ACount</dt>
+<dd>the number of elements to be rendered.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ACount is negative.</dd>
+<dt><code>TGLError.InvalidFramebufferOperation</code></dt>
+<dd>if the currently bound framebuffer is not framebuffer complete.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">TGLFramebuffer.Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a></dt>
+  <dd>Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a></dt>
+  <dd>Enables this vertex attribute.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a></dt>
+  <dd>Disables this vertex attribute.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a></dt>
+  <dd>Render primitives from array data, using indices from a bound index buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawElements"></a><code>class procedure <b>DrawElements</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: array of UInt8; const AFirst: Integer = 0; const ACount: Integer = 0); overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawElements"></a><code>class procedure <b>DrawElements</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: TArray&lt;UInt8&gt;; const AFirst: Integer = 0; const ACount: Integer = 0); overload; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawElements"></a><code>class procedure <b>DrawElements</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: array of UInt16; const AFirst: Integer = 0; const ACount: Integer = 0); overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawElements"></a><code>class procedure <b>DrawElements</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const AIndices: TArray&lt;UInt16&gt;; const AFirst: Integer = 0; const ACount: Integer = 0); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render primitives from array data, using supplied indices.
+
+<p>   
+
+<p><a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a> specifies multiple geometric primitives with very few subroutine calls. Instead of calling a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> function to pass each vertex attribute, you can use <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a> to prespecify separate arrays of vertex attributes and use them to construct a sequence of primitives with a single call to <a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a>.
+
+<p>When <a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">DrawElements</a> is called, it uses AIndices to located vertices in the vertex array. AType specifies what kind of primitives are constructed and how the array elements construct these primitives. If more than one array is enabled, each is used.
+
+<p>To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> a generic vertex attribute array, call <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a> and <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a>.
+
+<p><b>Note</b>: if the current program object, as set by <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a>, is invalid, rendering results are undefined. However, no error is generated for this case.
+
+<p> <b>OpenGL API</b>: glDrawElements
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AType</dt>
+<dd>specifies what kind of primitives to render.</dd>
+<dt>AIndices</dt>
+<dd>array of indices (of type UInt8 or UInt16).</dd>
+<dt>AFirst</dt>
+<dd>(optional) index to the first index in AIndices to use. Defaults to 0.</dd>
+<dt>ACount</dt>
+<dd>(optional) number of indices in AIndices to use, starting at AFirst. Defaults to 0 (all remaining indices).</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidFramebufferOperation</code></dt>
+<dd>if the currently bound framebuffer is not framebuffer complete.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">TGLFramebuffer.Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a></dt>
+  <dd>Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a></dt>
+  <dd>Enables this vertex attribute.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a></dt>
+  <dd>Disables this vertex attribute.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DrawElements"></a><code>class procedure <b>DrawElements</b>(const AType: <a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a>; const ACount: Integer; const AIndexType: <a  href="Neslib.Ooogles.html#TGLIndexType">TGLIndexType</a>); overload; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Render primitives from array data, using indices from a bound index buffer.
+
+<p>  
+
+<p><code>DrawElements</code> specifies multiple geometric primitives with very few subroutine calls. Instead of calling a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> function to pass each vertex attribute, you can use <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a> to prespecify separate arrays of vertex attributes and use them to construct a sequence of primitives with a single call to <code>DrawElements</code>.
+
+<p>AType specifies what kind of primitives are constructed and how the array elements construct these primitives. If more than one array is enabled, each is used.
+
+<p>To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> a generic vertex attribute array, call <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a> and <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a>.
+
+<p><b>Note</b>: if the current program object, as set by <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a>, is invalid, rendering results are undefined. However, no error is generated for this case.
+
+<p> <b>OpenGL API</b>: glDrawElements
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AType</dt>
+<dd>specifies what kind of primitives to render.</dd>
+<dt>ACount</dt>
+<dd>the number of indices used to render.</dd>
+<dt>AIndexType</dt>
+<dd>the type of the indices in the bound index buffer. Only 8-bit (UnsignedByte) and 16-bit (UnsignedShort) indices are supported.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidFramebufferOperation</code></dt>
+<dd>if the currently bound framebuffer is not framebuffer complete.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">TGLFramebuffer.Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a></dt>
+  <dd>Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a></dt>
+  <dd>Enables this vertex attribute.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a></dt>
+  <dd>Disables this vertex attribute.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">DrawArrays</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CullFace"></a><code>class procedure <b>CullFace</b>(const AMode: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify whether front- or back-facing polygons can be culled.
+
+<p>
+
+<p>This method specifies whether front- or back-facing polygons are culled (as specified by AMode) when polygon culling is enabled. Polygon culling is initially disabled. To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> polygon culling, call the <a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a> methods with the argument TGLCapability.CullFace.
+
+<p><a class="normal" href="Neslib.Ooogles.gl.html#FrontFace">gl.FrontFace</a> specifies which of the clockwise and counterclockwise polygons are front-facing and back-facing.
+
+<p><b>Note</b>: if mode is TGLFace.FrontAndBack, no polygons are drawn, but other primitives such as points and lines are drawn.
+
+<p><b>OpenGL API</b>: glCullFace
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMode</dt>
+<dd>whether front- or back-facing polygons are candidates for culling.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetCullFace">GetCullFace</a></dt>
+  <dd>Gets the current cull face mode.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a></dt>
+  <dd><code>Disable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a></dt>
+  <dd>Checks if a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#FrontFace">FrontFace.</a></dt>
+  <dd>Define front- and back-facing polygons.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCullFace"></a><code>class function <b>GetCullFace</b>: <a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current cull face mode.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_CULL_FACE_MODE)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current cull face mode.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#CullFace">CullFace</a></dt>
+  <dd>Specify whether front- or back-facing polygons can be culled.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FrontFace"></a><code>class procedure <b>FrontFace</b>(const AOrientation: <a  href="Neslib.Ooogles.html#TGLFaceOrientation">TGLFaceOrientation</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Define front- and back-facing polygons.
+
+<p>
+
+<p>In a scene composed entirely of opaque closed surfaces, back-facing polygons are never visible. Eliminating these invisible polygons has the obvious benefit of speeding up the rendering of the image. To <a class="normal" href="Neslib.Ooogles.gl.html#Enable">enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">disable</a> elimination of back-facing polygons, call <a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a> with argument TGLCapability.CullFace.
+
+<p>The projection of a polygon to window coordinates is said to have clockwise winding if an imaginary object following the path from its first vertex, its second vertex, and so on, to its last vertex, and finally back to its first vertex, moves in a clockwise direction about the interior of the polygon. The polygon's winding is said to be counterclockwise if the imaginary object following the same path moves in a counterclockwise direction about the interior of the polygon. glFrontFace specifies whether polygons with clockwise winding in window coordinates, or counterclockwise winding in window coordinates, are taken to be front-facing. Passing TGLFaceOrientation.CounterClockwise selects counterclockwise polygons as front-facing; TGLFaceOrientation.Clockwise selects clockwise polygons as front-facing. By default, counterclockwise polygons are taken to be front-facing.
+
+<p><b>OpenGL API</b>: glFrontFace
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AOrientation</dt>
+<dd>the orientation of front-facing polygons. Initial value is TGLFaceOrientation.CounterClockwise.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetFrontFace">GetFrontFace</a></dt>
+  <dd>Gets the current front face orientation.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a></dt>
+  <dd><code>Disable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a></dt>
+  <dd>Checks if a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#CullFace">CullFace.</a></dt>
+  <dd>Specify whether front- or back-facing polygons can be culled.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetFrontFace"></a><code>class function <b>GetFrontFace</b>: <a  href="Neslib.Ooogles.html#TGLFaceOrientation">TGLFaceOrientation</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current front face orientation.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_FRONT_FACE)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current front face orientation.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#FrontFace">FrontFace</a></dt>
+  <dd>Define front- and back-facing polygons.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LineWidth"></a><code>class procedure <b>LineWidth</b>(const AWidth: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specify the width of rasterized lines.
+
+<p>
+
+<p> The actual width is determined by rounding the supplied width to the nearest integer. (If the rounding results in the value 0, it is as if the line width were 1.)
+
+<p>There is a range of supported line widths. Only width 1 is guaranteed to be supported; others depend on the implementation. To query the range of supported widths, call <a class="normal" href="Neslib.Ooogles.gl.html#GetAliasedLineWidthRange">GetAliasedLineWidthRange</a>.
+
+<p><b>Note</b>: the line width specified by <code>LineWidth</code> is always returned when <a class="normal" href="Neslib.Ooogles.gl.html#GetLineWidth">GetLineWidth</a> is queried. Clamping and rounding have no effect on the specified value.
+
+<p><b>OpenGL API</b>: glLineWidth
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AWidth</dt>
+<dd>the width of rasterized lines. The initial value is 1.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth is less than or equal to 0.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetLineWidth">GetLineWidth</a></dt>
+  <dd>Get the current line width.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetAliasedLineWidthRange">GetAliasedLineWidthRange</a></dt>
+  <dd>Gets the smallest and largest supported widths for aliased lines.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetLineWidth"></a><code>class function <b>GetLineWidth</b>: Single; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the current line width.
+
+<p> <b>OpenGL API</b>: glGetFloatv(GL_LINE_WIDTH)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The current line width.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#LineWidth">LineWidth</a></dt>
+  <dd>Specify the width of rasterized lines.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PolygonOffset"></a><code>class procedure <b>PolygonOffset</b>(const AFactor, AUnits: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the scale and units used to calculate polygon depth values.
+
+<p> 
+
+<p>When TGLCapability.PolygonOffsetFill is enabled, each fragment's depth value will be offset after it is interpolated from the depth values of the appropriate vertices. The value of the offset is (AFactor × DZ) + (r × AUnits), where DZ is a measurement of the change in depth relative to the screen area of the polygon, and r is the smallest value that is guaranteed to produce a resolvable offset for a given implementation. The offset is added before the depth test is performed and before the value is written into the depth buffer.
+
+<p><code>PolygonOffset</code> is useful for rendering hidden-line images, for applying decals to surfaces, and for rendering solids with highlighted edges.
+
+<p><b>OpenGL API</b>: glPolygonOffset
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFactor</dt>
+<dd>a scale factor that is used to create a variable depth offset for each polygon. The initial value is 0.</dd>
+<dt>AUnits</dt>
+<dd>is multiplied by an implementation-specific value to create a constant depth offset. The initial value is 0.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a></dt>
+  <dd><code>Disable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a></dt>
+  <dd>Checks if a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetPolygonOffsetFactor">GetPolygonOffsetFactor</a></dt>
+  <dd>Gets the current polygon offset factor.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetPolygonOffsetUnits">GetPolygonOffsetUnits</a></dt>
+  <dd>Gets the current polygon offset units.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPolygonOffsetFactor"></a><code>class function <b>GetPolygonOffsetFactor</b>: Single; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current polygon offset factor.
+
+<p> <b>OpenGL API</b>: glGetFloatv(GL_POLYGON_OFFSET_FACTOR)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The polygon offset factor.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetPolygonOffsetUnits">GetPolygonOffsetUnits</a></dt>
+  <dd>Gets the current polygon offset units.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPolygonOffsetUnits"></a><code>class function <b>GetPolygonOffsetUnits</b>: Single; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the current polygon offset units.
+
+<p> <b>OpenGL API</b>: glGetFloatv(GL_POLYGON_OFFSET_UNITS)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The polygon offset units.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetPolygonOffsetFactor">GetPolygonOffsetFactor</a></dt>
+  <dd>Gets the current polygon offset factor.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PixelStore"></a><code>class procedure <b>PixelStore</b>(const AMode: <a  href="Neslib.Ooogles.html#TGLPixelStoreMode">TGLPixelStoreMode</a>; const AValue: <a  href="Neslib.Ooogles.html#TGLPixelStoreValue">TGLPixelStoreValue</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set pixel storage alignment.
+
+<p> 
+
+<p>This method sets pixel storage modes that affect the operation of subsequent <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">TGLFramebuffer.ReadPixels</a> as well as the unpacking of texture patterns (see <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">TGLTexture.Upload</a> and <a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">TGLTexture.SubUpload</a>).
+
+<p>The PackAlignment mode affects how pixel data is downloaded from the GPU into client memory. The UnpackAlignment mode affects how pixel data is uploaded from client memory to the GPU.
+
+<p><b>OpenGL API</b>: glPixelStorei
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMode</dt>
+<dd>the mode to set.</dd>
+<dt>AValue</dt>
+<dd>the alignment value to set for the mode.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">TGLFramebuffer.ReadPixels</a></dt>
+  <dd>Read a block of pixels from the frame buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">TGLTexture.Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">TGLTexture.SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetPixelStore">GetPixelStore</a></dt>
+  <dd>Returns to current pixel storage alignment.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPixelStore"></a><code>class function <b>GetPixelStore</b>(const AMode: <a  href="Neslib.Ooogles.html#TGLPixelStoreMode">TGLPixelStoreMode</a>): <a  href="Neslib.Ooogles.html#TGLPixelStoreValue">TGLPixelStoreValue</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns to current pixel storage alignment.
+
+<p>
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_PACK_ALIGNMENT/GL_UNPACK_ALIGNMENT)
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMode</dt>
+<dd>the mode for which to return the storage value.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The storage alignment for the given node.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">PixelStore</a></dt>
+  <dd>Set pixel storage alignment.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetAliasedLineWidthRange"></a><code>class procedure <b>GetAliasedLineWidthRange</b>(out AMin, AMax: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the smallest and largest supported widths for aliased lines.
+
+<p> 
+
+<p>The returned range always includes value 1.0.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_ALIASED_LINE_WIDTH_RANGE)
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMin</dt>
+<dd>is set to the smallest supported line width.</dd>
+<dt>AMax</dt>
+<dd>is set to the largest supported line width.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#LineWidth">LineWidth</a></dt>
+  <dd>Specify the width of rasterized lines.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetLineWidth">GetLineWidth</a></dt>
+  <dd>Get the current line width.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetAliasedPointSizeRange"></a><code>class procedure <b>GetAliasedPointSizeRange</b>(out AMin, AMax: Single); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the smallest and largest supported sizes for aliased points.
+
+<p> 
+
+<p>The returned range always includes value 1.0.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_ALIASED_POINT_SIZE_RANGE)</p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMin</dt>
+<dd>is set to the smallest supported point size.</dd>
+<dt>AMax</dt>
+<dd>is set to the largest supported point size.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Enable"></a><code>class procedure <b>Enable</b>(const ACapability: <a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.
+
+<p>
+
+<p>Use <a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a> to determine the current setting of any capability. The initial value for each capability with the exception of TGLCapability.Dither is False. The initial value for TGLCapability.Dither is True.
+
+<p><b>OpenGL API</b>: glEnable
+
+<p>           </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ACapability</dt>
+<dd>the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability to <code>enable</code>.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a></dt>
+  <dd>Checks if a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">TGLTexture.BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#CullFace">CullFace</a></dt>
+  <dd>Specify whether front- or back-facing polygons can be culled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthRange">DepthRange</a></dt>
+  <dd>Specify mapping of depth values from normalized device coordinates to window coordinates.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#LineWidth">LineWidth</a></dt>
+  <dd>Specify the width of rasterized lines.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Scissor">Scissor</a></dt>
+  <dd>Define the <code>scissor</code> box.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a></dt>
+  <dd>A texture</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Disable"></a><code>class procedure <b>Disable</b>(const ACapability: <a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Disable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.
+
+<p>
+
+<p>Use <a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a> to determine the current setting of any capability. The initial value for each capability with the exception of TGLCapability.Dither is False. The initial value for TGLCapability.Dither is True.
+
+<p><b>OpenGL API</b>: glDisable
+
+<p>           </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ACapability</dt>
+<dd>the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability to <code>disable</code>.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">IsEnabled</a></dt>
+  <dd>Checks if a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability is enabled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">TGLTexture.BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">BlendFunc</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#CullFace">CullFace</a></dt>
+  <dd>Specify whether front- or back-facing polygons can be culled.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">DepthFunc</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthRange">DepthRange</a></dt>
+  <dd>Specify mapping of depth values from normalized device coordinates to window coordinates.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#LineWidth">LineWidth</a></dt>
+  <dd>Specify the width of rasterized lines.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">PolygonOffset</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Scissor">Scissor</a></dt>
+  <dd>Define the <code>scissor</code> box.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">StencilFunc</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">StencilOp</a></dt>
+  <dd>Set front and back stencil test actions.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a></dt>
+  <dd>A texture</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsEnabled"></a><code>class function <b>IsEnabled</b>(const ACapability: <a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a>): Boolean; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability is enabled.
+
+<p>
+
+<p> <b>OpenGL API</b>: glIsEnabled
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ACapability</dt>
+<dd>the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability to check.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if ACapability is currently enabled. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Enable">Enable</a></dt>
+  <dd><code>Enable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Disable">Disable</a></dt>
+  <dd><code>Disable</code> a server-side <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> capability.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Finish"></a><code>class procedure <b>Finish</b>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Block until all <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> execution is complete.
+
+<p>This method does not return until the effects of all previously called <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> commands are complete. Such effects include all changes to <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> state, all changes to connection state, and all changes to the frame buffer contents.
+
+<p><b>Note</b>: <code>Finish</code> requires a round trip to the server.
+
+<p><b>OpenGL API</b>: glFinish
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Flush">Flush</a></dt>
+  <dd>Force execution of <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> commands in finite time.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Flush"></a><code>class procedure <b>Flush</b>; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Force execution of <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> commands in finite time.
+
+<p>Different <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementations buffer commands in several different locations, including network buffers and the graphics accelerator itself. This method empties all of these buffers, causing all issued commands to be executed as quickly as they are accepted by the actual rendering engine. Though this execution may not be completed in any particular time period, it does complete in finite time.
+
+<p>Because any <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> program might be executed over a network, or on an accelerator that buffers commands, all programs should call <code>Flush</code> whenever they count on having all of their previously issued commands completed. For example, call <code>Flush</code> before waiting for user input that depends on the generated image.
+
+<p><b>Note</b>: <code>Flush</code> can return at any time. It does not wait until the execution of all previously issued <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> commands is complete.
+
+<p><b>OpenGL API</b>: glFlush
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Finish">Finish</a></dt>
+  <dd>Block until all <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> execution is complete.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSubpixelBits"></a><code>class function <b>GetSubpixelBits</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get an estimate of the number of bits of subpixel resolution that are used to position rasterized geometry in window coordinates. The value must be at least 4.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_SUBPIXEL_BITS)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVendor"></a><code>class function <b>GetVendor</b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the company responsible for this <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation. This name does not change from release to release.
+
+<p>Because the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> does not include queries for the performance characteristics of an implementation, some applications are written to recognize known platforms and modify their <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> usage based on known performance characteristics of these platforms. <code>GetVendor</code> and <a class="normal" href="Neslib.Ooogles.gl.html#GetRenderer">GetRenderer</a> together uniquely specify a platform. They do not change from release to release and should be used by platform-recognition algorithms.
+
+<p><b>OpenGL API</b>: glGetString(GL_VENDOR)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetRenderer">GetRenderer</a></dt>
+  <dd>Get the name of the renderer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetRenderer"></a><code>class function <b>GetRenderer</b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the name of the renderer. This name is typically specific to a particular configuration of a hardware platform. It does not change from release to release.
+
+<p>Because the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> does not include queries for the performance characteristics of an implementation, some applications are written to recognize known platforms and modify their <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> usage based on known performance characteristics of these platforms. <a class="normal" href="Neslib.Ooogles.gl.html#GetVendor">GetVendor</a> and <code>GetRenderer</code> together uniquely specify a platform. They do not change from release to release and should be used by platform-recognition algorithms.
+
+<p><b>OpenGL API</b>: glGetString(GL_RENDERER)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetVendor">GetVendor</a></dt>
+  <dd>Get the company responsible for this <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetVersion"></a><code>class function <b>GetVersion</b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a version or release number of the form OpenGL&lt;space&gt;ES&lt;space&gt;&lt;version number&gt;&lt;space&gt;&lt;vendor-specific information&gt;.
+
+<p><b>OpenGL API</b>: glGetString(GL_VERSION)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetShadingLanguageVersion"></a><code>class function <b>GetShadingLanguageVersion</b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a version or release number for the shading language of the form OpenGL&lt;space&gt;ES&lt;space&gt;GLSL&lt;space&gt;ES&lt;space&gt;&lt;version number&gt;&lt;space&gt;&lt;vendor-specific information&gt;.
+
+<p><b>OpenGL API</b>: glGetString(GL_SHADING_LANGUAGE_VERSION)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetExtensions"></a><code>class function <b>GetExtensions</b>: RawByteString; inline; static;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a space-separated list of supported extensions to <a class="normal" href="Neslib.Ooogles.gl.html">GL</a>.
+
+<p>Some applications want to make use of features that are not part of the standard <a class="normal" href="Neslib.Ooogles.gl.html">GL</a>. These features may be implemented as extensions to the standard <a class="normal" href="Neslib.Ooogles.gl.html">GL</a>. This method returns a space-separated list of supported <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> extensions. (Extension names never contain a space character.)
+
+<p><b>OpenGL API</b>: glGetString(GL_EXTENSIONS)</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

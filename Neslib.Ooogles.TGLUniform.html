@@ -1,0 +1,574 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLUniform</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLUniform"></a><h1 class="cio">record TGLUniform</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLUniform = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+Represents a uniform in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>. These are variables marked with <code>uniform</code> in a vertex or fragment shader.</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#Init">Init</a></b>(const AProgram: <a  href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>; const AUniformName: RawByteString); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue0, AValue1: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue0, AValue1, AValue2: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue0, AValue1, AValue2, AValue3: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TVector2); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TVector3); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TVector4); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TMatrix2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TMatrix3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TMatrix4); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue0, AValue1: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue0, AValue1, AValue2: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue0, AValue1, AValue2, AValue3: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TIVector2); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TIVector3); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></b>(const AValue: TIVector4); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of Single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;Single&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TVector2); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TVector2&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TVector3); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TVector3&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TVector4); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TVector4&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;Integer&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TIVector2); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TIVector2&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TIVector3); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TIVector3&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TIVector4); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TIVector4&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TMatrix2); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TMatrix2&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TMatrix3); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TMatrix3&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: array of TMatrix4); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></b>(const AValues: TArray&lt;TMatrix4&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue0, AValue1: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue0, AValue1, AValue2: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue0, AValue1, AValue2, AValue3: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TVector2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TVector3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TVector4); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TMatrix2); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TMatrix3); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TMatrix4); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue0, AValue1: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue0, AValue1, AValue2: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue0, AValue1, AValue2, AValue3: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TIVector2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TIVector3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></b>(out AValue: TIVector4); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLUniform.html#GetMaxVertexUniformVectors">GetMaxVertexUniformVectors</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLUniform.html#GetMaxFragmentUniformVectors">GetMaxFragmentUniformVectors</a></b>: Integer; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLUniform.html#Location">Location</a></b>: GLint read FLocation;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Init"></a><code>procedure <b>Init</b>(const AProgram: <a  href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>; const AUniformName: RawByteString); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Initializes the uniform.
+
+<p> 
+
+<p> AUniformName must be an active uniform variable name in program that is not a structure, an array of structures, or a subcomponent of a vector or a matrix.
+
+<p>Uniform variables that are structures or arrays of structures may be queried by using separate <a class="normal" href="Neslib.Ooogles.TGLUniform.html">TGLUniform</a> records for each field within the structure. The array element operator &quot;[]&quot; and the structure field operator &quot;.&quot; may be used in name in order to select elements within an array or fields within a structure. The result of using these operators is not allowed to be another structure, an array of structures, or a subcomponent of a vector or a matrix. Except if the last part of name indicates a uniform variable array, the <a class="normal" href="Neslib.Ooogles.TGLUniform.html#Location">location</a> of the first element of an array can be retrieved by using the name of the array, or by using the name appended by &quot;[0]&quot;.
+
+<p>The actual locations assigned to uniform variables are not known until the program object is linked successfully.
+
+<p><b>Note</b>: in DEBUG mode, a warning will be logged to the debug console of AProgram does not contain a uniform named AUniformName.
+
+<p><b>OpenGL API</b>: glGetUniformLocation
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AProgram</dt>
+<dd>the program containing the uniform.</dd>
+<dt>AUniformName</dt>
+<dd>the (case-sensitive) name of the uniform as used in the vertex or fragment shader of the program.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AProgram is not a valid program or has not been successfully linked.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue0, AValue1: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue0, AValue1, AValue2: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue0, AValue1, AValue2, AValue3: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TVector2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TVector3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TVector4); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TMatrix2); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TMatrix3); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TMatrix4); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue0, AValue1: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue0, AValue1, AValue2: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue0, AValue1, AValue2, AValue3: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TIVector2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TIVector3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValue"></a><code>procedure <b>SetValue</b>(const AValue: TIVector4); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sets the value of the uniform. There are many overloaded versions for the different data types of the uniform.
+
+<p>When the uniform is a vector, you can set its value by either passing 2, 3 or 4 values, or by passing a single value of type TVector2, TVector3 or TVector4.
+
+<p>This method modifies the value of a uniform variable. It operates on the program object that was made part of current state by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a>.
+
+<p>All active uniform variables defined in a program object are initialized to 0 when the program object is linked successfully. They retain the values assigned to them by a call to <a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a> until the next successful link operation occurs on the program object, when they are once again initialized to 0.
+
+<p><b>Note</b>: for sampler uniforms, the value must be of an integer type.
+
+<p>   <b>OpenGL API</b>: glUniform*
+
+<p>   </p>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if there is no current program in use.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the number and types of the parameters does not match the declaration in the shader.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the uniform is of a sampler type, and the parameter is not of an integer type.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#Init">Init</a></dt>
+  <dd>Initializes the uniform.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">TGLProgram.Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetValue">GetValue</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of Single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;Single&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TVector2); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TVector2&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TVector3); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TVector3&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TVector4); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TVector4&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of Integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;Integer&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TIVector2); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TIVector2&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TIVector3); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TIVector3&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TIVector4); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TIVector4&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TMatrix2); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TMatrix2&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TMatrix3); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TMatrix3&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: array of TMatrix4); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SetValues"></a><code>procedure <b>SetValues</b>(const AValues: TArray&lt;TMatrix4&gt;); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Behaves like <a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a>, but operates on a single uniform variable or a uniform variable array.
+
+<p>
+
+<p>If AValues contains just a single value, then this method can be used to modify either a single uniform variable or a uniform variable array.
+
+<p>If AValues contains more than one value, then this method can only be used to modify a uniform variable array.
+
+<p><b>OpenGL API</b>: glUniform*v
+
+<p>See <a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a> for more notes and information.</p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AValues</dt>
+<dd>array of values to set.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue0, AValue1: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue0, AValue1, AValue2: Single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue0, AValue1, AValue2, AValue3: Single); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TVector2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TVector3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TVector4); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TMatrix2); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TMatrix3); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TMatrix4); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue0, AValue1: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue0, AValue1, AValue2: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue0, AValue1, AValue2, AValue3: Integer); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TIVector2); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TIVector3); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="GetValue"></a><code>procedure <b>GetValue</b>(out AValue: TIVector4); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return the value of a uniform variable.
+
+<p>
+
+<p>This method returns in AValue the value of the uniform variable. The type of the uniform variable determines the type of value that is returned. It is the responsibility of the caller to make sure that the type of AValue matches the type of the uniform variable in the shader.
+
+<p>The uniform variable values can only be queried after a link if the link was successful.
+
+<p> <b>OpenGL API</b>: glGetUniform*
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AValue</dt>
+<dd>is set to the returned value.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the program is not successfully linked.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#Init">Init</a></dt>
+  <dd>Initializes the uniform.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">TGLProgram.Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxVertexUniformVectors"></a><code>class function <b>GetMaxVertexUniformVectors</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a vertex shader. The value must be at least 128.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_VERTEX_UNIFORM_VECTORS)
+
+<p>  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetMaxFragmentUniformVectors">GetMaxFragmentUniformVectors</a></dt>
+  <dd>Get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a fragment shader.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxFragmentUniformVectors"></a><code>class function <b>GetMaxFragmentUniformVectors</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a fragment shader. The value must be at least 16.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_FRAGMENT_UNIFORM_VECTORS)
+
+<p>  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">SetValue</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValues">SetValues</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetMaxVertexUniformVectors">GetMaxVertexUniformVectors</a></dt>
+  <dd>Get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a vertex shader.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Location"></a><code>property <b>Location</b>: GLint read FLocation;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The <code>location</code> of this uniform in the program.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

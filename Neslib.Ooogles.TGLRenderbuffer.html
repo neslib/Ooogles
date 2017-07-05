@@ -1,0 +1,658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLRenderbuffer</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLRenderbuffer"></a><h1 class="cio">record TGLRenderbuffer</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLRenderbuffer = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A renderbuffer. Serves as <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">storage</a> for a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a>.</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#New">New</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">Delete</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#Unbind">Unbind</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#IsBound">IsBound</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></b>(const AWidth, AHeight: Integer; const AFormat: <a  href="Neslib.Ooogles.html#TGLRenderbufferFormat">TGLRenderbufferFormat</a> = TGLRenderbufferFormat.RGBA4); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></b>: <a  href="Neslib.Ooogles.html#TGLRenderbufferFormat">TGLRenderbufferFormat</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetCurrent">GetCurrent</a></b>: <a  href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#GetMaxRenderbufferSize">GetMaxRenderbufferSize</a></b>: Integer; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLRenderbuffer.html#Handle">Handle</a></b>: GLuint read FHandle;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a renderbuffer.
+
+<p>No renderbuffer objects are associated with the returned renderbuffer object names until they are first bound by calling <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a>.
+
+<p><b>OpenGL API</b>: glGenRenderbuffers
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the renderbuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the renderbuffer.
+
+<p>After a renderbuffer object is deleted, it has no contents, and its name is free for reuse (for example by <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#New">New</a>).
+
+<p>If a renderbuffer object that is currently bound is deleted, the binding reverts to 0 (the absence of any renderbuffer object). Additionally, special care must be taken when deleting a renderbuffer object if the image of the renderbuffer is attached to a framebuffer object. In this case, if the deleted renderbuffer object is attached to the currently bound framebuffer object, it is automatically detached. However, attachments to any other framebuffer objects are the responsibility of the application.
+
+<p><b>OpenGL API</b>: glDeleteRenderbuffers
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#New">New</a></dt>
+  <dd>Creates a renderbuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Bind"></a><code>procedure <b>Bind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Binds the renderbuffer.
+
+<p>A renderbuffer is a data <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">storage</a> object containing a single image of a renderable internal format. A renderbuffer's image may be attached to a framebuffer object to use as a destination for rendering and as a source for reading.
+
+<p><code>Bind</code> lets you create or use a named renderbuffer object. When a renderbuffer object is bound, the previous binding is automatically broken.
+
+<p>The state of a renderbuffer object immediately after it is first bound is a zero-sized memory buffer with format RGBA4 and zero-sized red, green, blue, alpha, depth, and stencil pixel depths.
+
+<p>A renderbuffer object binding created with <code>Bind</code> remains active until a different renderbuffer object name is bound, or until the bound renderbuffer object is deleted with <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">Delete</a>.
+
+<p><b>OpenGL API</b>: glBindRenderbuffer
+
+<p>     </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#New">New</a></dt>
+  <dd>Creates a renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">TGLFramebuffer.AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Unbind">UnBind</a></dt>
+  <dd>Unbinds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this renderbuffer is currently bound.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Unbind"></a><code>procedure <b>Unbind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Unbinds the renderbuffer.
+
+<p><b>OpenGL API</b>: glBindRenderbuffer
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this renderbuffer is currently bound.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IsBound"></a><code>function <b>IsBound</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks if this renderbuffer is currently bound.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if this is the currently bound renderbuffer, False otherwise.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Storage"></a><code>procedure <b>Storage</b>(const AWidth, AHeight: Integer; const AFormat: <a  href="Neslib.Ooogles.html#TGLRenderbufferFormat">TGLRenderbufferFormat</a> = TGLRenderbufferFormat.RGBA4); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create and initialize a renderbuffer object's data store.
+
+<p>  
+
+<p>   This method establishes the data <code>storage</code>, format, and dimensions of a renderbuffer object's image. Any existing data store for the renderbuffer is deleted and the contents of the <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#New">new</a> data store are undefined.
+
+<p>An implementation may vary its allocation of internal component resolution based on any parameter, but the allocation and chosen internal format must not be a function of any other state and cannot be changed once they are established. The actual resolution in bits of each component of the allocated image can be queried with the Get* methods.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glRenderbufferStorage
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AWidth</dt>
+<dd>width of the renderbuffer in pixels</dd>
+<dt>AHeight</dt>
+<dd>height of the renderbuffer in pixels</dd>
+<dt>AFormat</dt>
+<dd>(optional) color-renderable, depth-renderable, or stencil- renderable format of the renderbuffer. Defaults to RGBA4.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than zero or greater than the maximum renderbuffer size (see <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetMaxRenderbufferSize">GetMaxRenderbufferSize</a>).</dd>
+<dt><code>TGLError.OutOfMemory</code></dt>
+<dd>if the implementation is unable to create a data store with the requested AWidth and AHeight.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no renderbuffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#New">New</a></dt>
+  <dd>Creates a renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">TGLFramebuffer.AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetMaxRenderbufferSize">GetMaxRenderbufferSize</a></dt>
+  <dd>Get the largest renderbuffer width and height that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetWidth"></a><code>function <b>GetWidth</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the width of the renderbuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_WIDTH)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The width in pixels of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetHeight"></a><code>function <b>GetHeight</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the height of the renderbuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_HEIGHT)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The height in pixels of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetFormat"></a><code>function <b>GetFormat</b>: <a  href="Neslib.Ooogles.html#TGLRenderbufferFormat">TGLRenderbufferFormat</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the format of the renderbuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_INTERNAL_FORMAT)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The color-renderable, depth-renderable, or stencil-renderable format of the renderbuffer</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetRedSize"></a><code>function <b>GetRedSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the resolution in bits for the red component.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_RED_SIZE)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The resolution in bits for the red component of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetGreenSize"></a><code>function <b>GetGreenSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the resolution in bits for the green component.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_GREEN_SIZE)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The resolution in bits for the green component of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetBlueSize"></a><code>function <b>GetBlueSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the resolution in bits for the blue component.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_BLUE_SIZE)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The resolution in bits for the blue component of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAlphaSize"></a><code>function <b>GetAlphaSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the resolution in bits for the alpha component.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_ALPHA_SIZE)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The resolution in bits for the alpha component of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetDepthSize"></a><code>function <b>GetDepthSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the resolution in bits for the depth component.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_DEPTH_SIZE)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The resolution in bits for the depth component of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetStencilSize">GetStencilSize</a></dt>
+  <dd>Gets the resolution in bits for the stencil component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetStencilSize"></a><code>function <b>GetStencilSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the resolution in bits for the stencil component.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this renderbuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetRenderbufferParameteriv(GL_RENDERBUFFER_STENCIL_SIZE)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The resolution in bits for the stencil component of the image of the renderbuffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetWidth">GetWidth</a></dt>
+  <dd>Gets the width of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetHeight">GetHeight</a></dt>
+  <dd>Gets the height of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetFormat">GetFormat</a></dt>
+  <dd>Gets the format of the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetGreenSize">GetGreenSize</a></dt>
+  <dd>Gets the resolution in bits for the green component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetBlueSize">GetBlueSize</a></dt>
+  <dd>Gets the resolution in bits for the blue component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetAlphaSize">GetAlphaSize</a></dt>
+  <dd>Gets the resolution in bits for the alpha component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetDepthSize">GetDepthSize</a></dt>
+  <dd>Gets the resolution in bits for the depth component.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#GetRedSize">GetRedSize</a></dt>
+  <dd>Gets the resolution in bits for the red component.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrent"></a><code>class function <b>GetCurrent</b>: <a  href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the renderbuffer that is currently bound.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_RENDERBUFFER_BINDING)
+
+<p>  </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The currently bound renderbuffer. Its <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Handle">Handle</a> will be 0 if there is no renderbuffer bound.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this renderbuffer is currently bound.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxRenderbufferSize"></a><code>class function <b>GetMaxRenderbufferSize</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the largest renderbuffer width and height that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Handle">handle</a>. The value must be at least 1.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_RENDERBUFFER_SIZE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">Storage.</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: GLuint read FHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL <code>handle</code> to the renderbuffer object.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLBuffer</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLBuffer"></a><h1 class="cio">record TGLBuffer</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLBuffer = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A (vertex) array buffer or element array (index) buffer</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#New">New</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLBufferType">TGLBufferType</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#Delete">Delete</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#Unbind">Unbind</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLBuffer.html#IsBound">IsBound</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a></b>(const AData; const ASize: NativeInt; const AUsage: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a> = TGLBufferUsage.StaticDraw); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a></b>&lt;T: record&gt;(const AData: array of T; const AUsage: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a> = TGLBufferUsage.StaticDraw); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a></b>&lt;T: record&gt;(const AData: TArray&lt;T&gt;; const AUsage: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a> = TGLBufferUsage.StaticDraw); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#SubData">SubData</a></b>(const AOffset: NativeInt; const AData; const ASize: NativeInt); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#SubData">SubData</a></b>&lt;T: record&gt;(const AOffset: NativeInt; const AData: array of T); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLBuffer.html#SubData">SubData</a></b>&lt;T: record&gt;(const AOffset: NativeInt; const AData: TArray&lt;T&gt;); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLBuffer.html#GetSize">GetSize</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLBuffer.html#GetUsage">GetUsage</a></b>: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLBuffer.html#GetCurrentArrayBuffer">GetCurrentArrayBuffer</a></b>: <a  href="Neslib.Ooogles.TGLBuffer.html">TGLBuffer</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLBuffer.html#GetCurrentElementArrayBuffer">GetCurrentElementArrayBuffer</a></b>: <a  href="Neslib.Ooogles.TGLBuffer.html">TGLBuffer</a>; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLBuffer.html#Handle">Handle</a></b>: GLuint read FHandle;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>(const AType: <a  href="Neslib.Ooogles.html#TGLBufferType">TGLBufferType</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a buffer.
+
+<p>
+
+<p>No buffer objects are associated with the buffer until they are first bound by calling <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a>.
+
+<p><b>OpenGL API</b>: glGenBuffers
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AType</dt>
+<dd>the type of buffer to create.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the buffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the buffer.
+
+<p>If a buffer object that is currently bound is deleted, the binding reverts to 0 (the absence of any buffer object, which reverts to client memory usage).
+
+<p><b>OpenGL API</b>: glDeleteBuffers
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#New">New</a></dt>
+  <dd>Creates a buffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Bind"></a><code>procedure <b>Bind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Binds the buffer.
+
+<p>When a buffer object is bound to a target, the previous binding for that target is automatically broken.
+
+<p>The state of a buffer object immediately after it is first bound is a zero-sized memory buffer with TGLBufferUsage.StaticDraw usage.
+
+<p>While a buffer object name is bound, <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> operations on the target to which it is bound affect the bound buffer object, and queries of the target to which it is bound return state from the bound buffer object.
+
+<p>A buffer object binding created <code>Bind</code> remains active until a different buffer object name is bound to the same target, or until the bound buffer object is deleted with <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Delete">Delete</a>.
+
+<p>Once created, a named buffer object may be re-bound to any target as often as needed. However, the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation may make choices about how to optimize the storage of a buffer object based on its initial binding target.
+
+<p><b>OpenGL API</b>: glBindBuffer
+
+<p>     </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#GetCurrentArrayBuffer">GetCurrentArrayBuffer</a></dt>
+  <dd>Gets the currently bound array buffer (aka Vertex Buffer).</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#GetCurrentElementArrayBuffer">GetCurrentElementArrayBuffer</a></dt>
+  <dd>Gets the currently bound element array buffer (aka Index Buffer).</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#New">New</a></dt>
+  <dd>Creates a buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this buffer is currently bound.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Unbind"></a><code>procedure <b>Unbind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Unbinds the buffer.
+
+<p>This effectively unbinds any buffer object previously bound, and restores client memory usage for that buffer object target.
+
+<p>While the buffer is unbound, as in the initial state, attempts to modify or query state on the target to which it is bound generates an TGLError.InvalidOperation error.
+
+<p><b>OpenGL API</b>: glBindBuffer
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this buffer is currently bound.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IsBound"></a><code>function <b>IsBound</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks if this buffer is currently bound.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if this is the currently bound buffer, False otherwise.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Data"></a><code>procedure <b>Data</b>(const AData; const ASize: NativeInt; const AUsage: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a> = TGLBufferUsage.StaticDraw); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="Data"></a><code>procedure <b>Data</b>&lt;T: record&gt;(const AData: array of T; const AUsage: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a> = TGLBufferUsage.StaticDraw); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="Data"></a><code>procedure <b>Data</b>&lt;T: record&gt;(const AData: TArray&lt;T&gt;; const AUsage: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a> = TGLBufferUsage.StaticDraw); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create and initialize a buffer object's <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store.
+
+<p>  
+
+<p>There are overloaded versions of this method where AData is an array of values of generic type T. In that case, there is no ASize parameter.
+
+<p>   Any pre-existing <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store is deleted.
+
+<p>AUsage is a hint to the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation as to how a buffer object's <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store will be accessed. This enables the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation to make more intelligent decisions that may significantly impact buffer object performance. It does not, however, constrain the actual usage of the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store.
+
+<p><b>Note</b>: clients must align <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> elements consistent with the requirements of the client platform, with an additional base-level requirement that an offset within a buffer to a datum comprising N be a multiple of N.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this buffer is not bound.
+
+<p><b>OpenGL API</b>: glBufferData
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AData</dt>
+<dd>untyped value to copy to the buffer.</dd>
+<dt>ASize</dt>
+<dd>size of the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> in bytes.</dd>
+<dt>AUsage</dt>
+<dd>(optional) expected usage pattern of the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store. Defaults to TGLBufferUsage.StaticDraw.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ASize is negative.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no buffer is bound.</dd>
+<dt><code>TGLError.OutOfMemory</code></dt>
+<dd>if the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> is unable to create a <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store with the specified ASize.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#GetSize">GetSize</a></dt>
+  <dd>Get the size of the buffer in bytes.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#GetUsage">GetUsage</a></dt>
+  <dd>Get the buffer object's usage pattern.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#SubData">SubData</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SubData"></a><code>procedure <b>SubData</b>(const AOffset: NativeInt; const AData; const ASize: NativeInt); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="SubData"></a><code>procedure <b>SubData</b>&lt;T: record&gt;(const AOffset: NativeInt; const AData: array of T); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><a name="SubData"></a><code>procedure <b>SubData</b>&lt;T: record&gt;(const AOffset: NativeInt; const AData: TArray&lt;T&gt;); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Update a subset of a buffer object's <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store.
+
+<p>   
+
+<p>There are overloaded versions of this method where AData is an array of values of generic type T. In that case, there is no ASize parameter (but AOffset is still measured in bytes).
+
+<p>  This method redefines some or all of the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store for the buffer object currently bound to target. <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a> starting at byte offset AOffset and extending for ASize bytes is copied to the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store from the memory pointed to by AData. An error is thrown if offset and size together define a range beyond the bounds of the buffer object's <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store.
+
+<p><b>Note</b>: when replacing the entire <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store, consider using <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#SubData">SubData</a> rather than completely recreating the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store with <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a>. This avoids the cost of reallocating the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store.
+
+<p><b>Note</b>: consider using multiple buffer objects to avoid stalling the rendering pipeline during <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store updates. If any rendering in the pipeline makes reference to <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> in the buffer object being updated by <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#SubData">SubData</a>, especially from the specific region being updated, that rendering must drain from the pipeline before the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store can be updated.
+
+<p><b>Note</b>: clients must align <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> elements consistent with the requirements of the client platform, with an additional base-level requirement that an offset within a buffer to a datum comprising N be a multiple of N.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this buffer is not bound.
+
+<p><b>OpenGL API</b>: glBufferSubData
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AOffset</dt>
+<dd>the offset into the buffer object's <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store where <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> replacement will begin, measured in bytes.</dd>
+<dt>AData</dt>
+<dd>untyped value to copy to the buffer.</dd>
+<dt>ASize</dt>
+<dd>size of the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> in bytes.</dd>
+<dt>AUsage</dt>
+<dd>(optional) expected usage pattern of the <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store. Defaults to TGLBufferUsage.StaticDraw.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AOffset or ASize is negative, or if together they define a region of memory that extends beyond the buffer object's allocated <a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">data</a> store.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no buffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSize"></a><code>function <b>GetSize</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the size of the buffer in bytes.
+
+<p>  <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this buffer is not bound.
+
+<p><b>OpenGL API</b>: glGetBufferParameteriv(GL_BUFFER_SIZE)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The size of the buffer in bytes.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no buffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetUsage"></a><code>function <b>GetUsage</b>: <a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the buffer object's usage pattern.
+
+<p>  <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this buffer is not bound.
+
+<p><b>OpenGL API</b>: glGetBufferParameteriv(GL_BUFFER_USAGE)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The usage pattern.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no buffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">Data</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrentArrayBuffer"></a><code>class function <b>GetCurrentArrayBuffer</b>: <a  href="Neslib.Ooogles.TGLBuffer.html">TGLBuffer</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the currently bound array buffer (aka Vertex Buffer).
+
+<p>Returns The currently bound array buffer.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_ARRAY_BUFFER_BINDING)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#GetCurrentElementArrayBuffer">GetCurrentElementArrayBuffer</a></dt>
+  <dd>Gets the currently bound element array buffer (aka Index Buffer).</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrentElementArrayBuffer"></a><code>class function <b>GetCurrentElementArrayBuffer</b>: <a  href="Neslib.Ooogles.TGLBuffer.html">TGLBuffer</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the currently bound element array buffer (aka Index Buffer).
+
+<p>Returns The currently bound element array buffer.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_ELEMENT_ARRAY_BUFFER_BINDING)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#GetCurrentArrayBuffer">GetCurrentArrayBuffer</a></dt>
+  <dd>Gets the currently bound array buffer (aka Vertex Buffer).</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: GLuint read FHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL <code>handle</code> to the buffer object.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

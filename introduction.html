@@ -1,0 +1,549 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Ooogles</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<h1 class="externalitem">Ooogles - Object Oriented OpenGL-ES 2.0</h1>
+ 
+
+<p>Ooogles is a ultra-thin object oriented wrapper around OpenGL-ES 2.0 with near-zero impact on performance. It can also be used to create OpenGL applications for desktop platforms using the OpenGL-ES subset of OpenGL.
+
+<p>This wrapper is still pretty low-level. It is not a &quot;rendering engine&quot; or high-level framework, so you still need OpenGL knowledge.
+
+<p><h2 class=""><a name="_Features"></a>Features</h2>
+
+
+<p>Ooogles has the following features: </p>
+
+<ul class="compact_spacing">
+  <li><p>Encapsulates OpenGL &quot;objects&quot; into Delphi records+methods for a better organized and easier to use interface to OpenGL.</p></li>
+  <li><p>Provides type-safe access to most OpenGL constructs. For example:</p></li>
+  <li><p>In OpenGL, every &quot;object&quot; is just an integer (or Handle), and nothing prevents you to call a texture API on a shader object. This wrapper wraps the API into classes (actually records) like <a class="normal" href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a> and <a class="normal" href="Neslib.Ooogles.TGLShader.html">TGLShader</a>, preventing these types of errors.</p></li>
+  <li><p>Another big source of common OpenGL errors is to use incorrect enumeration values, resulting in GL_INVALID_ENUM errors. This wrapper uses true Delphi enums instead, preventing most of these errors.</p></li>
+  <li><p>The wrapper is very thin. OpenGL handles are not wrapped into Delphi classes or object interfaces, but in records instead. Most methods are inlined and wrap just a single OpenGL API. So the overhead of the wrapper is mostly zero.</p></li>
+  <li><p>A few methods perform multiple OpenGL calls for convenience. For example, when compiling a shader, the wrapper not only calls the compile API, but also checks for compilation errors. In DEBUG mode, it will expose those errors through exceptions, and it will also log any warnings to the debug console.</p></li>
+  <li><p>OpenGL APIs that are not tied to an OpenGL &quot;object&quot; are wrapped in the static <code><a class="normal" href="Neslib.Ooogles.gl.html">gl</a></code> class (which acts more like a namespace). For example, the OpenGL API <code>glClear</code> is wrapped in the method <code><a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a></code>.</p></li>
+  <li><p>The wrapper provides some features to make OpenGL-ES specific constructs compatible with (desktop) OpenGL. For example, OpenGL-ES requires the use of precision qualifiers in fragment shaders, but these are not supported by OpenGL. This wrapper will modify the shader source so it will work with OpenGL as well.</p></li>
+  <li><p>The wrapper only exposes methods that are OpenGL-ES compliant, so you cannot accidentially use APIs that only work with OpenGL, but not with OpenGL-ES. However, you always have access to the underlying OpenGL handle and so you can use it directly with the OpenGL API if you want to.</p></li>
+  <li><p>The wrapper handles the sometimes slightly different API names on different platforms.</p></li>
+  <li><p>When compiling with the DEBUG conditional define, and assertions enabled (the default configuration for Debug builds), every OpenGL call is checked for errors, and an exception is raised when an error occurs, indicating the type of error and in which method it occurred. When DEBUG is not defined, or assertions are disabled, all error checking code is removed from the build so it has zero impact on performance.</p></li>
+  <li><p>Also, when compiling in DEBUG mode with assertions enabled, warnings will be logged to the debug console if you forget to bind an object before you use it (or when a different object than the one you are using is currently bound).</p></li>
+  <li><p>The wrapper is well documented. Each record and method contains documentation from the official OpenGL-ES 2.0 reference, as well as custom documentation where needed. The documentation also shows which original OpenGL API call(s) are used in the implementation, to make it easier to find some method if you already know the API equivalent.</p></li>
+  <li><p>Comes with various samples that show how to use this wrapper. These samples work on Windows, macOS, iOS and Android. However, they do <b>not</b> use the FireMonkey framework, but a custom light-weight (and limited) framework that you can find in the &quot;Examples\Common&quot; directory.</p></li>
+</ul>
+
+<p> <h2 class=""><a name="_NonFeatures"></a>Non-features</h2>
+
+
+<p>The wrapper does <b>not</b> provide higher-level features such as automatic OpenGL resource managment. You need to release OpenGL resources yourself when you no longer need them. Resources are usually created using a method called <code>New</code> and released using a methods called <code>Delete</code>. For example:
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">var</span>
+  Texture: TGLTexture;
+<span class="pascal_keyword">begin</span>
+  Texture.New;
+  <span class="pascal_comment">// Do something with texture</span>
+  Texture.Delete;
+<span class="pascal_keyword">end</span>;</pre>
+
+<p>
+
+<p>I may add automatic resource management in the future if and when Delphi gets support for record finalizers.
+
+<p><h2 class=""><a name="_Dependencies"></a>Dependencies</h2>
+
+
+<p>This wrapper has no dependencies other than requiring the FastMath library (<a  href="https://github.com/neslib/FastMath">https://github.com/neslib/FastMath</a>). This library offers (among other things) very fast vector and matrix math calculations, which makes it ideal for use in high performance (OpenGL) applications.
+
+<p><h2 class=""><a name="_GettingStarted"></a>Getting Started</h2>
+
+
+<p>To get started: </p>
+
+<ul class="compact_spacing">
+  <li><p>Make sure the FastMath directory is at the same level as the Ooogles directory.</p></li>
+  <li><p>You usually want to add the FM_COLUMN_MAJOR conditional define to your project (for All configurations - All platforms). This enables column-major storage of matrices, which makes more sense for OpenGL applications.</p></li>
+  <li><p><b>After</b> you have created and activated your OpenGL context, call <a class="normal" href="Neslib.Ooogles.html#InitOoogles">InitOoogles</a>. This is needed to emulate OpenGL-ES on OpenGL platforms. If your application uses multiple contexts, you must call <a class="normal" href="Neslib.Ooogles.html#InitOoogles">InitOoogles</a> once for each context (after making it current). Take a look at the Sample.Platform.* unit for examples of when to call this.</p></li>
+  <li><p>When using Ooogles in your unit, you may get compiler hints saying something like &quot;H2443 Inline function X has not been expanded because unit Y is not specified in USES list&quot;. This is because Ooogles inlines most functions and Delphi requires you use the OpenGL units for inlining to work. Unfortunately, the names of those units differ by platform (eg. Winapi.OpenGL, iOSapi.OpenGLES etc). To make it easier to use the correct OpenGL units, it is easiest if you include the 'OpenGL.inc' file in your uses clauses instead, as in: </p>
+
+<pre class="longcode">
+    <span class="pascal_keyword">uses</span>
+      <span class="pascal_compiler_comment">{$INCLUDE 'OpenGL.inc'}</span>
+      Neslib.Ooogles;</pre>
+
+<p> Just make sure you &quot;use&quot; at least one other unit after the include file.</p></li>
+</ul>
+
+<p> <h2 class=""><a name="_MainClasses"></a>Main Classes</h2>
+
+
+<p>The following is a list of the main classes (actually records) used in Ooogles: </p>
+
+<ul class="compact_spacing">
+  <li><p><a class="normal" href="Neslib.Ooogles.gl.html">gl</a>: static class (or namespace) for OpenGL APIs that are not tied to a specific object.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLShader.html">TGLShader</a>: a vertex or fragment shader.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>: a program that combines a vertex shader and a fragment shader.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a>: represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>. These are variables marked with <code>attribute</code> in a vertex shader.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLUniform.html">TGLUniform</a>: represents a uniform in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>. These are variables marked with <code>uniform</code> in a vertex or fragment shader.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLBuffer.html">TGLBuffer</a>: a (vertex) array buffer or element array (index) buffer.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>: a 2D texture or cubemap texture.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a>: a framebuffer.</p></li>
+  <li><p><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>: a renderbuffer. Serves as storage for a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a>.</p></li>
+</ul>
+
+<p> Mapping from OpenGL to Ooogles
+
+<p>If you are fluent in OpenGL, the you may find the following table helpful to translate from a OpenGL API to an Ooogles method. It should all be pretty straightforward.
+
+<p></p>
+
+<table class="table_tag">
+  <tr class="head">
+    <th><p>OpenGL</p></th>
+    <th><p>Ooogles</p></th>
+  </tr>
+  <tr class="odd">
+    <td><p>glActiveTexture</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">TGLTexture.BindToTextureUnit</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glAttachShader</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">TGLProgram.AttachShader</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glBindAttribLocation</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Bind">TGLVertexAttrib.Bind</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glBindBuffer</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Bind">TGLBuffer.Bind</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glBindFramebuffer</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">TGLFramebuffer.Bind</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glBindTexture</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">TGLTexture.Bind</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glBlendColor</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">gl.BlendColor</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glBlendEquation</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">gl.BlendEquation</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glBlendEquationSeparate</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">gl.BlendEquationSeparate</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glBlendFunc</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">gl.BlendFunc</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glBlendFuncSeparate</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">gl.BlendFuncSeparate</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glBufferData</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Data">TGLBuffer.Data</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glBufferSubData</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#SubData">TGLBuffer.SubData</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glCheckFramebufferStatus</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">TGLFramebuffer.Status</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glClear</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glClearColor</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#ClearColor">gl.ClearColor</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glClearDepthf</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#ClearDepth">gl.ClearDepth</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glClearStencil</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#ClearStencil">gl.ClearStencil</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glColorMask</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#ColorMask">gl.ColorMask</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glCompileShader</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">TGLShader.Compile</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glCompressedTexImage2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">TGLTexture.UploadCompressed</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glCompressedTexSubImage2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">TGLTexture.SubUploadCompressed</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glCopyTexImage2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">TGLTexture.Copy</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glCopyTexSubImage2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">TGLTexture.SubCopy</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glCreateProgram</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">TGLProgram.New</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glCreateShader</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">TGLShader.New</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glCullFace</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#CullFace">gl.CullFace</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDeleteBuffers</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#Delete">TGLBuffer.Delete</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDeleteFramebuffers</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">TGLFramebuffer.Delete</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDeleteProgram</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">TGLProgram.Delete</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDeleteRenderbuffers</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">TGLRenderbuffer.Delete</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDeleteShader</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">TGLShader.Delete</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDeleteTextures</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Delete">TGLTexture.Delete</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDepthFunc</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">gl.DepthFunc</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDepthMask</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#DepthMask">gl.DepthMask</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDepthRangef</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#DepthRange">gl.DepthRange</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDetachShader</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">TGLProgram.DetachShader</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDisable</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDisableVertexAttribArray</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Disable">TGLVertexAttrib.Disable</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glDrawArrays</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">gl.DrawArrays</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glDrawElements</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">gl.DrawElements</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glEnable</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glEnableVertexAttribArray</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Enable">TGLVertexAttrib.Enable</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glFinish</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Finish">gl.Finish</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glFlush</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Flush">gl.Flush</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glFramebufferRenderbuffer</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">TGLFramebuffer.AttachRenderbuffer</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glFramebufferTexture2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">TGLFramebuffer.AttachTexture</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glFrontFace</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#FrontFace">gl.FrontFace</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGenBuffers</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLBuffer.html#New">TGLBuffer.New</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGenFramebuffers</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">TGLFramebuffer.New</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGenRenderbuffers</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#New">TGLRenderbuffer.New</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGenTextures</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#New">TGLTexture.New</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGenerateMipmap</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GenerateMipmap">TGLTexture.GenerateMipmap</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetBooleanv</p></td>
+    <td><p>various Get* methods</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetFloatv</p></td>
+    <td><p>various Get* methods</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetIntegerv</p></td>
+    <td><p>various Get* methods</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetActiveAttrib</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttributeInfo">TGLProgram.GetAttributeInfo</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetActiveUniform</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetUniformInfo">TGLProgram.GetUniformInfo</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetAttachedShaders</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">TGLProgram.GetAttachedShaders</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetAttribLocation</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Init">TGLVertexAttrib.Init</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetBufferParameteriv</p></td>
+    <td><p>TGLBuffer.Get*</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetError</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#GetError">gl.GetError</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetFramebufferAttachmentParameteriv</p></td>
+    <td><p>TGLFramebuffer.Get*</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetProgramInfoLog</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a> (in DEBUG mode)</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetProgramiv</p></td>
+    <td><p>TGLProgram.Get*</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetRenderbufferParameteriv</p></td>
+    <td><p>TGLRenderbuffer.Get*</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetShaderInfoLog</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html">TGLShader</a> (in DEBUG mode)</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetShaderSource</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html#GetSource">TGLShader.GetSource</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetShaderiv</p></td>
+    <td><p>TGLShader.Get*</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetString</p></td>
+    <td><p>gl.Get*</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetTexParameter*</p></td>
+    <td><p>TGLTexture.Get*</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetUniform</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetValue">TGLUniform.GetValue</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetUniformLocation</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLUniform.html#Init">TGLUniform.Init</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glGetVertexAttrib*</p></td>
+    <td><p>TGLVertexAttrib.Get*</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glGetVertexAttribPointerv</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#GetOffset">TGLVertexAttrib.GetOffset</a>/GetData</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glHint</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MipmapHint">TGLTexture.MipmapHint</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glIsBuffer</p></td>
+    <td><p>not needed</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glIsEnabled</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#IsEnabled">gl.IsEnabled</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glIsFramebuffer</p></td>
+    <td><p>not needed</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glIsProgram</p></td>
+    <td><p>not needed</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glIsRenderbuffer</p></td>
+    <td><p>not needed</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glIsShader </p></td>
+    <td><p>not needed</p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glIsTexture</p></td>
+    <td><p>not needed</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glLineWidth</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#LineWidth">gl.LineWidth</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glLinkProgram</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">TGLProgram.Link</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glPixelStorei</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glPolygonOffset</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">gl.PolygonOffset</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glReadPixels</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">TGLFramebuffer.ReadPixels</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glReleaseShaderCompiler</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html#ReleaseCompiler">TGLShader.ReleaseCompiler</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glRenderbufferStorage</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">TGLRenderbuffer.Storage</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glSampleCoverage</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">gl.SampleCoverage</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glScissor</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Scissor">gl.Scissor</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glShaderSource</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">TGLShader.SetSource</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glStencilFunc</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">gl.StencilFunc</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glStencilFuncSeparate</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#StencilFuncSeparate">gl.StencilFuncSeparate</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glStencilMask</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#StencilMask">gl.StencilMask</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glStencilMaskSeparate</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#StencilMaskSeparate">gl.StencilMaskSeparate</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glStencilOp</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">gl.StencilOp</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glStencilOpSeparate</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#StencilOpSeparate">gl.StencilOpSeparate</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glTexImage2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">TGLTexture.Upload</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glTexParameter</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MinFilter">TGLTexture.MinFilter</a>/MagFilter/WrapS/WrapT</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glTexSubImage2D</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">TGLTexture.SubUpload</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glUniform*</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">TGLUniform.SetValue</a>/SetValues</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glUseProgram</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glValidateProgram</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">TGLProgram.Validate</a></p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glVertexAttrib*</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#SetValue">TGLVertexAttrib.SetValue</a></p></td>
+  </tr>
+  <tr class="odd">
+    <td><p>glVertexAttribPointer</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#SetConfig">TGLVertexAttrib.SetConfig</a>/SetData</p></td>
+  </tr>
+  <tr class="even">
+    <td><p>glViewport</p></td>
+    <td><p><a class="normal" href="Neslib.Ooogles.gl.html#Viewport">gl.Viewport</a></p></td>
+  </tr>
+</table>
+
+<p><div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

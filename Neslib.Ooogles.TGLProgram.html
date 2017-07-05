@@ -1,0 +1,779 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLProgram</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLProgram"></a><h1 class="cio">record TGLProgram</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLProgram = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A program that combines a vertex shader and a fragment shader.</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#New">New</a></b>; overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#New">New</a></b>(const AVertexShader, AFragmentShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></b>(const AShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#AttachShaders">AttachShaders</a></b>(const AVertexShader, AFragmentShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></b>(const AShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></b>: TArray&lt;<a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>&gt;; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetAttributeInfo">GetAttributeInfo</a></b>(const AIndex: Integer): <a  href="Neslib.Ooogles.TGLAttrInfo.html">TGLAttrInfo</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetUniformInfo">GetUniformInfo</a></b>(const AIndex: Integer): <a  href="Neslib.Ooogles.TGLUniformInfo.html">TGLUniformInfo</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetDeleteStatus">GetDeleteStatus</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetLinkStatus">GetLinkStatus</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetValidateStatus">GetValidateStatus</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLProgram.html#GetCurrent">GetCurrent</a></b>: <a  href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLProgram.html#Handle">Handle</a></b>: GLuint read FHandle;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>; overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>(const AVertexShader, AFragmentShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a program object.
+
+<p> 
+
+<p>A program object is an object to which shader objects can be attached. This provides a mechanism to specify the shader objects that will be linked to create a program. It also provides a means for checking the compatibility of the shaders that will be used to create a program (for instance, checking the compatibility between a vertex shader and a fragment shader). When no longer needed as part of a program object, shader objects can be detached.
+
+<p>One or more executables are created in a program object by successfully attaching shader objects to it with <a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a>, successfully compiling the shader objects with <a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">TGLShader.Compile</a>, and successfully linking the program object with <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a>. These executables are made part of current state when <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a> is called. Program objects can be deleted by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a>. The memory associated with the program object will be deleted when it is no longer part of current rendering state for any context.
+
+<p><b>Note</b>: like texture objects, the name space for program objects may be shared across a set of contexts, as long as the server sides of the contexts share the same address space. If the name space is shared across contexts, any attached objects and the data associated with those attached objects are shared as well.
+
+<p><b>Note</b>: applications are responsible for providing the synchronization across API calls when objects are accessed from different execution threads.
+
+<p><b>OpenGL API</b>: glCreateProgram
+
+<p>       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AVertexShader</dt>
+<dd>(optional) vertex shader to attach.</dd>
+<dt>AFragmentShader</dt>
+<dd>(optional) fragment shader to attach.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html">TGLShader</a></dt>
+  <dd>A vertex or fragment shader</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a></dt>
+  <dd>Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html">TGLUniform</a></dt>
+  <dd>Represents a uniform in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the program. This frees the memory and invalidates the name associated with the program object specified by program. This command effectively undoes the effects of a call to <a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a>.
+
+<p>If a program object is in <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">use</a> as part of current rendering state, it will be flagged for deletion, but it will not be deleted until it is no longer part of current state for any rendering context. If a program object to be deleted has shader objects attached to it, those shader objects will be automatically detached but not deleted unless they have already been flagged for deletion by a previous call to <a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">TGLShader.Delete</a>.
+
+<p>To determine whether a program object has been flagged for deletion, call IsFlaggedForDeletion.
+
+<p><b>OpenGL API</b>: glDeleteProgram
+
+<p>  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AttachShader"></a><code>procedure <b>AttachShader</b>(const AShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Attach a shader object to the program.
+
+<p>
+
+<p> In order to create an executable, there must be a way to specify the list of things that will be linked together. Program objects provide this mechanism. Shaders that are to be linked together in a program object must first be attached to that program object. This method attaches the shader object specified by AShader to the program. This indicates that shader will be included in <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operations that will be performed on program.
+
+<p>All operations that can be performed on a shader object are valid whether or not the shader object is attached to a program object. It is permissible to attach a shader object to a program object before source code has been loaded into the shader object or before the shader object has been compiled. Multiple shader objects of the same type may not be attached to a single program object. However, a single shader object may be attached to more than one program object. If a shader object is deleted while it is attached to a program object, it will be flagged for deletion, and deletion will not occur until <a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a> is called to detach it from all program objects to which it is attached.
+
+<p><b>OpenGL API</b>: glAttachShader
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AShader</dt>
+<dd>the shader object to be attached.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AShader is already attached to the program, or if another shader object of the same type as shader is already attached to the program.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">TGLShader.Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">TGLShader.SetSource</a></dt>
+  <dd>Set or replace the source code in a shader object.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AttachShaders"></a><code>procedure <b>AttachShaders</b>(const AVertexShader, AFragmentShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Attaches a vertex shader and fragment shader in a single call.
+
+<p> 
+
+<p>This method is just a shortcut for calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a> twice.</p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AVertexShader</dt>
+<dd>the vertex shader to attach.</dd>
+<dt>AFragmentShader</dt>
+<dd>the fragment shader to attach.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DetachShader"></a><code>procedure <b>DetachShader</b>(const AShader: <a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Detach a shader object from a program object.
+
+<p>
+
+<p> This command can be used to undo the effect of the command <a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a>.
+
+<p>If shader has already been flagged for deletion by a call to <a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">TGLShader.Delete</a> and it is not attached to any other program object, it will be deleted after it has been detached.
+
+<p><b>OpenGL API</b>: glDetachShader
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AShader</dt>
+<dd>the shader object to be dettached.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AShader is not attached to this program.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttachedShaders"></a><code>function <b>GetAttachedShaders</b>: TArray&lt;<a  href="Neslib.Ooogles.TGLShader.html">TGLShader</a>&gt;; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return the shader objects attached to the program.
+
+<p> <b>OpenGL API</b>: glGetAttachedShaders
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">An array of attached shaders.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Link"></a><code>function <b>Link</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Links the program.
+
+<p>  A shader object of type TGLShaderType.Vertex attached to program is used to create an executable that will run on the programmable vertex processor. A shader object of type TGLShaderType.Fragment attached to program is used to create an executable that will run on the programmable fragment processor.
+
+<p>As a result of a successful <code>link</code> operation, all active user-defined uniform variables belonging to program will be initialized to 0, and each of the program object's active uniform variables can be accessed using <a class="normal" href="Neslib.Ooogles.TGLUniform.html">TGLUniform</a>. Also, any active user-defined attribute variables that have not been bound to a generic vertex attribute index will be bound to one at this time.
+
+<p>Linking of a program object can fail for a number of reasons as specified in the OpenGL ES Shading Language Specification. This will result in a <a class="normal" href="Neslib.Ooogles.EGLShaderError.html">EGLShaderError</a> exception (in DEBUG mode). The following lists some of the conditions that will cause a <code>link</code> error. </p>
+
+<ul class="compact_spacing">
+  <li><p>A vertex shader and a fragment shader are not both present in the program object.</p></li>
+  <li><p>The number of active attribute variables supported by the implementation has been exceeded.</p></li>
+  <li><p>The storage limit for uniform variables has been exceeded.</p></li>
+  <li><p>The number of active uniform variables supported by the implementation has been exceeded.</p></li>
+  <li><p>The main function is missing for the vertex shader or the fragment shader.</p></li>
+  <li><p>A varying variable actually used in the fragment shader is not declared in the same way (or is not declared at all) in the vertex shader.</p></li>
+  <li><p>A reference to a function or variable name is unresolved.</p></li>
+  <li><p>A shared global is declared with two different types or two different initial values.</p></li>
+  <li><p>One or more of the attached shader objects has not been successfully compiled (via <a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">TGLShader.Compile</a>).</p></li>
+  <li><p>Binding a generic attribute matrix caused some rows of the matrix to fall outside the allowed maximum number of vertex attributes.</p></li>
+  <li><p>Not enough contiguous vertex attribute slots could be found to bind attribute matrices.</p></li>
+</ul>
+
+<p> When a program object has been successfully linked, the program object can be made part of current state by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a>.
+
+<p>This method will also install the generated executables as part of the current rendering state if the <code>link</code> operation was successful and the specified program object is already currently in <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">use</a> as a result of a previous call to <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a>. If the program object currently in <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">use</a> is relinked unsuccessfully, its <code>link</code> status will be set to False, but the executables and associated state will remain part of the current state until a subsequent call to <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a> removes it from <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">use</a>. After it is removed from <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">use</a>, it cannot be made part of current state until it has been successfully relinked.
+
+<p>After the <code>link</code> operation, applications are free to modify attached shader objects, compile attached shader objects, detach shader objects, <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> shader objects, and attach additional shader objects. None of these operations affects the information log or the program that is part of the program object.
+
+<p><b>Note</b>: if the <code>link</code> operation is unsuccessful, any information about a previous <code>link</code> operation on program is lost (i.e., a failed <code>link</code> does not restore the old state of program). Certain information can still be retrieved from program even after an unsuccessful <code>link</code> operation.
+
+<p><b>OpenGL API</b>: glLinkProgram, glGetProgramInfoLog, glGetProgramiv(GL_LINK_STATUS/GL_INFO_LOG_LENGTH)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">In RELEASE mode: True on success, False on failure. In DEBUG mode: True on success or an <a class="normal" href="Neslib.Ooogles.EGLError.html">EGLError</a> exception will be raised on failure.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><a class="normal" href="Neslib.Ooogles.EGLShaderError.html">EGLShaderError</a></dt>
+<dd>when the shaders cannot be linked.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a></dt>
+  <dd>Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html">TGLUniform</a></dt>
+  <dd>Represents a uniform in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">TGLShader.Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Validate"></a><code>function <b>Validate</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Validates the program.
+
+<p>  This method checks to see whether the executables contained in program can execute given the current OpenGL state. The validation information (exception message) may consist of an empty string, or it may be a string containing information about how the current program object interacts with the rest of current OpenGL state. This provides a way for OpenGL implementers to convey more information about why the current program is inefficient, suboptimal, failing to execute, and so on.
+
+<p>If validation is successful, the program is guaranteed to execute given the current state. Otherwise, the program is guaranteed to not execute.
+
+<p>This function is typically useful only during application development. The informational string stored in the exception message is completely implementation dependent; therefore, an application should not expect different OpenGL implementations to produce identical information strings.
+
+<p><b>Note</b>: this function mimics the validation operation that OpenGL implementations must perform when rendering commands are issued while programmable shaders are part of current state. The error TGLError.InvalidOperation will be generated by <a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">gl.DrawArrays</a> or <a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">gl.DrawElements</a> if any two active samplers in the current program object are of different types, but refer to the same texture image unit.
+
+<p><b>Note</b>: it may be difficult or cause a performance degradation for applications to catch these errors when rendering commands are issued. Therefore, applications are advised to make calls to <code>Validate</code> to detect these issues during application development.
+
+<p><b>OpenGL API</b>: glValidateProgram, glGetProgramInfoLog, glGetProgramiv(GL_VALIDATE_STATUS/GL_INFO_LOG_LENGTH)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">In RELEASE mode: True on success, False on failure. In DEBUG mode: True on success or an <a class="normal" href="Neslib.Ooogles.EGLError.html">EGLError</a> exception will be raised on failure.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><a class="normal" href="Neslib.Ooogles.EGLShaderError.html">EGLShaderError</a></dt>
+<dd>with any validation errors.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Use"></a><code>procedure <b>Use</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Installs the program object as part of current rendering state.
+
+<p> Executables for each stage are created in a program object by successfully attaching shader objects to it with <a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a>, successfully compiling the shader objects with Compile, and successfully linking the program object with <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a>.
+
+<p>A program object will contain executables that will run on the vertex and fragment processors if it contains one shader object of type TGLShaderType.Vertex and one shader object of type TGLShaderType.Fragment that have both been successfully compiled and linked.
+
+<p>While a program object is in <code>use</code>, applications are free to modify attached shader objects, compile attached shader objects, attach shader objects, and detach or <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> shader objects. None of these operations will affect the executables that are part of the current state. However, relinking the program object that is currently in <code>use</code> will install the program object as part of the current rendering state if the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operation was successful (see <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a>). If the program object currently in <code>use</code> is relinked unsuccessfully, its <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> status will be set to False, but the executables and associated state will remain part of the current state until a subsequent call to <code>Use</code> removes it from <code>use</code>. After it is removed from <code>use</code>, it cannot be made part of current state until it has been successfully relinked.
+
+<p><b>Note</b>: like texture objects and buffer objects, the name space for program objects may be shared across a set of contexts, as long as the server sides of the contexts share the same address space. If the name space is shared across contexts, any attached objects and the data associated with those attached objects are shared as well.
+
+<p><b>Note</b>: applications are responsible for providing the synchronization across API calls when objects are accessed from different execution threads.
+
+<p><b>OpenGL API</b>: glUseProgram
+
+<p>         </p>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the program could not be made part of the current state.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html">TGLVertexAttrib</a></dt>
+  <dd>Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html">TGLUniform</a></dt>
+  <dd>Represents a uniform in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">TGLShader.Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttributeInfo"></a><code>function <b>GetAttributeInfo</b>(const AIndex: Integer): <a  href="Neslib.Ooogles.TGLAttrInfo.html">TGLAttrInfo</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return information about an active attribute variable.
+
+<p>
+
+<p>  This method returns information about an active attribute variable in the program object specified by program. The number of active attributes can be obtained by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a>. A value of 0 for AIndex selects the first active attribute variable. Permissible values for AIndex range from 0 to the number of active attribute variables minus 1.
+
+<p>Attribute variables have arbitrary names and obtain their values through numbered generic vertex attributes. An attribute variable is considered active if it is determined during the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operation that it may be accessed during program execution. Therefore, the program should have previously been linked by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a>, but it is not necessary for it to have been linked successfully.
+
+<p>This method will return as much information as it can about the specified active attribute variable. If no information is available, the returned name will be an empty string. This situation could occur if this function is called after a <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operation that failed.
+
+<p><b>OpenGL API</b>: glGetActiveAttrib
+
+<p>       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AIndex</dt>
+<dd>the index of the attribute variable to be queried.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Information about attribute at the given index.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AIndex is greater than or equal to the number of active attribute variables in program.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a></dt>
+  <dd>Get the number of active attribute variables in the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#GetMaxVertexAttribs">TGLShader.GetMaxVertexAttribs</a></dt>
+  <dd>Get the maximum number of 4-component generic vertex attributes accessible to a vertex shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Bind">TGLVertexAttrib.Bind</a></dt>
+  <dd>Initializes the vertex attribute by binding a user-defined attribute name to an attribute <a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#Location">location</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetUniformInfo">GetUniformInfo</a></dt>
+  <dd>Return information about an active uniform variable.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">TGLProgram.Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#SetValue">TGLVertexAttrib.SetValue</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#SetConfig">TGLVertexAttrib.SetConfig</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLVertexAttrib.html#SetData">TGLVertexAttrib.SetData</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetUniformInfo"></a><code>function <b>GetUniformInfo</b>(const AIndex: Integer): <a  href="Neslib.Ooogles.TGLUniformInfo.html">TGLUniformInfo</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return information about an active uniform variable.
+
+<p>
+
+<p>  The number of active uniform variables can be obtained by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a>. A value of 0 for index selects the first active uniform variable. Permissible values for index range from 0 to the number of active uniform variables minus 1.
+
+<p>Shaders may <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">use</a> either built-in uniform variables, user-defined uniform variables, or both. Built-in uniform variables have a prefix of &quot;gl_&quot; and reference existing OpenGL state or values derived from such state (e.g., gl_DepthRange). User-defined uniform variables have arbitrary names and obtain their values from the application through calls to <a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">TGLUniform.SetValue</a>. A uniform variable (either built-in or user-defined) is considered active if it is determined during the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operation that it may be accessed during program execution. Therefore, program should have previously been linked by calling <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a>, but it is not necessary for it to have been linked successfully.
+
+<p>Only one active uniform variable will be reported for a uniform array.
+
+<p>Uniform variables that are declared as structures or arrays of structures will not be returned directly by this function. Instead, each of these uniform variables will be reduced to its fundamental components containing the &quot;.&quot; and &quot;[]&quot; operators such that each of the names is valid as an argument to <a class="normal" href="Neslib.Ooogles.TGLUniform.html#Init">TGLUniform.Init</a>. Each of these reduced uniform variables is counted as one active uniform variable and is assigned an index. A valid name cannot be a structure, an array of structures, or a subcomponent of a vector or matrix.
+
+<p>Uniform variables other than arrays will have a Size of 1. Structures and arrays of structures will be reduced as described earlier, such that each of the names returned will be a data type in the earlier list. If this reduction results in an array, the size returned will be as described for uniform arrays; otherwise, the size returned will be 1.
+
+<p>The list of active uniform variables may include both built-in uniform variables (which begin with the prefix &quot;gl_&quot;) as well as user-defined uniform variable names.
+
+<p>This function will return as much information as it can about the specified active uniform variable. If no information is available, the returned name will be an empty string. This situation could occur if this function is called after a <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operation that failed.
+
+<p><b>OpenGL API</b>: glGetActiveUniform
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AIndex</dt>
+<dd>the index of the uniform variable to be queried.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Information about uniform at the given index.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AIndex is greater than or equal to the number of active uniforms in the program.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetMaxVertexUniformVectors">TGLUniform.GetMaxVertexUniformVectors</a></dt>
+  <dd>Get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a vertex shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetMaxFragmentUniformVectors">TGLUniform.GetMaxFragmentUniformVectors</a></dt>
+  <dd>Get the maximum number of four-element floating-point, integer, or boolean vectors that can be held in uniform variable storage for a fragment shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a></dt>
+  <dd>Get the number of active uniform variables in the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttributeInfo">GetAttributeInfo</a></dt>
+  <dd>Return information about an active attribute variable.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#GetValue">TGLUniform.GetValue</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#Init">TGLUniform.Init</a></dt>
+  <dd>Initializes the uniform.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLUniform.html#SetValue">TGLUniform.SetValue</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetDeleteStatus"></a><code>function <b>GetDeleteStatus</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> status.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_DELETE_STATUS)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the program is currently flagged for deletion. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetLinkStatus">GetLinkStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetValidateStatus">GetValidateStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">validate</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a></dt>
+  <dd>Get the number of active attribute variables in the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a></dt>
+  <dd>Get the number of active uniform variables in the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetLinkStatus"></a><code>function <b>GetLinkStatus</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> status.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_LINK_STATUS)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the last <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> operation was successful. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetDeleteStatus">GetDeleteStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetValidateStatus">GetValidateStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">validate</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a></dt>
+  <dd>Get the number of active attribute variables in the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a></dt>
+  <dd>Get the number of active uniform variables in the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetValidateStatus"></a><code>function <b>GetValidateStatus</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">validate</a> status.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_VALIDATE_STATUS)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the last <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">validate</a> operation was successful. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetDeleteStatus">GetDeleteStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetLinkStatus">GetLinkStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a></dt>
+  <dd>Get the number of active attribute variables in the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a></dt>
+  <dd>Get the number of active uniform variables in the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetActiveAttributes"></a><code>function <b>GetActiveAttributes</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of active attribute variables in the program.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_ACTIVE_ATTRIBUTES)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of active attributes.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetDeleteStatus">GetDeleteStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetLinkStatus">GetLinkStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetValidateStatus">GetValidateStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">validate</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveUniforms">GetActiveUniforms</a></dt>
+  <dd>Get the number of active uniform variables in the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetActiveUniforms"></a><code>function <b>GetActiveUniforms</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of active uniform variables in the program.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_ACTIVE_UNIFORMS)
+
+<p>         </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of active uniforms.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">Delete</a></dt>
+  <dd>Deletes the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">Validate</a></dt>
+  <dd>Validates the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetDeleteStatus">GetDeleteStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Delete">delete</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetLinkStatus">GetLinkStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">link</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetValidateStatus">GetValidateStatus</a></dt>
+  <dd>Get the <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Validate">validate</a> status.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttachedShaders">GetAttachedShaders</a></dt>
+  <dd>Return the shader objects attached to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetActiveAttributes">GetActiveAttributes</a></dt>
+  <dd>Get the number of active attribute variables in the program.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrent"></a><code>class function <b>GetCurrent</b>: <a  href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the program that is currently active.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_CURRENT_PROGRAM)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The currently active program. Its <a class="normal" href="Neslib.Ooogles.TGLProgram.html#Handle">Handle</a> will be 0 if there is no program active.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: GLuint read FHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL <code>handle</code> to the program object.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

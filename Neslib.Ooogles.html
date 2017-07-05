@@ -1,0 +1,967 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<h1 class="unit">Unit Neslib.Ooogles</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Uses</td><td><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></td><td><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></td><td><a class="section" href="#PasDoc-Types">Types</a></td><td><a class="section" href="#PasDoc-Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="description">Description</h2>
+<p>
+Ooogles - Object Oriented OpenGL-ES 2.0</p>
+<a name="PasDoc-Uses"></a><h2 class="overview">Overview</h2>
+<a name="PasDoc-Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLAttrInfo.html"><code>TGLAttrInfo</code></a></td>
+<td class="itemdesc">Information about an attribute as returned by <a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetAttributeInfo">TGLProgram.GetAttributeInfo</a>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLUniformInfo.html"><code>TGLUniformInfo</code></a></td>
+<td class="itemdesc">Information about a uniform as returned by <a class="normal" href="Neslib.Ooogles.TGLProgram.html#GetUniformInfo">TGLProgram.GetUniformInfo</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Neslib.Ooogles.EGLError.html"><code>EGLError</code></a></td>
+<td class="itemdesc">Exception type for OpenGL related errors.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="Neslib.Ooogles.EGLShaderError.html"><code>EGLShaderError</code></a></td>
+<td class="itemdesc">Exception type for OpenGL shader compilation and linking errors.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="Neslib.Ooogles.gl.html"><code>gl</code></a></td>
+<td class="itemdesc">Static class (or namespace) for OpenGL APIs that are not tied to a specific object.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLShader.html"><code>TGLShader</code></a></td>
+<td class="itemdesc">A vertex or fragment shader</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLProgram.html"><code>TGLProgram</code></a></td>
+<td class="itemdesc">A program that combines a vertex shader and a fragment shader.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLBuffer.html"><code>TGLBuffer</code></a></td>
+<td class="itemdesc">A (vertex) array buffer or element array (index) buffer</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLVertexAttrib.html"><code>TGLVertexAttrib</code></a></td>
+<td class="itemdesc">Represents a single vertex attribute in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLUniform.html"><code>TGLUniform</code></a></td>
+<td class="itemdesc">Represents a uniform in a <a class="normal" href="Neslib.Ooogles.TGLProgram.html">TGLProgram</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLTexture.html"><code>TGLTexture</code></a></td>
+<td class="itemdesc">A texture</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLRenderbuffer.html"><code>TGLRenderbuffer</code></a></td>
+<td class="itemdesc">A renderbuffer.</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold" href="Neslib.Ooogles.TGLFramebuffer.html"><code>TGLFramebuffer</code></a></td>
+<td class="itemdesc">A framebuffer</td>
+</tr>
+</table>
+<a name="PasDoc-FuncsProcs"></a><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.html#InitOoogles">InitOoogles</a></b>;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLError">TGLError</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLClear">TGLClear</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLClearBuffers">TGLClearBuffers</a></b> = set of <a  href="Neslib.Ooogles.html#TGLClear">TGLClear</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLDataType">TGLDataType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLPrimitiveType">TGLPrimitiveType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLBufferType">TGLBufferType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLBufferUsage">TGLBufferUsage</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLIndexType">TGLIndexType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLTextureType">TGLTextureType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a></b> = 0..5;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLMagFilter">TGLMagFilter</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLMinFilter">TGLMinFilter</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLMipmapHint">TGLMipmapHint</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLCapability">TGLCapability</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLFace">TGLFace</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLFaceOrientation">TGLFaceOrientation</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLPixelStoreMode">TGLPixelStoreMode</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLPixelStoreValue">TGLPixelStoreValue</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLBlendFunc">TGLBlendFunc</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLBlendEquation">TGLBlendEquation</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLCompareFunc">TGLCompareFunc</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLStencilOp">TGLStencilOp</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLRenderbufferFormat">TGLRenderbufferFormat</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLFramebufferStatus">TGLFramebufferStatus</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLFramebufferAttachmentType">TGLFramebufferAttachmentType</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLAttrDataType">TGLAttrDataType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#TGLUniformDataType">TGLUniformDataType</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="Neslib.Ooogles.html#GL_RGB565">GL_RGB565</a></b> = $8D62;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="InitOoogles"></a><code>procedure <b>InitOoogles</b>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+You <b>must</b> call this procdure <b>After</b> you have created and activated your OpenGL context. This is needed to emulate OpenGL-ES on OpenGL platforms. If your application uses multiple contexts, you must call <code>InitOoogles</code> once for each context (after making it current).</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLError"></a><code><b>TGLError</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL error codes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+NoError = GL_NO_ERROR: No error has been recorded.</li>
+<li>
+InvalidEnum = GL_INVALID_ENUM: An unacceptable value is specified for an enumerated argument. The offending command is ignored and has no other side effect than to set the error flag.</li>
+<li>
+InvalidValue = GL_INVALID_VALUE: A numeric argument is out of range. The offending command is ignored and has no other side effect than to set the error flag.</li>
+<li>
+InvalidOperation = GL_INVALID_OPERATION: The specified operation is not allowed in the current state. The offending command is ignored and has no other side effect than to set the error flag.</li>
+<li>
+InvalidFramebufferOperation = GL_INVALID_FRAMEBUFFER_OPERATION: The command is trying to render to or read from the framebuffer while the currently bound framebuffer is not framebuffer complete. The offending command is ignored and has no other side effect than to set the error flag.</li>
+<li>
+OutOfMemory = GL_OUT_OF_MEMORY: There is not enough memory left to execute the command. The state of the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> is undefined, except for the state of the error flags, after this error is recorded.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLClear"></a><code><b>TGLClear</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A buffer to clear using <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+_Reserved = 0: Reserved (only here for API compatibility)</li>
+<li>
+Depth = 8: To clear the depth buffer</li>
+<li>
+Stencil = 10: To clear the stencil buffer</li>
+<li>
+Color = 14: To clear the color buffer</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLClearBuffers"></a><code><b>TGLClearBuffers</b> = set of <a  href="Neslib.Ooogles.html#TGLClear">TGLClear</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A set of buffers to clear using <a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLShaderType"></a><code><b>TGLShaderType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The type of a shader</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Vertex = GL_VERTEX_SHADER: A vertex shader</li>
+<li>
+Fragment = GL_FRAGMENT_SHADER: A fragment shader</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLDataType"></a><code><b>TGLDataType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported data types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Byte = GL_BYTE: 8-bit signed integer. Corresponds to Delphi's Int8 or ShortInt.</li>
+<li>
+Short = GL_SHORT: 16-bit signed integer Corresponds to Delphi's Int16 or SmallInt.</li>
+<li>
+Int = GL_INT: 32-bit signed integer Corresponds to Delphi's Int32 or Integer.</li>
+<li>
+Float = GL_FLOAT: 32-bit floating-point value. Corresponds to Delphi's Single type.</li>
+<li>
+UnsignedByte = GL_UNSIGNED_BYTE: 8-bit unsigned integer. Corresponds to Delphi's UInt8 or Byte.</li>
+<li>
+UnsignedShort = GL_UNSIGNED_SHORT: 16-bit unsigned integer. Corresponds to Delphi's UInt16 or Word.</li>
+<li>
+UnsignedInt = GL_UNSIGNED_INT: 32-bit unsigned integer. Corresponds to Delphi's UInt32 or Cardinal.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLPrimitiveType"></a><code><b>TGLPrimitiveType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported primitive types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Points = GL_POINTS: Single points.</li>
+<li>
+Lines = GL_LINES: Single lines.</li>
+<li>
+LineStrip = GL_LINE_STRIP: Connected lines.</li>
+<li>
+LineLoop = GL_LINE_LOOP: Connected lines, closed to form a polygon.</li>
+<li>
+Triangles = GL_TRIANGLES: Single triangles.</li>
+<li>
+TriangleStrip = GL_TRIANGLE_STRIP: A strip of triangles.</li>
+<li>
+TriangleFan = GL_TRIANGLE_FAN: A fan of triangles.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLBufferType"></a><code><b>TGLBufferType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported buffer types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Vertex = GL_ARRAY_BUFFER: A vertex buffer (aka array buffer). Contains an array of vertices.</li>
+<li>
+Index = GL_ELEMENT_ARRAY_BUFFER: An index buffer (aka element array buffer). Contains an array of indices to vertices.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLBufferUsage"></a><code><b>TGLBufferUsage</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Hints how a buffer object's data is accessed.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+StaticDraw = GL_STATIC_DRAW: The data stored in a buffer will be modified once and used many times.</li>
+<li>
+StreamDraw = GL_STREAM_DRAW: The data stored in a buffer will be modified once and used at most a few times.</li>
+<li>
+DynamicDraw = GL_DYNAMIC_DRAW: The data stored in a buffer will be modified repeatedly and used many times.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLIndexType"></a><code><b>TGLIndexType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported types of indices</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+UnsignedByte = GL_UNSIGNED_BYTE: 8-bit unsigned integer. Corresponds to Delphi's UInt8 or Byte.</li>
+<li>
+UnsignedShort = GL_UNSIGNED_SHORT: 16-bit unsigned integer. Corresponds to Delphi's UInt16 or Word.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLTextureType"></a><code><b>TGLTextureType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported texture types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+TwoD = GL_TEXTURE_2D: A 2D texture</li>
+<li>
+CubeMap = GL_TEXTURE_CUBE_MAP: A cube map texture</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLPixelFormat"></a><code><b>TGLPixelFormat</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported pixel formats</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Alpha = GL_ALPHA: Each element is a single alpha component. The <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> converts it to floating point and assembles it into an RGBA element by attaching 0 for red, green, and blue. Each component is then clamped to the range [0,1].</li>
+<li>
+RGB = GL_RGB: Each element is an RGB triple. The <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> converts it to floating point and assembles it into an RGBA element by attaching 1 for alpha. Each component is then clamped to the range [0,1].</li>
+<li>
+RGBA = GL_RGBA: Each element contains all four components. The <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> converts it to floating point, then each component is clamped to the range [0,1].</li>
+<li>
+Luminance = GL_LUMINANCE: Each element is a single luminance value. The <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> converts it to floating point, then assembles it into an RGBA element by replicating the luminance value three times for red, green, and blue and attaching 1 for alpha. Each component is then clamped to the range [0,1].</li>
+<li>
+LuminanceAlpha = GL_LUMINANCE_ALPHA: Each element is a luminance/alpha pair. The <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> converts it to floating point, then assembles it into an RGBA element by replicating the luminance value three times for red, green, and blue. Each component is then clamped to the range [0,1].</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLCubeTarget"></a><code><b>TGLCubeTarget</b> = 0..5;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Target indices for the six sides of a cube texture: </p>
+
+<ul class="compact_spacing">
+  <li><p>0: Face in positive X direction</p></li>
+  <li><p>1: Face in negative X direction</p></li>
+  <li><p>2: Face in positive Y direction</p></li>
+  <li><p>3: Face in negative Y direction</p></li>
+  <li><p>4: Face in positive Z direction</p></li>
+  <li><p>5: Face in negative Z direction</p></li>
+</ul>
+
+<p></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLPixelDataType"></a><code><b>TGLPixelDataType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported pixel data types</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+UnsignedByte = GL_UNSIGNED_BYTE: Each byte is interpreted as one color component (red, green, blue or alpha). When converted to floating point, the value is divided by 255.</li>
+<li>
+UnsignedShort565 = GL_UNSIGNED_SHORT_5_6_5: A single 16-bit integer contains 5 bits for the red component, 6 bits for the green component and 5 bits for the blue component. When converted to floating point, the red and blue components are divided by 31 and the green component is divided by 63.</li>
+<li>
+UnsignedShort4444 = GL_UNSIGNED_SHORT_4_4_4_4: A single 16-bit integer contains all components, with 4 bits for each component. When converted to floating point, every component is divided by 15.</li>
+<li>
+UnsignedShort5551 = GL_UNSIGNED_SHORT_5_5_5_1: A single 16-bit integer contains all components, with 5 bits for the red, green and blue components, and 1 bit for the alpha component. When converted to floating point, the red, green and blue components are divided by 31 and the alpha component is used as-is.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLMagFilter"></a><code><b>TGLMagFilter</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Texture magnification filters</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Nearest = GL_NEAREST: Returns the value of the texture element that is nearest (in Manhattan distance) to the center of the pixel being textured. This is usually the fastest method.</li>
+<li>
+Linear = GL_LINEAR: Returns the weighted average of the four texture elements that are closest to the center of the pixel being textured. This usually provides better quality.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLMinFilter"></a><code><b>TGLMinFilter</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Texture minification filters</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Nearest = GL_NEAREST: Returns the value of the texture element that is nearest (in Manhattan distance) to the center of the pixel being textured. This is usually the fastest method.</li>
+<li>
+Linear = GL_LINEAR: Returns the weighted average of the four texture elements that are closest to the center of the pixel being textured. This usually provides better quality than Nearest.</li>
+<li>
+NearestMipmapNearest = GL_NEAREST_MIPMAP_NEAREST: Chooses the mipmap that most closely matches the size of the pixel being textured and uses the Nearest criterion (the texture element nearest to the center of the pixel) to produce a texture value. This is usually the fastest method when using mipmapping.</li>
+<li>
+LinearMipmapNearest = GL_LINEAR_MIPMAP_NEAREST: Chooses the mipmap that most closely matches the size of the pixel being textured and uses the Linear criterion (a weighted average of the four texture elements that are closest to the center of the pixel) to produce a texture value.</li>
+<li>
+NearestMipmapLinear = GL_NEAREST_MIPMAP_LINEAR: Chooses the two mipmaps that most closely match the size of the pixel being textured and uses the Nearest criterion (the texture element nearest to the center of the pixel) to produce a texture value from each mipmap. The final texture value is a weighted average of those two values.</li>
+<li>
+LinearMipmapLinear = GL_LINEAR_MIPMAP_LINEAR: Chooses the two mipmaps that most closely match the size of the pixel being textured and uses the Linear criterion (a weighted average of the four texture elements that are closest to the center of the pixel) to produce a texture value from each mipmap. The final texture value is a weighted average of those two values. This is usually the slowest (but highest quality) method when using mipmapping.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLWrapMode"></a><code><b>TGLWrapMode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Texture wrapping modes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+NormalRepeat = GL_REPEAT: Repeats the texture. Causes the integer part of the texture coordinate to be ignored; the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> uses only the fractional part, thereby creating a repeating pattern.</li>
+<li>
+MirroredRepeat = GL_MIRRORED_REPEAT: Repeats and mirrors the texture. Causes the final texture coordinate (Dst) to be set to the fractional part of the original texture coordinate (Src) if the integer part of Src is even; if the integer part of Src is odd, then Dst is set to 1 - Frac(Src), where Frac(Src) represents the fractional part of Src.</li>
+<li>
+ClampToEdge = GL_CLAMP_TO_EDGE: Clamps the texture to its edges. Causes the texture coordinate to be clamped to the size of the texture in the direction of clamping.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLMipmapHint"></a><code><b>TGLMipmapHint</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Mipmap hinting options, as used by <a class="normal" href="Neslib.Ooogles.TGLTexture.html#MipmapHint">TGLTexture.MipmapHint</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Fastest = GL_FASTEST: The most efficient option should be chosen.</li>
+<li>
+Nicest = GL_NICEST: The most correct, or highest quality, option should be chosen.</li>
+<li>
+DontCare = GL_DONT_CARE: No preference.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLCapability"></a><code><b>TGLCapability</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL capabilities than can be enabled and disabled (using <a class="normal" href="Neslib.Ooogles.gl.html#Enable">gl.Enable</a> and <a class="normal" href="Neslib.Ooogles.gl.html#Disable">gl.Disable</a>)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Blend = GL_BLEND: If enabled, blend the computed fragment color values with the values in the color buffers.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">gl.BlendFunc.</a></dt>
+  <dd>Specify pixel arithmetic using blend functions.</dd>
+</dl>
+</li>
+<li>
+CullFace = GL_CULL_FACE: If enabled, cull polygons based on their winding in window coordinates.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#CullFace">gl.CullFace.</a></dt>
+  <dd>Specify whether front- or back-facing polygons can be culled.</dd>
+</dl>
+</li>
+<li>
+DepthTest = GL_DEPTH_TEST: If enabled, do depth comparisons and update the depth buffer. Note that even if the depth buffer exists and the depth mask is non-zero, the depth buffer is not updated if the depth test is disabled.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">and gl.DepthRangef.</a></dt>
+  <dd>Specify the value used for depth buffer comparisons.</dd>
+</dl>
+</li>
+<li>
+Dither = GL_DITHER: If enabled, dither color components or indices before they are written to the color buffer.</li>
+<li>
+PolygonOffsetFill = GL_POLYGON_OFFSET_FILL: If enabled, an offset is added to depth values of a polygon's fragments produced by rasterization.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PolygonOffset">gl.PolygonOffset.</a></dt>
+  <dd>Set the scale and units used to calculate polygon depth values.</dd>
+</dl>
+</li>
+<li>
+SampleAlphaToCoverage = GL_SAMPLE_ALPHA_TO_COVERAGE: If enabled, compute a temporary coverage value where each bit is determined by the alpha value at the corresponding sample location. The temporary coverage value is then ANDed with the fragment coverage value.</li>
+<li>
+SampleCoverage = GL_SAMPLE_COVERAGE: If enabled, the fragment's coverage is ANDed with the temporary coverage value.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">gl.SampleCoverage.</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+</dl>
+</li>
+<li>
+ScissorTest = GL_SCISSOR_TEST: If enabled, discard fragments that are outside the scissor rectangle.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#Scissor">gl.Scissor.</a></dt>
+  <dd>Define the <code>scissor</code> box.</dd>
+</dl>
+</li>
+<li>
+StencilTest = GL_STENCIL_TEST: If enabled, do stencil testing and update the stencil buffer.
+
+<p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">and gl.StencilOp.</a></dt>
+  <dd>Set front and back function and reference value for stencil testing.</dd>
+</dl>
+</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLFace"></a><code><b>TGLFace</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Faces used for culling and stencilling.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Front = GL_FRONT: Front-facing polygons are culled.</li>
+<li>
+Back = GL_BACK: Back-facing polygons are culled (the default).</li>
+<li>
+FrontAndBack = GL_FRONT_AND_BACK: Front- and back-facing polygons are culled.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLFaceOrientation"></a><code><b>TGLFaceOrientation</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Specifies the orientation of front-facing polygons, as used by <a class="normal" href="Neslib.Ooogles.gl.html#FrontFace">gl.FrontFace</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Clockwise = GL_CW: Clockwise winding</li>
+<li>
+CounterClockwise = GL_CCW: Counter-clockwise winding (default)</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLPixelStoreMode"></a><code><b>TGLPixelStoreMode</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pixel storage modes, as used by <a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+PackAlignment = GL_PACK_ALIGNMENT: Specifies the packing of pixel data downloading from the GPU into client memory.</li>
+<li>
+UnpackAlignment = GL_UNPACK_ALIGNMENT: Specifies the packing of pixel data when uploading from client memory to the GPU.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLPixelStoreValue"></a><code><b>TGLPixelStoreValue</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Allowed values for TGLPixelStorage mode, as used by <a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+One = 1: Pixel data is aligned on a byte boundary</li>
+<li>
+Two = 2: Pixel data is aligned on 2-byte boundary</li>
+<li>
+Four = 4: Pixel data is aligned on 4-byte boundary</li>
+<li>
+Eight = 8: Pixel data is aligned on 8-byte boundary</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLBlendFunc"></a><code><b>TGLBlendFunc</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Blend functions as used by <a class="normal" href="Neslib.Ooogles.gl.html#BlendFunc">gl.BlendFunc</a> and <a class="normal" href="Neslib.Ooogles.gl.html#BlendFuncSeparate">gl.BlendFuncSeparate</a>. In the descriptions of the items, the following terms are used: </p>
+
+<ul class="compact_spacing">
+  <li><p>SColor: source color (R, G and B values)</p></li>
+  <li><p>SAlpha: source alpha</p></li>
+  <li><p>DColor: destination color</p></li>
+  <li><p>DAlpha: destination alpha</p></li>
+  <li><p>RColor: resulting color</p></li>
+  <li><p>RAlpha: resulting alpha</p></li>
+  <li><p>CColor: constant color, as specified using <a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">gl.BlendColor</a></p></li>
+  <li><p>CAlpha: constant alpha, as specified using <a class="normal" href="Neslib.Ooogles.gl.html#BlendColor">gl.BlendColor</a></p></li>
+</ul>
+
+<p></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Zero = GL_ZERO: RColor = 0, RAlpha = 0</li>
+<li>
+One = GL_ONE: RColor = 1, RAlpha = 1</li>
+<li>
+SrcColor = GL_SRC_COLOR: RColor = SColor, RAlpha = SAlpha</li>
+<li>
+OneMinusSrcColor = GL_ONE_MINUS_SRC_COLOR: RColor = 1 - SColor, RAlpha = 1 - SAlpha</li>
+<li>
+DstColor = GL_DST_COLOR: RColor = DColor, RAlpha = DAlpha</li>
+<li>
+OneMinusDstColor = GL_ONE_MINUS_DST_COLOR: RColor = 1 - DColor, RAlpha = 1 - DAlpha</li>
+<li>
+SrcAlpha = GL_SRC_ALPHA: RColor = SAlpha, RAlpha = SAlpha</li>
+<li>
+OneMinusSrcAlpha = GL_ONE_MINUS_SRC_ALPHA: RColor = 1 - SAlpha, RAlpha = 1 - SAlpha</li>
+<li>
+DstAlpha = GL_DST_ALPHA: RColor = DAlpha, RAlpha = DAlpha</li>
+<li>
+OneMinusDstAlpha = GL_ONE_MINUS_DST_ALPHA: RColor = 1 - DAlpha, RAlpha = 1 - DAlpha</li>
+<li>
+ConstantColor = GL_CONSTANT_COLOR: RColor = CColor, RAlpha = CAlpha</li>
+<li>
+OneMinusConstantColor = GL_ONE_MINUS_CONSTANT_COLOR: RColor = 1 - CColor, RAlpha = 1 - CAlpha</li>
+<li>
+ConstantAlpha = GL_CONSTANT_ALPHA: RColor = CAlpha, RAlpha = CAlpha</li>
+<li>
+OneMinusConstantAlpha = GL_ONE_MINUS_CONSTANT_ALPHA: RColor = 1 - CAlpha, RAlpha = 1 - CAlpha</li>
+<li>
+SrcAlphaSaturate = GL_SRC_ALPHA_SATURATE: RColor = Min(SAlpha, 1 - DAlpha), RAlpha = 1</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLBlendEquation"></a><code><b>TGLBlendEquation</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Blend equations as used by <a class="normal" href="Neslib.Ooogles.gl.html#BlendEquation">gl.BlendEquation</a> and <a class="normal" href="Neslib.Ooogles.gl.html#BlendEquationSeparate">gl.BlendEquationSeparate</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Add = GL_FUNC_ADD: Result = (SrcColor * SrcWeigth) + (DstColor * DstWeight)</li>
+<li>
+Subtract = GL_FUNC_SUBTRACT: Result = (SrcColor * SrcWeigth) - (DstColor * DstWeight)</li>
+<li>
+ReverseSubtract = GL_FUNC_REVERSE_SUBTRACT: Result = (DstColor * DstWeight) - (SrcColor * SrcWeigth)</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLCompareFunc"></a><code><b>TGLCompareFunc</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compare functions as used by <a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">gl.StencilFunc</a> and <a class="normal" href="Neslib.Ooogles.gl.html#DepthFunc">gl.DepthFunc</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Never = GL_NEVER: The function always fails.</li>
+<li>
+Less = GL_LESS: For stencil operations, the function passes if (Ref and Mask) &lt; (Stencil and Mask). For depth operations, the function passes if the incoming depth value is less than the stored depth value.</li>
+<li>
+LessOrEqual = GL_LEQUAL: For stencil operations, the function passes if (Ref and Mask) &lt;= (Stencil and Mask). For depth operations, the function passes if the incoming depth value is less than or equal to the stored depth value.</li>
+<li>
+Greater = GL_GREATER: For stencil operations, the function passes if (Ref and Mask) &gt; (Stencil and Mask). For depth operations, the function passes if the incoming depth value is greater than the stored depth value.</li>
+<li>
+GreaterOrEqual = GL_GEQUAL: For stencil operations, the function passes if (Ref and Mask) &gt;= (Stencil and Mask). For depth operations, the function passes if the incoming depth value is greater than or equal to the stored depth value.</li>
+<li>
+Equal = GL_EQUAL: For stencil operations, the function passes if (Ref and Mask) = (Stencil and Mask). For depth operations, the function passes if the incoming depth value is equal to the stored depth value.</li>
+<li>
+NotEqual = GL_NOTEQUAL: For stencil operations, the function passes if (Ref and Mask) &lt;&gt; (Stencil and Mask). For depth operations, the function passes if the incoming depth value is not equal to the stored depth value.</li>
+<li>
+Always = GL_ALWAYS: The function always passes.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLStencilOp"></a><code><b>TGLStencilOp</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Stencil operations as used by <a class="normal" href="Neslib.Ooogles.gl.html#StencilOp">gl.StencilOp</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Keep = GL_KEEP: Keeps the current value.</li>
+<li>
+Zero = GL_ZERO: Sets the stencil buffer value to 0.</li>
+<li>
+Replace = GL_REPLACE: Sets the stencil buffer value to ARef, as specified by <a class="normal" href="Neslib.Ooogles.gl.html#StencilFunc">gl.StencilFunc</a>.</li>
+<li>
+Increment = GL_INCR: Increments the current stencil buffer value. Clamps to the maximum representable unsigned value.</li>
+<li>
+IncrementAndWrap = GL_INCR_WRAP: Increments the current stencil buffer value. Wraps stencil buffer value to zero when incrementing the maximum representable unsigned value.</li>
+<li>
+Decrement = GL_DECR: Decrements the current stencil buffer value. Clamps to 0.</li>
+<li>
+DecrementAndWrap = GL_DECR_WRAP: Decrements the current stencil buffer value. Wraps stencil buffer value to the maximum representable unsigned value when decrementing a stencil buffer value of zero.</li>
+<li>
+Invert = GL_INVERT: Bitwise inverts the current stencil buffer value.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLRenderbufferFormat"></a><code><b>TGLRenderbufferFormat</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Specifies the color-renderable, depth-renderable, or stencil-renderable format of a <a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+RGBA4 = GL_RGBA4: Color format with alpha support, using 4 bits per component (red, green, blue and alpha)</li>
+<li>
+RGB565 = GL_RGB565: Color format without alpha support, using 5 bits for the red and blue components and 6 bits for the green component.</li>
+<li>
+RGB5_A1 = GL_RGB5_A1: Color format with alpha support, using 5 bits for each color component (red, green and blue) and 1 bit for the alpha component.</li>
+<li>
+Depth16 = GL_DEPTH_COMPONENT16: 16-bit depth format</li>
+<li>
+Stencil8 = GL_STENCIL_INDEX8: 9-bit stencil format</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLFramebufferStatus"></a><code><b>TGLFramebufferStatus</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Completeness status of a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a>.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Complete = GL_FRAMEBUFFER_COMPLETE: The framebuffer is complete</li>
+<li>
+IncompleteAttachment = GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT: Not all framebuffer attachment points are framebuffer attachment complete. This means that at least one attachment point with a renderbuffer or texture attached has its attached object no longer in existence or has an attached image with a width or height of zero, or the color attachment point has a non-color-renderable image attached, or the depth attachment point has a non-depth-renderable image attached, or the stencil attachment point has a non-stencil-renderable image attached.</li>
+<li>
+IncompleteDimensions = GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT: Not all attached images have the same width and height.</li>
+<li>
+MissingAttachment = GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: No images are attached to the framebuffer.</li>
+<li>
+Unsupported = GL_FRAMEBUFFER_UNSUPPORTED: The combination of internal formats of the attached images violates an implementation-dependent set of restrictions.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLFramebufferAttachment"></a><code><b>TGLFramebufferAttachment</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Attachment points of a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Color = GL_COLOR_ATTACHMENT0: Attachment point for a color buffer</li>
+<li>
+Depth = GL_DEPTH_ATTACHMENT: Attachment point for a depth buffer</li>
+<li>
+Stencil = GL_STENCIL_ATTACHMENT: Attachment point for a stencil buffer</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLFramebufferAttachmentType"></a><code><b>TGLFramebufferAttachmentType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Types of objects attached to a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a></p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+None = GL_NONE: No renderbuffer or texture is attached.</li>
+<li>
+RenderBuffer = GL_RENDERBUFFER: The attachment is a renderbuffer</li>
+<li>
+Texture = GL_TEXTURE: The attachment is a texture</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLAttrDataType"></a><code><b>TGLAttrDataType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported data types for attributes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Float = GL_FLOAT: Single-precision floating-point type. Corresponds to Delphi's Single type.</li>
+<li>
+Vector2 = GL_FLOAT_VEC2: A vector of 2 floats. Corresponds to FastMath's TVector2 type.</li>
+<li>
+Vector3 = GL_FLOAT_VEC3: A vector of 3 floats. Corresponds to FastMath's TVector3 type.</li>
+<li>
+Vector4 = GL_FLOAT_VEC4: A vector of 4 floats. Corresponds to FastMath's TVector4 type.</li>
+<li>
+Matrix2 = GL_FLOAT_MAT2: A 2x2 matrix of floats. Corresponds to FastMath's TMatrix2 type.</li>
+<li>
+Matrix3 = GL_FLOAT_MAT3: A 3x3 matrix of floats. Corresponds to FastMath's TMatrix3 type.</li>
+<li>
+Matrix4 = GL_FLOAT_MAT4: A 4x4 matrix of floats. Corresponds to FastMath's TMatrix4 type.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGLUniformDataType"></a><code><b>TGLUniformDataType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Supported data types for uniforms</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+Float = GL_FLOAT: Single-precision floating-point type. Corresponds to Delphi's Single type.</li>
+<li>
+Vector2 = GL_FLOAT_VEC2: A vector of 2 floats. Corresponds to FastMath's TVector2 type.</li>
+<li>
+Vector3 = GL_FLOAT_VEC3: A vector of 3 floats. Corresponds to FastMath's TVector3 type.</li>
+<li>
+Vector4 = GL_FLOAT_VEC4: A vector of 4 floats. Corresponds to FastMath's TVector4 type.</li>
+<li>
+Int = GL_INT: 32-bit integer type. Corresponds to Delphi's Integer type.</li>
+<li>
+IVector2 = GL_INT_VEC2: A vector of 2 integers. Corresponds to FastMath's TIVector2 type.</li>
+<li>
+IVector3 = GL_INT_VEC3: A vector of 3 integers. Corresponds to FastMath's TIVector3 type.</li>
+<li>
+IVector4 = GL_INT_VEC4: A vector of 4 integers. Corresponds to FastMath's TIVector4 type.</li>
+<li>
+Bool = GL_BOOL: Boolean type.</li>
+<li>
+BVector2 = GL_BOOL_VEC2: A vector of 2 booleans.</li>
+<li>
+BVector3 = GL_BOOL_VEC3: A vector of 3 booleans.</li>
+<li>
+BVector4 = GL_BOOL_VEC4: A vector of 4 booleans.</li>
+<li>
+Matrix2 = GL_FLOAT_MAT2: A 2x2 matrix of floats. Corresponds to FastMath's TMatrix2 type.</li>
+<li>
+Matrix3 = GL_FLOAT_MAT3: A 3x3 matrix of floats. Corresponds to FastMath's TMatrix3 type.</li>
+<li>
+Matrix4 = GL_FLOAT_MAT4: A 4x4 matrix of floats. Corresponds to FastMath's TMatrix4 type.</li>
+<li>
+Sampler2D = GL_SAMPLER_2D: A 2D texture sampler</li>
+<li>
+SamplerCube = GL_SAMPLER_CUBE: A cubetexture sampler</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GL_RGB565"></a><code><b>GL_RGB565</b> = $8D62;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

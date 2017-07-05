@@ -1,0 +1,1402 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLTexture</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLTexture"></a><h1 class="cio">record TGLTexture</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLTexture = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A texture</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#New">New</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLTextureType">TGLTextureType</a> = TGLTextureType.TwoD); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#Delete">Delete</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLTexture.html#IsBound">IsBound</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></b>(const ATextureUnit: Cardinal); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></b>(const ATextureUnit: Cardinal); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#GenerateMipmap">GenerateMipmap</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#MinFilter">MinFilter</a></b>(const AMinFilter: <a  href="Neslib.Ooogles.html#TGLMinFilter">TGLMinFilter</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMinFilter">GetMinFilter</a></b>: <a  href="Neslib.Ooogles.html#TGLMinFilter">TGLMinFilter</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#MagFilter">MagFilter</a></b>(const AMagFilter: <a  href="Neslib.Ooogles.html#TGLMagFilter">TGLMagFilter</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMagFilter">GetMagFilter</a></b>: <a  href="Neslib.Ooogles.html#TGLMagFilter">TGLMagFilter</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#WrapS">WrapS</a></b>(const AWrap: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetWrapS">GetWrapS</a></b>: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#WrapT">WrapT</a></b>(const AWrap: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetWrapT">GetWrapT</a></b>: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></b>(const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; const AWidth, AHeight: Integer; const AData: Pointer; const ALevel: Integer = 0; const AType: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a> = TGLPixelDataType.UnsignedByte; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></b>(const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; const AXOffset, AYOffset, AWidth, AHeight: Integer; const AData: Pointer; const ALevel: Integer = 0; const AType: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a> = TGLPixelDataType.UnsignedByte; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></b>(const AFormat: Cardinal; const AWidth, AHeight: Integer; const AData: Pointer; const ADataSize: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></b>(const AFormat: Cardinal; const AXOffset, AYOffset, AWidth, AHeight: Integer; const AData: Pointer; const ADataSize: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></b>(const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; const ALeft, ABottom, AWidth, AHeight: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></b>(const AXOffset, AYOffset, ALeft, ABottom, AWidth, AHeight: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetCurrent2DTexture">GetCurrent2DTexture</a></b>: <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetCurrentCubemapTexture">GetCurrentCubemapTexture</a></b>: <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetActiveTextureUnit">GetActiveTextureUnit</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetCompressedTextureFormats">GetCompressedTextureFormats</a></b>: TArray&lt;Cardinal&gt;; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.TGLTexture.html#MipmapHint">MipmapHint</a></b>(const AHint: <a  href="Neslib.Ooogles.html#TGLMipmapHint">TGLMipmapHint</a>); inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMipmapHint">GetMipmapHint</a></b>: <a  href="Neslib.Ooogles.html#TGLMipmapHint">TGLMipmapHint</a>; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMaxCombinedTextureUnits">GetMaxCombinedTextureUnits</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMaxVertexTextureUnits">GetMaxVertexTextureUnits</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></b>: Integer; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLTexture.html#Handle">Handle</a></b>: GLuint read FHandle;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>(const AType: <a  href="Neslib.Ooogles.html#TGLTextureType">TGLTextureType</a> = TGLTextureType.TwoD); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a texture.
+
+<p>
+
+<p><b>OpenGL API</b>: glGenTextures
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AType</dt>
+<dd>(optional) type of texture to create. Defaults to a 2D texture.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Delete">Delete</a></dt>
+  <dd>Deletes the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the texture.
+
+<p>After a texture is deleted, it has no contents or dimensionality. If a texture that is currently bound is deleted, the binding reverts to 0 (the default texture).
+
+<p><b>OpenGL API</b>: glDeleteTextures
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#New">New</a></dt>
+  <dd>Creates a texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Bind"></a><code>procedure <b>Bind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Binds the texture.
+
+<p>Lets you create or use a named texture. Binds the texture name to the target of the current active texture unit. When a texture is bound to a target, the previous binding for that target is automatically broken.
+
+<p>When a texture is first bound, it assumes the specified target: A first bound texture of type TGLTextureType.TwoD becomes a two-dimensional texture and a first bound texture of type TGLTextureType.CubeMap becomes a cube-mapped texture. The state of a two-dimensional texture immediately after it is first bound is equivalent to the state of the default texture at <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> initialization.
+
+<p>While a texture is bound, <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> operations on the target to which it is bound affect the bound texture, and queries of the target to which it is bound return state from the bound texture. In effect, the texture targets become aliases for the textures currently bound to them, and the texture name zero refers to the default textures that were bound to them at initialization.
+
+<p>A texture binding remains active until a different texture is bound to the same target, or until the bound texture is deleted with <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Delete">Delete</a>.
+
+<p>Once created, a named texture may be re-bound to its same original target as often as needed. It is usually much faster to use <code>Bind</code> to <code>bind</code> an existing named texture to one of the texture targets than it is to reload the texture image using <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a>.
+
+<p><b>OpenGL API</b>: glBindTexture
+
+<p>     </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#New">New</a></dt>
+  <dd>Creates a texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Delete">Delete</a></dt>
+  <dd>Deletes the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this texture is currently bound.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Unbind"></a><code>procedure <b>Unbind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Unbinds the texture.
+
+<p><b>OpenGL API</b>: glBindTexture
+
+<p>   </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this texture is currently bound.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IsBound"></a><code>function <b>IsBound</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks if this texture is currently bound.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if this is the currently bound texture, False otherwise.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="BindToTextureUnit"></a><code>procedure <b>BindToTextureUnit</b>(const ATextureUnit: Cardinal); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Actives a texture unit and binds this texture to that unit.
+
+<p>
+
+<p> Once the texture unit is active, it binds the texture by calling <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a>.
+
+<p><b>OpenGL API</b>: glActiveTexture, glBindTexture
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ATextureUnit</dt>
+<dd>index of the texture unit to make active. The number of texture units is implementation dependent, but must be at least 8.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidEnum</code></dt>
+<dd>if ATextureUnit is greater than the number of supported texture units.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this texture is currently bound.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the fragment shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCombinedTextureUnits">GetMaxCombinedTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UnbindFromTextureUnit"></a><code>procedure <b>UnbindFromTextureUnit</b>(const ATextureUnit: Cardinal); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Actives a texture unit and unbinds this texture from that unit.
+
+<p>
+
+<p> Once the texture unit is active, it unbinds the texture by calling <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a>.
+
+<p><b>OpenGL API</b>: glActiveTexture, glBindTexture
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ATextureUnit</dt>
+<dd>index of the texture unit to make active. The number of texture units is implementation dependent, but must be at least 8.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidEnum</code></dt>
+<dd>if ATextureUnit is greater than the number of supported texture units.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this texture is currently bound.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the fragment shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCombinedTextureUnits">GetMaxCombinedTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GenerateMipmap"></a><code>procedure <b>GenerateMipmap</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Generate a complete set of mipmaps for this texture object.
+
+<p>Computes a complete set of mipmap arrays derived from the zero level array. Array levels up to and including the 1x1 dimension texture image are replaced with the derived arrays, regardless of previous contents. The zero level texture image is left unchanged.
+
+<p>The internal formats of the derived mipmap arrays all match those of the zero level texture image. The dimensions of the derived arrays are computed by halving the width and height of the zero level texture image, then in turn halving the dimensions of each array level until the 1x1 dimension texture image is reached.
+
+<p>The contents of the derived arrays are computed by repeated filtered reduction of the zero level array. No particular filter algorithm is required, though a box filter is recommended. <a class="normal" href="Neslib.Ooogles.TGLTexture.html#MipmapHint">MipmapHint</a> may be called to express a preference for speed or quality of filtering.
+
+<p>   <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glGenerateMipmap
+
+<p>    </p>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if this is a cube map texture, but its six faces do not share indentical widths, heights, formats, and types.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if either the width or height of the zero level array is not a power of two.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the zero level array is stored in a compressed internal format.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">TGLFrameBuffer.AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MipmapHint">MipmapHint</a></dt>
+  <dd>Sets an implementation-specific hint for generating mipmaps.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MinFilter"></a><code>procedure <b>MinFilter</b>(const AMinFilter: <a  href="Neslib.Ooogles.html#TGLMinFilter">TGLMinFilter</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sets the minification filter for this texture.
+
+<p>
+
+<p>The texture minifying function is used whenever the pixel being textured maps to an area greater than one texture element. There are six defined minifying functions. Two of them use the nearest one or nearest four texture elements to compute the texture value. The other four use mipmaps.
+
+<p>A mipmap is an ordered set of arrays representing the same image at progressively lower resolutions. If the texture has dimensions W × H, there are Floor(Log2(Max(W, H)) + 1) mipmap levels. The first mipmap level is the original texture, with dimensions W × H. Each subsequent mipmap level has half the dimensions of the previous level, until the final mipmap is reached, which has dimension 1 × 1.
+
+<p>To define the mipmap levels, call <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a>, <a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a> or <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a> with the ALevel argument indicating the order of the mipmaps. Level 0 is the original texture; level Floor(Log2(Max(W, H))) is the final 1 × 1 mipmap.
+
+<p>As more texture elements are sampled in the minification process, fewer aliasing artifacts will be apparent. While the Nearest and Linear minification functions can be faster than the other four, they sample only one or four texture elements to determine the texture value of the pixel being rendered and can produce moire patterns or ragged transitions. The initial value of the minification filter is NearestMipmapLinear.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glTexParameteri(GL_TEXTURE_MIN_FILTER)
+
+<p>          </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMinFilter</dt>
+<dd>the minification filter.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a></dt>
+  <dd>Set pixel storage alignment.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMinFilter">GetMinFilter</a></dt>
+  <dd>Gets the minification filter for this texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MagFilter">MagFilter</a></dt>
+  <dd>Sets the magnification filter for this texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMinFilter"></a><code>function <b>GetMinFilter</b>: <a  href="Neslib.Ooogles.html#TGLMinFilter">TGLMinFilter</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the minification filter for this texture.
+
+<p> <b>OpenGL API</b>: glGetTexParameteriv(GL_TEXTURE_MIN_FILTER)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The minification filter.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MinFilter">MinFilter</a></dt>
+  <dd>Sets the minification filter for this texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MagFilter"></a><code>procedure <b>MagFilter</b>(const AMagFilter: <a  href="Neslib.Ooogles.html#TGLMagFilter">TGLMagFilter</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sets the magnification filter for this texture.
+
+<p>
+
+<p>The texture magnification function is used when the pixel being textured maps to an area less than or equal to one texture element. It sets the texture magnification function to either Nearest or Linear. Nearest is generally faster than Linear, but it can produce textured images with sharper edges because the transition between texture elements is not as smooth. The initial value of the magnification filter is Linear.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glTexParameteri(GL_TEXTURE_MAG_FILTER)
+
+<p>          </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMagFilter</dt>
+<dd>the magnification filter.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a></dt>
+  <dd>Set pixel storage alignment.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMagFilter">GetMagFilter</a></dt>
+  <dd>Gets the magnification filter for this texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MinFilter">MinFilter</a></dt>
+  <dd>Sets the minification filter for this texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMagFilter"></a><code>function <b>GetMagFilter</b>: <a  href="Neslib.Ooogles.html#TGLMagFilter">TGLMagFilter</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the magnification filter for this texture.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glGetTexParameteriv(GL_TEXTURE_MAG_FILTER)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The magnification filter.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MagFilter">MagFilter</a></dt>
+  <dd>Sets the magnification filter for this texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WrapS"></a><code>procedure <b>WrapS</b>(const AWrap: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sets the wrap mode for texture coordinate S (horizontal).
+
+<p>
+
+<p>See <a class="normal" href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a> for options and their effects.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glTexParameteri(GL_TEXTURE_WRAP_S)
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AWrap</dt>
+<dd>the wrap mode.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetWrapS">GetWrapS</a></dt>
+  <dd>Gets the wrap mode for texture coordinate S.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#WrapT">WrapT</a></dt>
+  <dd>Sets the wrap mode for texture coordinate T (vertical).</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetWrapS"></a><code>function <b>GetWrapS</b>: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the wrap mode for texture coordinate S.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glGetTexParameteriv(GL_TEXTURE_WRAP_S)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The wrap mode.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#WrapS">WrapS</a></dt>
+  <dd>Sets the wrap mode for texture coordinate S (horizontal).</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="WrapT"></a><code>procedure <b>WrapT</b>(const AWrap: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sets the wrap mode for texture coordinate T (vertical).
+
+<p>
+
+<p>See <a class="normal" href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a> for options and their effects.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glTexParameteri(GL_TEXTURE_WRAP_T)
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AWrap</dt>
+<dd>the wrap mode.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Unbind">Unbind</a></dt>
+  <dd>Unbinds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UnbindFromTextureUnit">UnbindFromTextureUnit</a></dt>
+  <dd>Actives a texture unit and unbinds this texture from that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetWrapT">GetWrapT</a></dt>
+  <dd>Gets the wrap mode for texture coordinate T.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#WrapS">WrapS</a></dt>
+  <dd>Sets the wrap mode for texture coordinate S (horizontal).</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetWrapT"></a><code>function <b>GetWrapT</b>: <a  href="Neslib.Ooogles.html#TGLWrapMode">TGLWrapMode</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the wrap mode for texture coordinate T.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glGetTexParameteriv(GL_TEXTURE_WRAP_T)
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The wrap mode.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#WrapT">WrapT</a></dt>
+  <dd>Sets the wrap mode for texture coordinate T (vertical).</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Upload"></a><code>procedure <b>Upload</b>(const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; const AWidth, AHeight: Integer; const AData: Pointer; const ALevel: Integer = 0; const AType: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a> = TGLPixelDataType.UnsignedByte; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Uploads an image to the texture. This creates the texture in memory.
+
+<p>      
+
+<p>       Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is active. Texturing is active when the current fragment shader or vertex shader makes use of built-in texture lookup functions.
+
+<p>To define texture images, call <code>Upload</code>. The arguments describe the parameters of the texture image, such as height, width, level-of-detail number (see <a class="normal" href="Neslib.Ooogles.TGLTexture.html#MinFilter">MinFilter</a>), and format. The other arguments describe how the image is represented in memory.
+
+<p>Data is read from AData as a sequence of unsigned bytes or shorts, depending on AType. Color components are converted to floating point based on the AType.
+
+<p>AWidth × AHeight texels are read from memory, starting at location AData. By default, these texels are taken from adjacent memory locations, except that after all width texels are read, the read pointer is advanced to the next four-byte boundary. The four-byte row alignment is specified by <a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a> with argument UnpackAlignment, and it can be set to one, two, four, or eight bytes.
+
+<p>The first element corresponds to the lower left corner of the texture image. Subsequent elements progress left-to-right through the remaining texels in the lowest row of the texture image, and then in successively higher rows of the texture image. The final element corresponds to the upper right corner of the texture image.
+
+<p><b>Note</b>: AData may be a nil pointer. In this case, texture memory is allocated to accommodate a texture of AWidth × AHeight pixels. You can then <code>upload</code> subtextures to initialize this texture memory. The image is undefined if the user tries to apply an uninitialized portion of the texture image to a primitive.
+
+<p><b>Note</b>: This method specifies a two-dimensional or cube-map texture for the current texture unit, specified with <a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a>.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glTexImage2D
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFormat</dt>
+<dd>the format of the texel data.</dd>
+<dt>AWidth</dt>
+<dd>the width of the texture image. All implementations support 2D texture images that are at least 64 texels wide and cube-mapped texture images that are at least 16 texels wide.</dd>
+<dt>AHeight</dt>
+<dd>the height of the texture image. All implementations support 2D texture images that are at least 64 texels high and cube-mapped texture images that are at least 16 texels high.</dd>
+<dt>AData</dt>
+<dd>pointer to the image data in memory.</dd>
+<dt>ALevel</dt>
+<dd>(optional) level-of-detail number if updating separate mipmap levels. Level 0 (default) is the base image level. Level N is the Nth mipmap reduction image.</dd>
+<dt>AType</dt>
+<dd>(optional) data type the texel data. Defaults to UnsignedByte.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this texture is a cube texture, then this parameter specifies which of the 6 cube faces to update. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if this is a cube map texture and the AWidth and</dd>
+<dt><code>AHeight</code></dt>
+<dd>parameters are not equal.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ALevel is less than 0 or greater than the maximum level.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than 0 or greater than the maximum texture size.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AType is UnsignedShort565 and AFormat is not RGB.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AType is UnsignedShort4444 or</dd>
+<dt><code>UnsignedShort5551</code></dt>
+<dd>and AFormat is not RGBA.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></dt>
+  <dd>Uploads a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></dt>
+  <dd>Uploads a part of a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a></dt>
+  <dd>Set pixel storage alignment.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SubUpload"></a><code>procedure <b>SubUpload</b>(const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; const AXOffset, AYOffset, AWidth, AHeight: Integer; const AData: Pointer; const ALevel: Integer = 0; const AType: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a> = TGLPixelDataType.UnsignedByte; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Uploads a part of an image to the texture. This updates the texture in memory.
+
+<p>        
+
+<p>       This method redefines a contiguous subregion of an existing two-dimensional texture image. The texels referenced by data replace the portion of the existing texture array with X indices AXOffset and AXOffset + AWidth - 1, inclusive, and Y indices AYOffset and AYOffset + AHeight - 1, inclusive. This region may not include any texels outside the range of the texture array as it was originally specified. It is not an error to specify a subtexture with zero width or height, but such a specification has no effect.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glTexSubImage2D
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFormat</dt>
+<dd>the format of the texel data.</dd>
+<dt>AXOffset</dt>
+<dd>texel offset in the X direction within the texture array.</dd>
+<dt>AYOffset</dt>
+<dd>texel offset in the Y direction within the texture array.</dd>
+<dt>AWidth</dt>
+<dd>the width of the texture subimage.</dd>
+<dt>AHeight</dt>
+<dd>the height of the texture subimage.</dd>
+<dt>AData</dt>
+<dd>pointer to the image data in memory.</dd>
+<dt>ALevel</dt>
+<dd>(optional) level-of-detail number if updating separate mipmap levels. Level 0 (default) is the base image level. Level N is the Nth mipmap reduction image.</dd>
+<dt>AType</dt>
+<dd>(optional) data type the texel data. Defaults to UnsignedByte.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this texture is a cube texture, then this parameter specifies which of the 6 cube faces to update. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ALevel is less than 0 or greater than the maximum level.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AXOffset &lt; 0 or AXOffset + AWidth is greater than the width of this texture.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AYOffset &lt; 0 or AYOffset + AHeight is greater than the height of this texture.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than 0.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the texture array has not been defined by a previous <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a> of <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a> operation whose AFormat matches the AFormat parameter of this method.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AType is UnsignedShort565 and AFormat is not RGB.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AType is UnsignedShort4444 or UnsignedShort5551 and AFormat is not RGBA.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></dt>
+  <dd>Uploads a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></dt>
+  <dd>Uploads a part of a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a></dt>
+  <dd>Set pixel storage alignment.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="UploadCompressed"></a><code>procedure <b>UploadCompressed</b>(const AFormat: Cardinal; const AWidth, AHeight: Integer; const AData: Pointer; const ADataSize: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Uploads a compressed image to the texture. This creates the texture in memory.
+
+<p>      
+
+<p>      Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is active. Texturing is active when the current fragment shader or vertex shader makes use of built-in texture lookup functions.
+
+<p>This method defines a two-dimensional texture image or cube-map texture image using compressed image data from client memory. The texture image is decoded according to the extension specification defining the specified AFormat. OpenGL ES defines no specific compressed texture formats, but does provide a mechanism to obtain symbolic constants for such formats provided by extensions. The list of specific compressed texture formats supported can be obtained by <a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCompressedTextureFormats">GetCompressedTextureFormats</a>.
+
+<p><b>Note</b>: a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation may choose to store the texture array at any internal resolution it chooses.
+
+<p><b>Note</b>: this method specifies a two-dimensional or cube-map texture for the current texture unit, specified with <a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a>.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glCompressedTexImage2D
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFormat</dt>
+<dd>the compressed format of the texel data.</dd>
+<dt>AWidth</dt>
+<dd>the width of the texture image. All implementations support 2D texture images that are at least 64 texels wide and cube-mapped texture images that are at least 16 texels wide.</dd>
+<dt>AHeight</dt>
+<dd>the height of the texture image. All implementations support 2D texture images that are at least 64 texels high and cube-mapped texture images that are at least 16 texels high.</dd>
+<dt>AData</dt>
+<dd>pointer to the compressed image data in memory.</dd>
+<dt>ADataSize</dt>
+<dd>the size of the compressed image data in bytes.</dd>
+<dt>ALevel</dt>
+<dd>(optional) level-of-detail number if updating separate mipmap levels. Level 0 (default) is the base image level. Level N is the Nth mipmap reduction image.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this texture is a cube texture, then this parameter specifies which of the 6 cube faces to update. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidEnum</code></dt>
+<dd>if AFormat is not a supported format returned in <a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCompressedTextureFormats">GetCompressedTextureFormats</a>.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ALevel is less than 0 or greater than the maximum level.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than 0 or greater than the maximum texture size.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ADataSize is not consistent with the format, dimensions, and contents of the specified compressed image data.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if parameter combinations are not supported by the specific compressed internal format as specified in the specific texture compression extension.</dd>
+<dt><code>Other</code></dt>
+<dd>Undefined results, including abnormal program termination, are generated if data is not encoded in a manner consistent with the extension specification defining the internal compression format.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></dt>
+  <dd>Uploads a part of a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCompressedTextureFormats">GetCompressedTextureFormats</a></dt>
+  <dd>Gets a list of symbolic constants indicating which compressed texture formats are available.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SubUploadCompressed"></a><code>procedure <b>SubUploadCompressed</b>(const AFormat: Cardinal; const AXOffset, AYOffset, AWidth, AHeight: Integer; const AData: Pointer; const ADataSize: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Uploads a part of a compressed image to the texture. This updates the texture in memory.
+
+<p>        
+
+<p>         Texturing maps a portion of a specified texture image onto each graphical primitive for which texturing is active. Texturing is active when the current fragment shader or vertex shader makes use of built-in texture lookup functions.
+
+<p>This method redefines a contiguous subregion of an existing two-dimensional texture image. The texels referenced by AData replace the portion of the existing texture array with X indices AXOffset and AXoffset + AWidth - 1, and the Y indices AYOffset and AYOffset + AHeight - 1, inclusive. This region may not include any texels outside the range of the texture array as it was originally specified. It is not an error to specify a subtexture with width of 0, but such a specification has no effect.
+
+<p>AFormat must be the same extension-specified compressed-texture format previously specified by <a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a>.
+
+<p><b>Note</b>: this method specifies a two-dimensional or cube-map texture for the current texture unit, specified with <a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a>.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glCompressedTexSubImage2D
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFormat</dt>
+<dd>the compressed format of the texel data.</dd>
+<dt>AXOffset</dt>
+<dd>texel offset in the X direction within the texture array.</dd>
+<dt>AYOffset</dt>
+<dd>texel offset in the Y direction within the texture array.</dd>
+<dt>AWidth</dt>
+<dd>the width of the texture subimage.</dd>
+<dt>AHeight</dt>
+<dd>the height of the texture subimage.</dd>
+<dt>AData</dt>
+<dd>pointer to the compressed image data in memory.</dd>
+<dt>ADataSize</dt>
+<dd>the size of the compressed image data in bytes.</dd>
+<dt>ALevel</dt>
+<dd>(optional) level-of-detail number if updating separate mipmap levels. Level 0 (default) is the base image level. Level N is the Nth mipmap reduction image.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this texture is a cube texture, then this parameter specifies which of the 6 cube faces to update. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidEnum</code></dt>
+<dd>if AFormat is not a supported format returned in <a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCompressedTextureFormats">GetCompressedTextureFormats</a>.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ALevel is less than 0 or greater than the maximum level.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AXOffset &lt; 0 or AXOffset + AWidth is greater than the width of this texture.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AYOffset &lt; 0 or AYOffset + AHeight is greater than the height of this texture.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than 0.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ADataSize is not consistent with the format, dimensions, and contents of the specified compressed image data.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the texture array has not been defined by a previous <a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a> operation whose AFormat matches the format of this method.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if parameter combinations are not supported by the specific compressed internal format as specified in the specific texture compression extension.</dd>
+<dt><code>Other</code></dt>
+<dd>Undefined results, including abnormal program termination, are generated if data is not encoded in a manner consistent with the extension specification defining the internal compression format.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></dt>
+  <dd>Uploads a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCompressedTextureFormats">GetCompressedTextureFormats</a></dt>
+  <dd>Gets a list of symbolic constants indicating which compressed texture formats are available.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Copy"></a><code>procedure <b>Copy</b>(const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; const ALeft, ABottom, AWidth, AHeight: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies pixels from the current framebuffer into the texture.
+
+<p>      
+
+<p>    This method defines a two-dimensional texture image or cube-map texture image with pixels from the current framebuffer (rather than from client memory, as is the case for <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a>).
+
+<p>The screen-aligned pixel rectangle with lower left corner at (ALeft, ABottom) and with a width of AWidth and a height of AHeight defines the texture array at the mipmap level specified by ALevel. AFormat specifies the internal format of the texture array.
+
+<p>The pixels in the rectangle are processed exactly as if <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">TGLFramebuffer.ReadPixels</a> had been called with format set to RGBA, but the process stops just after conversion of RGBA values. Subsequent processing is identical to that described for <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a>, beginning with the clamping of the R, G, B, and A values to the range 0-1 and then conversion to the texture's internal format for storage in the texel array.
+
+<p>The components required for AFormat must be a subset of those present in the framebuffer's format. For example, a RGBA framebuffer can be used to supply components for any AFormat. However, a RGB framebuffer can only be used to supply components for RGB or Luminance base internal format textures, not Alpha, LuminanceAlpha or RGBA textures.
+
+<p>Pixel ordering is such that lower ALeft and ABottom screen coordinates correspond to lower S and T texture coordinates.
+
+<p>If any of the pixels within the specified rectangle are outside the framebuffer associated with the current rendering context, then the values obtained for those pixels are undefined.
+
+<p><b>Note</b>: a <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> implementation may choose to store the texture array at any internal resolution it chooses.
+
+<p><b>Note</b>: an image with height or width of 0 indicates a NULL texture.
+
+<p><b>Note</b>: This method specifies a two-dimensional or cube-map texture for the current texture unit, specified with <a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a>.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glCopyTexImage2D
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AFormat</dt>
+<dd>the format of the texel data.</dd>
+<dt>ALeft</dt>
+<dd>window coordinate of the left corner of the rectangular region of pixels to be copied.</dd>
+<dt>ABottom</dt>
+<dd>window coordinate of the bottom corner of the rectangular region of pixels to be copied.</dd>
+<dt>AWidth</dt>
+<dd>the width of the texture image. All implementations support 2D texture images that are at least 64 texels wide and cube-mapped texture images that are at least 16 texels wide.</dd>
+<dt>AHeight</dt>
+<dd>the height of the texture image. All implementations support 2D texture images that are at least 64 texels high and cube-mapped texture images that are at least 16 texels high.</dd>
+<dt>ALevel</dt>
+<dd>(optional) level-of-detail number if updating separate mipmap levels. Level 0 (default) is the base image level. Level N is the Nth mipmap reduction image.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this texture is a cube texture, then this parameter specifies which of the 6 cube faces to update. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if this is a cube map texture and the AWidth and AHeight parameters are not equal.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ALevel is less than 0 or greater than the maximum level.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than 0 or greater than then maximum texture size.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the currently bound framebuffer's format does not contain a superset of the components required by the base format of AFormat.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">TGLFrameBuffer.Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></dt>
+  <dd>Uploads a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a></dt>
+  <dd>Uploads a part of an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></dt>
+  <dd>Uploads a part of a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SubCopy"></a><code>procedure <b>SubCopy</b>(const AXOffset, AYOffset, ALeft, ABottom, AWidth, AHeight: Integer; const ALevel: Integer = 0; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies pixels from a part of the current framebuffer into the texture.
+
+<p>       
+
+<p>       This method replaces a rectangular portion of a two-dimensional texture image or cube-map texture image with pixels from the current framebuffer (rather than from client memory, as is the case for <a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a>).
+
+<p>The screen-aligned pixel rectangle with lower left corner at ALeft, ABottom and with width AWidth and height AHeight replaces the portion of the texture array with X indices AXOffset through AXOffset + AWidth - 1, inclusive, and Y indices AYOffset through AYOffset + AHeight - 1, inclusive, at the mipmap level specified by level.
+
+<p>The pixels in the rectangle are processed exactly as if <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">TGLFramebuffer.ReadPixels</a> had been called with format set to RGBA, but the process stops just after conversion of RGBA values. Subsequent processing is identical to that described for <a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUpload">SubUpload</a>, beginning with the clamping of the R, G, B, and A values to the range 0-1 and then conversion to the texture's internal format for storage in the texel array.
+
+<p>The destination rectangle in the texture array may not include any texels outside the texture array as it was originally specified. It is not an error to specify a subtexture with zero width or height, but such a specification has no effect.
+
+<p>If any of the pixels within the specified rectangle are outside the framebuffer associated with the current rendering context, then the values obtained for those pixels are undefined.
+
+<p>No change is made to the internalformat, width, or height parameters of the texture array or to texel values outside the specified subregion.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this texture is not bound.
+
+<p><b>OpenGL API</b>: glCopyTexSubImage2D
+
+<p>       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AXOffset</dt>
+<dd>texel offset in the X direction within the texture array.</dd>
+<dt>AYOffset</dt>
+<dd>texel offset in the Y direction within the texture array.</dd>
+<dt>ALeft</dt>
+<dd>window coordinate of the left corner of the rectangular region of pixels to be copied.</dd>
+<dt>ABottom</dt>
+<dd>window coordinate of the bottom corner of the rectangular region of pixels to be copied.</dd>
+<dt>AWidth</dt>
+<dd>the width of the texture subimage.</dd>
+<dt>AHeight</dt>
+<dd>the height of the texture subimage.</dd>
+<dt>ALevel</dt>
+<dd>(optional) level-of-detail number if updating separate mipmap levels. Level 0 (default) is the base image level. Level N is the Nth mipmap reduction image.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this texture is a cube texture, then this parameter specifies which of the 6 cube faces to update. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if ALevel is less than 0 or greater than the maximum level.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AXOffset &lt; 0 or AXOffset + AWidth is greater than the width of this texture.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AYOffset &lt; 0 or AYOffset + AHeight is greater than the height of this texture.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if AWidth or AHeight is less than 0.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the texture array has not been defined by a previous <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a> of <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a> operation whose AFormat matches the AFormat parameter of this method.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if the currently bound framebuffer's format does not contain a superset of the components required by the base format of AFormat.</dd>
+<dt><code>TGLError.InvalidFramebufferOperation</code></dt>
+<dd>if the currently bound framebuffer is not framebuffer complete.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">TGLFrameBuffer.Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></dt>
+  <dd>Uploads a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></dt>
+  <dd>Uploads a part of a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureSize">GetMaxTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCubeMapTextureSize">GetMaxCubeMapTextureSize</a></dt>
+  <dd>Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrent2DTexture"></a><code>class function <b>GetCurrent2DTexture</b>: <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the 2D texture that is currently bound for the active multitexture unit.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_TEXTURE_BINDING_2D)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The currently bound 2D texture. Its <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">Handle</a> will be 0 if there is no 2D texture bound.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCurrentCubemapTexture">GetCurrentCubeMapTexture</a></dt>
+  <dd>Get the cubemap texture that is currently bound for the active multitexture unit.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrentCubemapTexture"></a><code>class function <b>GetCurrentCubemapTexture</b>: <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the cubemap texture that is currently bound for the active multitexture unit.
+
+<p> <b>OpenGL API</b>: glGetProgramiv(GL_TEXTURE_BINDING_CUBE_MAP)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The currently bound cubemap texture. Its <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">Handle</a> will be 0 if there is no cubemap texture bound.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetCurrent2DTexture">GetCurrent2DTexture</a></dt>
+  <dd>Get the 2D texture that is currently bound for the active multitexture unit.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetActiveTextureUnit"></a><code>class function <b>GetActiveTextureUnit</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the active texture unit.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_ACTIVE_TEXTURE)
+
+<p>  </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The index active multitexture unit, ranging from 0 to <a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a> - 1.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the fragment shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCombinedTextureUnits">GetMaxCombinedTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCompressedTextureFormats"></a><code>class function <b>GetCompressedTextureFormats</b>: TArray&lt;Cardinal&gt;; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets a list of symbolic constants indicating which compressed texture formats are available. May be empty.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_NUM_COMPRESSED_TEXTURE_FORMATS/GL_COMPRESSED_TEXTURE_FORMATS)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">A list of compressed texture formats.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#UploadCompressed">UploadCompressed</a></dt>
+  <dd>Uploads a compressed image to the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubUploadCompressed">SubUploadCompressed</a></dt>
+  <dd>Uploads a part of a compressed image to the texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="MipmapHint"></a><code>class procedure <b>MipmapHint</b>(const AHint: <a  href="Neslib.Ooogles.html#TGLMipmapHint">TGLMipmapHint</a>); inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sets an implementation-specific hint for generating mipmaps.
+
+<p>
+
+<p><b>Note</b>: this is a global setting that effects all textures.
+
+<p><b>OpenGL API</b>: glHint
+
+<p> </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AHint</dt>
+<dd>the preference for generating mipmaps.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GenerateMipmap">GenerateMipmap</a></dt>
+  <dd>Generate a complete set of mipmaps for this texture object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMipmapHint">GetMipmapHint</a></dt>
+  <dd>Gets the current implementation-specific hint for generating mipmaps.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMipmapHint"></a><code>class function <b>GetMipmapHint</b>: <a  href="Neslib.Ooogles.html#TGLMipmapHint">TGLMipmapHint</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the current implementation-specific hint for generating mipmaps.
+
+<p> <b>OpenGL API</b>: glGetIntegerv(GL_GENERATE_MIPMAP_HINT)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The mipmap generation preference.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GenerateMipmap">GenerateMipmap</a></dt>
+  <dd>Generate a complete set of mipmaps for this texture object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#MipmapHint">MipmapHint</a></dt>
+  <dd>Sets an implementation-specific hint for generating mipmaps.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxTextureUnits"></a><code>class function <b>GetMaxTextureUnits</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the maximum supported texture image units that can be used to access texture maps from the fragment shader. The value must be at least 8.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_TEXTURE_IMAGE_UNITS)
+
+<p>  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCombinedTextureUnits">GetMaxCombinedTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxVertexTextureUnits">GetMaxVertexTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxCombinedTextureUnits"></a><code>class function <b>GetMaxCombinedTextureUnits</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined. If both the vertex shader and the fragment processing stage access the same texture image unit, then that counts as using two texture image units against this limit. The value must be at least 8.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS)
+
+<p>  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the fragment shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxVertexTextureUnits">GetMaxVertexTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxVertexTextureUnits"></a><code>class function <b>GetMaxVertexTextureUnits</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader. The value may be 0.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS)
+
+<p>  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#BindToTextureUnit">BindToTextureUnit</a></dt>
+  <dd>Actives a texture unit and binds this texture to that unit.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxTextureUnits">GetMaxTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the fragment shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GetMaxCombinedTextureUnits">GetMaxCombinedTextureUnits</a></dt>
+  <dd>Gets the maximum supported texture image units that can be used to access texture maps from the vertex shader and the fragment processor combined.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxTextureSize"></a><code>class function <b>GetMaxTextureSize</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets a rough estimate of the largest texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>. The value must be at least 64.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_TEXTURE_SIZE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxCubeMapTextureSize"></a><code>class function <b>GetMaxCubeMapTextureSize</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets a rough estimate of the largest cube-map texture that the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> can <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Handle">handle</a>. The value must be at least 16.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_CUBE_MAP_TEXTURE_SIZE)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: GLuint read FHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL <code>handle</code> to the texture object.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

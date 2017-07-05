@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLShader</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLShader"></a><h1 class="cio">record TGLShader</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLShader = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A vertex or fragment shader</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLShader.html#New">New</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a>); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLShader.html#New">New</a></b>(const AType: <a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a>; const ASource: RawByteString); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLShader.html#Delete">Delete</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a></b>(const ASource: RawByteString); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLShader.html#GetSource">GetSource</a></b>: RawByteString; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLShader.html#GetType">GetType</a></b>: <a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLShader.html#GetDeleteStatus">GetDeleteStatus</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLShader.html#GetCompileStatus">GetCompileStatus</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLShader.html#GetMaxVaryingVectors">GetMaxVaryingVectors</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLShader.html#GetMaxVertexAttribs">GetMaxVertexAttribs</a></b>: Integer; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class procedure <b><a  href="Neslib.Ooogles.TGLShader.html#ReleaseCompiler">ReleaseCompiler</a></b>; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLShader.html#Handle">Handle</a></b>: GLuint read FHandle;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>(const AType: <a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a>); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>(const AType: <a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a>; const ASource: RawByteString); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a shader object.
+
+<p> 
+
+<p>A shader object is used to maintain the source code that define a shader.
+
+<p>AType indicates the type of shader to be created. Two types of shaders are supported. A shader of type TGLShaderType.Vertex is a shader that is intended to run on the programmable vertex processor. A shader of type TGLShaderType.Fragment is a shader that is intended to run on the programmable fragment processor.
+
+<p><b>Note</b>: like texture objects, the name space for shader objects may be shared across a set of contexts, as long as the server sides of the contexts share the same address space. If the name space is shared across contexts, any attached objects and the data associated with those attached objects are shared as well.
+
+<p><b>Note</b>: applications are responsible for providing the synchronization across API calls when objects are accessed from different execution threads.
+
+<p><b>OpenGL API</b>: glCreateShader
+
+<p>     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AType</dt>
+<dd>the type of shader to be created.</dd>
+<dt>ASource</dt>
+<dd>(optional) GLSL-ES source code for the shader. When specified, <a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a> will be called.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a></dt>
+  <dd>Set or replace the source code in a shader object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#GetSource">GetSource</a></dt>
+  <dd>Get the source code string from a shader object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#AttachShader">TGLProgram.AttachShader</a></dt>
+  <dd>Attach a shader object to the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">TGLProgram.DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">Delete</a></dt>
+  <dd>Deletes the shader.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the shader. This frees the memory and invalidates the name associated with the shader object specified by shader. This command effectively undoes the effects of a call to <a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a>.
+
+<p>If a shader object to be deleted is attached to a program object, it will be flagged for deletion, but it will not be deleted until it is no longer attached to any program object, for any rendering context (i.e., it must be detached from wherever it was attached before it will be deleted).
+
+<p>To determine whether an object has been flagged for deletion, call IsFlaggedForDeletion.
+
+<p><b>OpenGL API</b>: glDeleteShader
+
+<p>   </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#New">TGLProgram.New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#DetachShader">TGLProgram.DetachShader</a></dt>
+  <dd>Detach a shader object from a program object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Use">TGLProgram.Use</a></dt>
+  <dd>Installs the program object as part of current rendering state.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="SetSource"></a><code>procedure <b>SetSource</b>(const ASource: RawByteString); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set or replace the source code in a shader object.
+
+<p>
+
+<p>Any source code previously stored in the shader object is completely replaced.
+
+<p> <b>Note</b>: when used with Desktop OpenGL, the source code may be modified to make it compatible with Desktop GLSL.
+
+<p><b>OpenGL API</b>: glShaderSource
+
+<p>   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ASource</dt>
+<dd>the GLSL-ES source code of the shader.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if a shader compiler is not supported.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#GetSource">GetSource</a></dt>
+  <dd>Get the source code string from a shader object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">Delete</a></dt>
+  <dd>Deletes the shader.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSource"></a><code>function <b>GetSource</b>: RawByteString; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the source code string from a shader object.
+
+<p> <b>OpenGL API</b>: glGetShaderSource
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The shader source code.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a></dt>
+  <dd>Set or replace the source code in a shader object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Compile"></a><code>function <b>Compile</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.
+
+<p><b>OpenGL API</b>: glCompileShader, glGetShaderInfoLog, glGetShaderiv(GL_COMPILE_STATUS/GL_INFO_LOG_LENGTH)
+
+<p>   </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">In RELEASE mode: True on success, False on failure. In DEBUG mode: True on success or an <a class="normal" href="Neslib.Ooogles.EGLError.html">EGLError</a> exception will be raised on failure.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if a shader compiler is not supported.</dd>
+<dt><a class="normal" href="Neslib.Ooogles.EGLShaderError.html">EGLShaderError</a></dt>
+<dd>when the source code contains errors and cannot be compiled.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLProgram.html#Link">TGLProgram.Link</a></dt>
+  <dd>Links the program.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a></dt>
+  <dd>Set or replace the source code in a shader object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#ReleaseCompiler">TGLShader.ReleaseCompiler.</a></dt>
+  <dd>Release resources allocated by the shader compiler.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetType"></a><code>function <b>GetType</b>: <a  href="Neslib.Ooogles.html#TGLShaderType">TGLShaderType</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Gets the type of the shader.
+
+<p> <b>OpenGL API</b>: glGetShaderiv(GL_SHADER_TYPE)
+
+<p> </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The shader type.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">Delete</a></dt>
+  <dd>Deletes the shader.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetDeleteStatus"></a><code>function <b>GetDeleteStatus</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the <a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">delete</a> status.
+
+<p> <b>OpenGL API</b>: glGetShaderiv(GL_DELETE_STATUS)
+
+<p>   </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the shader is currently flagged for deletion. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">Delete</a></dt>
+  <dd>Deletes the shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a></dt>
+  <dd>Set or replace the source code in a shader object.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCompileStatus"></a><code>function <b>GetCompileStatus</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the <a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">compile</a> status.
+
+<p> <b>OpenGL API</b>: glGetShaderiv(GL_COMPILE_STATUS)
+
+<p>   </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the last <a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">compile</a> operation was successful. False otherwise.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#New">New</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Delete">Delete</a></dt>
+  <dd>Deletes the shader.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#SetSource">SetSource</a></dt>
+  <dd>Set or replace the source code in a shader object.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxVaryingVectors"></a><code>class function <b>GetMaxVaryingVectors</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the maximum number four-element floating-point vectors available for interpolating varying variables used by vertex and fragment shaders. Varying variables declared as matrices or arrays will consume multiple interpolators. The value must be at least 8.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_VARYING_VECTORS)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetMaxVertexAttribs"></a><code>class function <b>GetMaxVertexAttribs</b>: Integer; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the maximum number of 4-component generic vertex attributes accessible to a vertex shader. The value must be at least 8.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_MAX_VERTEX_ATTRIBS)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReleaseCompiler"></a><code>class procedure <b>ReleaseCompiler</b>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Release resources allocated by the shader compiler.
+
+<p>For implementations that support a shader compiler, this method frees resources allocated by the shader compiler. This is a hint from the application that additional shader compilations are unlikely to occur, at least for some period of time, and that the resources consumed by the shader compiler may be released and put to better use elsewhere.
+
+<p>However, if a call to <a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a> is made after a call to <code>ReleaseCompiler</code>, the shader compiler must be restored to service the compilation request as if <code>ReleaseCompiler</code> had never been called.
+
+<p><b>OpenGL API</b>: glReleaseShaderCompiler
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLShader.html#Compile">Compile</a></dt>
+  <dd>Compiles the shader;
+
+<p>   <b>Note</b>: in DEBUG mode, any compiler warnings will be output to the debug console.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: GLuint read FHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL <code>handle</code> to the shader object.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

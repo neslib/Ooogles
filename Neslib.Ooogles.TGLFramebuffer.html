@@ -1,0 +1,1033 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>Ooogles: Neslib.Ooogles: record TGLFramebuffer</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>Ooogles</h2><p><a href="introduction.html" class="navigation">Ooogles</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="conclusion.html" class="navigation">License</a></p></td><td class="content">
+<a name="TGLFramebuffer"></a><h1 class="cio">record TGLFramebuffer</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td>Hierarchy</td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="Neslib.Ooogles.html">Neslib.Ooogles</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGLFramebuffer = record</code></p>
+<h2 class="description">Description</h2>
+<p>
+A framebuffer</p>
+<h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#New">New</a></b>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#Delete">Delete</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetCurrent">GetCurrent</a></b>: <a  href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a>; static; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></b>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#IsBound">IsBound</a></b>: Boolean; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#Status">Status</a></b>: <a  href="Neslib.Ooogles.html#TGLFramebufferStatus">TGLFramebufferStatus</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>; const ARenderbuffer: <a  href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#DetachRenderbuffer">DetachRenderbuffer</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>; const ATexture: <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#DetachTexture">DetachTexture</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedObjectType">GetAttachedObjectType</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.html#TGLFramebufferAttachmentType">TGLFramebufferAttachmentType</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTexture">GetAttachedTexture</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedRenderbuffer">GetAttachedRenderbuffer</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTextureLevel">GetAttachedTextureLevel</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedCubeMapFace">GetAttachedCubeMapFace</a></b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">ReadPixels</a></b>(const ALeft, ABottom, AWidth, AHeight: Integer; const AData: Pointer; const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a> = TGLPixelFormat.RGBA; const ADataType: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a> = TGLPixelDataType.UnsignedByte); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetGreenBits">GetGreenBits</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetBlueBits">GetBlueBits</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetAlphaBits">GetAlphaBits</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetDepthBits">GetDepthBits</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">GetStencilBits</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetSampleBuffers">GetSampleBuffers</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetSamples">GetSamples</a></b>: Integer; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a></b>: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; inline; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>class function <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a></b>: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a>; inline; static;</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>property <b><a  href="Neslib.Ooogles.TGLFramebuffer.html#Handle">Handle</a></b>: GLuint read FHandle;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="New"></a><code>procedure <b>New</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a framebuffer.
+
+<p>No framebuffer objects are associated with the returned framebuffer object names until they are first bound by calling <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a>.
+
+<p><b>OpenGL API</b>: glGenFramebuffers
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Delete"></a><code>procedure <b>Delete</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the framebuffer.
+
+<p>After a framebuffer object is deleted, it has no attachments, and its name is free for reuse (for example by <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">New</a>). If a framebuffer object that is currently bound is deleted, the binding reverts to 0 (the window-system-provided framebuffer).
+
+<p><b>OpenGL API</b>: glDeleteFramebuffers
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">New</a></dt>
+  <dd>Creates a framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetCurrent"></a><code>class function <b>GetCurrent</b>: <a  href="Neslib.Ooogles.TGLFramebuffer.html">TGLFramebuffer</a>; static; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the current framebuffer.
+
+<p><b>Note</b>: do <b>not</b> <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">delete</a> this framebuffer.
+
+<p><b>Note</b>: if you call Current <b>before</b> you create any custom framebuffers, then the returned value can be regarded as the default framebuffer. Note that this is not always the &quot;system&quot; framebuffer, since you are not allowed to access that framebuffer on some devices.
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">New</a></dt>
+  <dd>Creates a framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Bind"></a><code>procedure <b>Bind</b>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Binds the framebuffer.
+
+<p><code>Bind</code> lets you create or use a named framebuffer object. When a framebuffer object is bound, the previous binding is automatically broken.
+
+<p>Framebuffer object names are unsigned integers. The value zero is reserved to represent the &quot;system&quot; framebuffer provided by the windowing system. Framebuffer object names and the corresponding framebuffer object contents are local to the shared object space of the current <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> rendering context.
+
+<p>You may use <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">New</a> to generate a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">new</a> framebuffer object name.
+
+<p>The state of a framebuffer object immediately after it is first bound is three attachment points (ColorAttachment, DepthAttachment, and StencilAttachment) each with None as the object type.
+
+<p>While a framebuffer object name is bound, all rendering to the framebuffer (with <a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">gl.DrawArrays</a> and <a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">gl.DrawElements</a>) and reading from the framebuffer (with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">ReadPixels</a>, <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">TGLTexture.Copy</a>, or <a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">TGLTexture.SubCopy</a>) use the images attached to the application-created framebuffer object rather than the default window-system-provided framebuffer.
+
+<p>Application created framebuffer objects differ from the default window-system-provided framebuffer in a few important ways. First, they have modifiable attachment points for a color buffer, a depth buffer, and a stencil buffer to which framebuffer attachable images may be attached and detached. Second, the size and format of the attached images are controlled entirely within the <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> and are not affected by window-system events, such as pixel format selection, window resizes, and display mode changes. Third, when rendering to or reading from an application created framebuffer object, the pixel ownership test always succeeds (i.e. they own all their pixels). Fourth, there are no visible color buffer bitplanes, only a single &quot;off-screen&quot; color image attachment, so there is no sense of front and back buffers or swapping. Finally, there is no multisample buffer.
+
+<p>A framebuffer object binding created with <code>Bind</code> remains active until a different framebuffer object name is bound, or until the bound framebuffer object is deleted with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">Delete</a>.
+
+<p><b>Note</b>: you cannot unbind a framebuffer. If you want to revert back to the default framebuffer, then you should call <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetCurrent">TGLFramebuffer.GetCurrent</a> <b>before</b> you generate a <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">new</a> framebuffer. Then you can <code>bind</code> to the that framebuffer later to revert back to it.
+
+<p><b>OpenGL API</b>: glBindFramebuffer
+
+<p>    </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#New">New</a></dt>
+  <dd>Creates a framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#IsBound">IsBound</a></dt>
+  <dd>Checks if this framebuffer is currently bound.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="IsBound"></a><code>function <b>IsBound</b>: Boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks if this framebuffer is currently bound.
+
+<p></p>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if this is the currently bound framebuffer, False otherwise.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Status"></a><code>function <b>Status</b>: <a  href="Neslib.Ooogles.html#TGLFramebufferStatus">TGLFramebufferStatus</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return the framebuffer completeness <code>status</code>.
+
+<p> The returned value identifies whether or not the currently bound framebuffer is framebuffer complete, and if not, which of the rules of framebuffer completeness is violated.
+
+<p>If the currently bound framebuffer is not framebuffer complete, then it is an error to attempt to use the framebuffer for writing or reading. This means that rendering commands (<a class="normal" href="Neslib.Ooogles.gl.html#Clear">gl.Clear</a>, <a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">gl.DrawArrays</a>, and <a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">gl.DrawElements</a>) as well as commands that read the framebuffer (<a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">ReadPixels</a>, <a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">TGLTexture.Copy</a>, and <a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">TGLTexture.SubCopy</a>) will generate the error InvalidFramebufferOperation if called while the framebuffer is not framebuffer complete.
+
+<p><b>Note</b>: it is strongly advised, thought not required, that an application call <code>Status</code> to see if the framebuffer is complete prior to rendering. This is because some implementations may not support rendering to particular combinations of internal formats.
+
+<p><b>Note</b>: the default window-system-provided framebuffer is always framebuffer complete, and thus Complete is returned when there is no bound application created framebuffer.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glCheckFramebufferStatus
+
+<p>      </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The completeness <code>status</code>.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">TGLRenderbuffer.Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Copy">TGLTexture.Copy</a></dt>
+  <dd>Copies pixels from the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#SubCopy">TGLTexture.SubCopy</a></dt>
+  <dd>Copies pixels from a part of the current framebuffer into the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DrawArrays">gl.DrawArrays</a></dt>
+  <dd></dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#DrawElements">gl.DrawElements</a></dt>
+  <dd>Render primitives from array data, using indices from a bound index buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">ReadPixels</a></dt>
+  <dd>Read a block of pixels from the frame buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">TGLRenderbuffer.Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AttachRenderbuffer"></a><code>procedure <b>AttachRenderbuffer</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>; const ARenderbuffer: <a  href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Attach a renderbuffer to this framebuffer.
+
+<p> 
+
+<p> This method attaches the renderbuffer specified by ARenderbuffer as one of the logical buffers of the currently bound framebuffer object. AAttachment specifies whether the renderbuffer should be attached to the framebuffer object's color, depth, or stencil buffer. A renderbuffer may not be attached to the default framebuffer object name 0.
+
+<p><b>Note</b>: if a renderbuffer object is deleted while its image is attached to the currently bound framebuffer, then it is as if <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#DetachRenderbuffer">DetachRenderbuffer</a> had been called for the attachment point to which this image was attached in the currently bound framebuffer object. In other words, the renderbuffer image is detached from the currently bound framebuffer. Note that the renderbuffer image is specifically not detached from any non-bound framebuffers. Detaching the image from any non-bound framebuffers is the responsibility of the application.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glFramebufferRenderbuffer
+
+<p>       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to which ARenderbuffer should be attached.</dd>
+<dt>ARenderbuffer</dt>
+<dd>the renderbuffer to attach.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#DetachRenderbuffer">DetachRenderbuffer</a></dt>
+  <dd>Detach a renderbuffer from this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Bind">TGLRenderbuffer.Bind</a></dt>
+  <dd>Binds the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Delete">TGLRenderbuffer.Delete</a></dt>
+  <dd>Deletes the renderbuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLRenderbuffer.html#Storage">TGLRenderbuffer.Storage</a></dt>
+  <dd>Create and initialize a renderbuffer object's data store.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DetachRenderbuffer"></a><code>procedure <b>DetachRenderbuffer</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Detach a renderbuffer from this framebuffer.
+
+<p>
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glFramebufferRenderbuffer
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point from which the renderbuffer should be detached.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="AttachTexture"></a><code>procedure <b>AttachTexture</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>; const ATexture: <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; const ACubeTarget: <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a> = 0); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Attach a texture to this framebuffer.
+
+<p>  
+
+<p> This method attaches the texture image specified by ATexture as one of the logical buffers of the currently bound framebuffer object. AAttachment specifies whether the texture image should be attached to the framebuffer object's color, depth, or stencil buffer. A texture image may not be attached to the default framebuffer object name 0.
+
+<p><b>Note</b>: special precautions need to be taken to avoid attaching a texture image to the currently bound framebuffer while the texture object is currently bound and potentially sampled by the current vertex or fragment shader. Doing so could lead to the creation of a &quot;feedback loop&quot; between the writing of pixels by rendering operations and the simultaneous reading of those same pixels when used as texels in the currently bound texture. In this scenario, the framebuffer will be considered framebuffer complete, but the values of fragments rendered while in this state will be undefined. The values of texture samples may be undefined as well.
+
+<p><b>Note</b>: if a texture object is deleted while its image is attached to the currently bound framebuffer, then it is as if <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#DetachTexture">DetachTexture</a> had been called for the attachment point to which this image was attached in the currently bound framebuffer object. In other words, the texture image is detached from the currently bound framebuffer. Note that the texture image is specifically not detached from any non-bound framebuffers. Detaching the image from any non-bound framebuffers is the responsibility of the application.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glFramebufferTexture2D
+
+<p>        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to which ATexture should be attached.</dd>
+<dt>ATexture</dt>
+<dd>the texture to attach.</dd>
+<dt>ACubeTarget</dt>
+<dd>(optional) if this ATexture is a cube texture, then this parameter specifies which of the 6 cube faces to attach. This parameter is ignored for 2D textures.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#DetachTexture">DetachTexture</a></dt>
+  <dd>Detach a texture from this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Bind">TGLTexture.Bind</a></dt>
+  <dd>Binds the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Delete">Delete</a></dt>
+  <dd>Deletes the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Delete">TGLTexture.Delete</a></dt>
+  <dd>Deletes the texture.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#GenerateMipmap">TGLTexture.GenerateMipmap</a></dt>
+  <dd>Generate a complete set of mipmaps for this texture object.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLTexture.html#Upload">TGLTexture.Upload</a></dt>
+  <dd>Uploads an image to the texture.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DetachTexture"></a><code>procedure <b>DetachTexture</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Detach a texture from this framebuffer.
+
+<p>
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glFramebufferTexture2D
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point from which the texture should be detached.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttachedObjectType"></a><code>function <b>GetAttachedObjectType</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.html#TGLFramebufferAttachmentType">TGLFramebufferAttachmentType</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the type of object attached to an attachment point of the framebuffer.
+
+<p>
+
+<p>  <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetFramebufferAttachmentParameteriv(GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE)
+
+<p>      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to check.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The type of attachment attached to this point.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTexture">GetAttachedTexture</a></dt>
+  <dd>Returns the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedRenderbuffer">GetAttachedRenderbuffer</a></dt>
+  <dd>Returns the renderbuffer attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTextureLevel">GetAttachedTextureLevel</a></dt>
+  <dd>Returns the mipmap level of the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedCubeMapFace">GetAttachedCubeMapFace</a></dt>
+  <dd>Returns the cube map face of the cube-map texture attached to an attachment point of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttachedTexture"></a><code>function <b>GetAttachedTexture</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.TGLTexture.html">TGLTexture</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the texture attached to an attachment point of the framebuffer.
+
+<p>
+
+<p>   <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetFramebufferAttachmentParameteriv(GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME)
+
+<p>      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to check.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The texture attached to this point.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no texture is attached to the given attachment point.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedObjectType">GetAttachedObjectType</a></dt>
+  <dd>Returns the type of object attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedRenderbuffer">GetAttachedRenderbuffer</a></dt>
+  <dd>Returns the renderbuffer attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTextureLevel">GetAttachedTextureLevel</a></dt>
+  <dd>Returns the mipmap level of the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedCubeMapFace">GetAttachedCubeMapFace</a></dt>
+  <dd>Returns the cube map face of the cube-map texture attached to an attachment point of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttachedRenderbuffer"></a><code>function <b>GetAttachedRenderbuffer</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.TGLRenderbuffer.html">TGLRenderbuffer</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the renderbuffer attached to an attachment point of the framebuffer.
+
+<p>
+
+<p>   <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetFramebufferAttachmentParameteriv(GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME)
+
+<p>      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to check.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The renderbuffer attached to this point.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no renderbuffer is attached to the given attachment point.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedObjectType">GetAttachedObjectType</a></dt>
+  <dd>Returns the type of object attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTexture">GetAttachedTexture</a></dt>
+  <dd>Returns the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTextureLevel">GetAttachedTextureLevel</a></dt>
+  <dd>Returns the mipmap level of the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedCubeMapFace">GetAttachedCubeMapFace</a></dt>
+  <dd>Returns the cube map face of the cube-map texture attached to an attachment point of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttachedTextureLevel"></a><code>function <b>GetAttachedTextureLevel</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the mipmap level of the texture attached to an attachment point of the framebuffer.
+
+<p>
+
+<p>   <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetFramebufferAttachmentParameteriv(GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL)
+
+<p>      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to check.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The mipmap level of texture attached to this point.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no texture is attached to the given attachment point.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedObjectType">GetAttachedObjectType</a></dt>
+  <dd>Returns the type of object attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedRenderbuffer">GetAttachedRenderbuffer</a></dt>
+  <dd>Returns the renderbuffer attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTexture">GetAttachedTexture</a></dt>
+  <dd>Returns the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedCubeMapFace">GetAttachedCubeMapFace</a></dt>
+  <dd>Returns the cube map face of the cube-map texture attached to an attachment point of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAttachedCubeMapFace"></a><code>function <b>GetAttachedCubeMapFace</b>(const AAttachment: <a  href="Neslib.Ooogles.html#TGLFramebufferAttachment">TGLFramebufferAttachment</a>): <a  href="Neslib.Ooogles.html#TGLCubeTarget">TGLCubeTarget</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the cube map face of the cube-map texture attached to an attachment point of the framebuffer.
+
+<p>
+
+<p>   <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetFramebufferAttachmentParameteriv(GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE)
+
+<p>      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AAttachment</dt>
+<dd>the attachment point to check.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The cube map face of texture attached to this point.</p><h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no framebuffer is bound.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if no texture is attached to the given attachment point.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Bind">Bind</a></dt>
+  <dd>Binds the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachRenderbuffer">AttachRenderbuffer</a></dt>
+  <dd>Attach a renderbuffer to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#AttachTexture">AttachTexture</a></dt>
+  <dd>Attach a texture to this framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedObjectType">GetAttachedObjectType</a></dt>
+  <dd>Returns the type of object attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedRenderbuffer">GetAttachedRenderbuffer</a></dt>
+  <dd>Returns the renderbuffer attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTexture">GetAttachedTexture</a></dt>
+  <dd>Returns the texture attached to an attachment point of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAttachedTextureLevel">GetAttachedTextureLevel</a></dt>
+  <dd>Returns the mipmap level of the texture attached to an attachment point of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="ReadPixels"></a><code>procedure <b>ReadPixels</b>(const ALeft, ABottom, AWidth, AHeight: Integer; const AData: Pointer; const AFormat: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a> = TGLPixelFormat.RGBA; const ADataType: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a> = TGLPixelDataType.UnsignedByte); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Read a block of pixels from the frame buffer.
+
+<p>      
+
+<p>      This method returns pixel data from the frame buffer, starting with the pixel whose lower left corner is at location (ALeft, ABottom), into client memory starting at location AData. The TGLPixelStoreMode.PackAlignment parameter, set with the <a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a> command, affects the processing of the pixel data before it is placed into client memory.
+
+<p>Pixels are returned in row order from the lowest to the highest row, left to right in each row.
+
+<p>AFormat specifies the format for the returned pixel values. RGBA color components are read from the color buffer. Each color component is converted to floating point such that zero intensity maps to 0.0 and full intensity maps to 1.0.
+
+<p>Unneeded data is then discarded. For example, TGLPixelFormat.Alpha discards the red, green, and blue components, while PackAlignment.RGB discards only the alpha component. The final values are clamped to the range 0..1.
+
+<p>Finally, the components are converted to the proper format, as specified by ADataType. When type is TGLPixelDataType.UnsignedByte (the default), each component is multiplied by 255. When ADataType is TGLPixelDataType.UnsignedShort565, UnsignedShort4444 or UnsignedShort5551, each component is multiplied accordingly.
+
+<p><b>Note</b>: if the currently bound framebuffer is not the default framebuffer object, color components are read from the color image attached to the TGLFramebufferAttachment.Color attachment point.
+
+<p><b>Note</b>: only two AFormat/ADataType parameter pairs are accepted. TGLPixelFormat.RGBA/TGLPixelDataType.UnsignedByte is always accepted, and the other acceptable pair can be discovered by calling <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a> and <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a>.
+
+<p><b>Note</b>: values for pixels that lie outside the window connected to the current <a class="normal" href="Neslib.Ooogles.gl.html">GL</a> context are undefined.
+
+<p><b>Note</b>: if an error is generated, no change is made to the contents of data.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glReadPixels
+
+<p>    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ALeft</dt>
+<dd>left window coordinate of the first pixel that is read from the framebuffer.</dd>
+<dt>ABottom</dt>
+<dd>bottom window coordinate of the first pixel that is read from the framebuffer.</dd>
+<dt>AWidth</dt>
+<dd>width of the rectangle in pixels.</dd>
+<dt>AHeight</dt>
+<dd>height of the rectangle in pixels.</dd>
+<dt>AData</dt>
+<dd>pointer to the pixel data to be filled.</dd>
+<dt>AFormat</dt>
+<dd>(optional) format of the pixels to return. Only Alpha, RGB and RGBA are supported. Defaults to RGBA.</dd>
+<dt>ADataType</dt>
+<dd>(optional) data type of the pixels to return. Defaults to UnsignedByte.</dd>
+</dl>
+<h6 class="description_section">Exceptions raised</h6>
+<dl class="exceptions_raised">
+<dt><code>TGLError.InvalidEnum</code></dt>
+<dd>if AFormat or ADataType is not an accepted value.</dd>
+<dt><code>TGLError.InvalidValue</code></dt>
+<dd>if either AWidth or AHeight is negative.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if ADataType is UnsignedShort565 and AFormat is not RGB.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if ADataType is UnsignedShort4444 or UnsignedShort5551 and AFormat is not RGBA.</dd>
+<dt><code>TGLError.InvalidOperation</code></dt>
+<dd>if AFormat and ADataType are neither RGBA UnsignedByte, respectively, nor the AFormat/ADataType pair returned by calling <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a> and <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a>.</dd>
+<dt><code>TGLError.InvalidFramebufferOperation</code></dt>
+<dd>if the framebuffer is not framebuffer complete.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a></dt>
+  <dd>Get the format chosen by the implementation in which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a></dt>
+  <dd>Get the type chosen by the implementation with which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a>.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#PixelStore">gl.PixelStore</a></dt>
+  <dd>Set pixel storage alignment.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#GetPixelStore">gl.GetPixelStore</a></dt>
+  <dd>Returns to current pixel storage alignment.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#Status">Status</a></dt>
+  <dd>Return the framebuffer completeness <code>status</code>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetRedBits"></a><code>function <b>GetRedBits</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of red bitplanes in the color buffer of the framebuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_RED_BITS)
+
+<p>    </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of red bitplanes.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetGreenBits">GetGreenBits</a></dt>
+  <dd>Get the number of green bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetBlueBits">GetBlueBits</a></dt>
+  <dd>Get the number of blue bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAlphaBits">GetAlphaBits</a></dt>
+  <dd>Get the number of alpha bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetDepthBits">GetDepthBits</a></dt>
+  <dd>Get the number of bitplanes in the depth buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetGreenBits"></a><code>function <b>GetGreenBits</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of green bitplanes in the color buffer of the framebuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_GREEN_BITS)
+
+<p>    </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of green bitplanes.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></dt>
+  <dd>Get the number of red bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetBlueBits">GetBlueBits</a></dt>
+  <dd>Get the number of blue bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAlphaBits">GetAlphaBits</a></dt>
+  <dd>Get the number of alpha bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetDepthBits">GetDepthBits</a></dt>
+  <dd>Get the number of bitplanes in the depth buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetBlueBits"></a><code>function <b>GetBlueBits</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of blue bitplanes in the color buffer of the framebuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_BLUE_BITS)
+
+<p>    </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of blue bitplanes.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetGreenBits">GetGreenBits</a></dt>
+  <dd>Get the number of green bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></dt>
+  <dd>Get the number of red bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAlphaBits">GetAlphaBits</a></dt>
+  <dd>Get the number of alpha bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetDepthBits">GetDepthBits</a></dt>
+  <dd>Get the number of bitplanes in the depth buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetAlphaBits"></a><code>function <b>GetAlphaBits</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of alpha bitplanes in the color buffer of the framebuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_ALPHA_BITS)
+
+<p>    </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of alpha bitplanes.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetGreenBits">GetGreenBits</a></dt>
+  <dd>Get the number of green bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetBlueBits">GetBlueBits</a></dt>
+  <dd>Get the number of blue bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></dt>
+  <dd>Get the number of red bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetDepthBits">GetDepthBits</a></dt>
+  <dd>Get the number of bitplanes in the depth buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetDepthBits"></a><code>function <b>GetDepthBits</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of bitplanes in the depth buffer of the framebuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_DEPTH_BITS)
+
+<p>    </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of bitplanes in the depth buffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetGreenBits">GetGreenBits</a></dt>
+  <dd>Get the number of green bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetBlueBits">GetBlueBits</a></dt>
+  <dd>Get the number of blue bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAlphaBits">GetAlphaBits</a></dt>
+  <dd>Get the number of alpha bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></dt>
+  <dd>Get the number of red bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetStencilBits">GetStencilBits</a></dt>
+  <dd>Get the number of bitplanes in the stencil buffer of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetStencilBits"></a><code>function <b>GetStencilBits</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of bitplanes in the stencil buffer of the framebuffer.
+
+<p> <b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_STENCIL_BITS)
+
+<p>    </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The number of bitplanes in the stencil buffer.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetGreenBits">GetGreenBits</a></dt>
+  <dd>Get the number of green bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetBlueBits">GetBlueBits</a></dt>
+  <dd>Get the number of blue bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetAlphaBits">GetAlphaBits</a></dt>
+  <dd>Get the number of alpha bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></dt>
+  <dd>Get the number of red bitplanes in the color buffer of the framebuffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetRedBits">GetRedBits</a></dt>
+  <dd>Get the number of red bitplanes in the color buffer of the framebuffer.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSampleBuffers"></a><code>function <b>GetSampleBuffers</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the number of sample buffers associated with the framebuffer.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_SAMPLE_BUFFERS)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">gl.SampleCoverage</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetSamples"></a><code>function <b>GetSamples</b>: Integer; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the coverage mask size of the framebuffer.
+
+<p><b>Note</b>: in DEBUG mode with assertions enabled, an error will be logged to the debug console if this framebuffer is not bound.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_SAMPLES)
+
+<p></p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.gl.html#SampleCoverage">gl.SampleCoverage</a></dt>
+  <dd>Specify multisample coverage parameters.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetColorReadFormat"></a><code>class function <b>GetColorReadFormat</b>: <a  href="Neslib.Ooogles.html#TGLPixelFormat">TGLPixelFormat</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the format chosen by the implementation in which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a>. In addition to this implementation-dependent format/type pair, format RGBA in conjunction with type UnsingedByte is always allowed by every implementation, regardless of the currently bound render surface.
+
+<p><b>Note</b>: this is a global value that affects all framebuffers.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_IMPLEMENTATION_COLOR_READ_FORMAT)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">ReadPixels</a></dt>
+  <dd>Read a block of pixels from the frame buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a></dt>
+  <dd>Get the type chosen by the implementation with which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="GetColorReadType"></a><code>class function <b>GetColorReadType</b>: <a  href="Neslib.Ooogles.html#TGLPixelDataType">TGLPixelDataType</a>; inline; static;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the type chosen by the implementation with which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a>. In addition to this implementation-dependent format/type pair, format RGBA in conjunction with type UnsingedByte is always allowed by every implementation, regardless of the currently bound render surface.
+
+<p><b>Note</b>: this is a global value that affects all framebuffers.
+
+<p><b>OpenGL API</b>: glGetIntegerv(GL_IMPLEMENTATION_COLOR_READ_TYPE)
+
+<p> </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#ReadPixels">ReadPixels</a></dt>
+  <dd>Read a block of pixels from the frame buffer.</dd>
+  <dt><a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadFormat">GetColorReadFormat</a></dt>
+  <dd>Get the format chosen by the implementation in which pixels may be read from the color buffer of the currently bound framebuffer in conjunction with <a class="normal" href="Neslib.Ooogles.TGLFramebuffer.html#GetColorReadType">GetColorReadType</a>.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="Handle"></a><code>property <b>Handle</b>: GLuint read FHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+OpenGL <code>handle</code> to the framebuffer object.</p>
+</td></tr>
+</table>
+<div style="height:1000px"></div><hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="https://github.com/neslib/PasDocEx">PasDocEx</a>, based on <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>
