@@ -4,6 +4,8 @@ Ooogles is a ultra-thin object oriented Delphi wrapper around OpenGL-ES 2.0 with
 
 This wrapper is still pretty low-level. It is not a "rendering engine" or high-level framework, so you still need OpenGL knowledge.
 
+The main goals of Ooogles are to make it easier and less error-prone to use OpenGL-ES, offering error reporting in `DEBUG` builds and a better Code Insight experience in the Delphi IDE.
+
 ## Features
 
 Ooogles has the following features:
@@ -37,6 +39,8 @@ end;
 ```
 
 I may add automatic resource management in the future if and when Delphi gets support for record finalizers.
+
+Also, the wrapper only supports OpenGL-ES version 2.0. It does not support the "old" version 1 fixed-function rendering pipeline. I may add support for version 3.0 and up once it is offered by Delphi becomes more mainstream.
 
 ## Dependencies
 
