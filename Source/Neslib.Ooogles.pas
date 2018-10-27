@@ -38,7 +38,7 @@ const
   GL_RGB565 = $8D62;
 {$ENDIF}
 
-{ You @bold(must) call this procdure @bold(After) you have created and activated
+{ You @bold(must) call this procedure @bold(After) you have created and activated
   your OpenGL context. This is needed to emulate OpenGL-ES on OpenGL platforms.
   If your application uses multiple contexts, you must call InitOoogles once for
   each context (after making it current). }
@@ -6686,8 +6686,12 @@ end;
 
 procedure TGLShader.Delete;
 begin
-  glDeleteShader(FHandle);
-  Assert(_Check('TGLShader.Delete'));
+  if (FHandle <> 0) then
+  begin
+    glDeleteShader(FHandle);
+    FHandle := 0;
+    Assert(_Check('TGLShader.Delete'));
+  end;
 end;
 
 function TGLShader.GetCompileStatus: Boolean;
@@ -6835,8 +6839,12 @@ end;
 
 procedure TGLProgram.Delete;
 begin
-  glDeleteProgram(FHandle);
-  Assert(_Check('TGLProgram.Delete'));
+  if (FHandle <> 0) then
+  begin
+    glDeleteProgram(FHandle);
+    FHandle := 0;
+    Assert(_Check('TGLProgram.Delete'));
+  end;
 end;
 
 procedure TGLProgram.DetachShader(const AShader: TGLShader);
@@ -7071,8 +7079,12 @@ end;
 
 procedure TGLBuffer.Delete;
 begin
-  glDeleteBuffers(1, @FHandle);
-  Assert(_Check('TGLBuffer.Delete'));
+  if (FHandle <> 0) then
+  begin
+    glDeleteBuffers(1, @FHandle);
+    FHandle := 0;
+    Assert(_Check('TGLBuffer.Delete'));
+  end;
 end;
 
 class function TGLBuffer.GetCurrentArrayBuffer: TGLBuffer;
@@ -7824,15 +7836,19 @@ procedure TGLTexture.Copy(const AFormat: TGLPixelFormat; const ALeft, ABottom,
   AWidth, AHeight, ALevel: Integer; const ACubeTarget: TGLCubeTarget);
 begin
   Assert(_CheckBinding(FType, FHandle, 'TGLTexture.Copy'));
-  glCopyTexImage2D(GetTarget(ACubeTarget), ALeft, Ord(AFormat), ALeft, ABottom,
+  glCopyTexImage2D(GetTarget(ACubeTarget), ALevel, Ord(AFormat), ALeft, ABottom,
     AWidth, AHeight, 0);
   Assert(_Check('TGLTexture.Copy'));
 end;
 
 procedure TGLTexture.Delete;
 begin
-  glDeleteTextures(1, @FHandle);
-  Assert(_Check('TGLTexture.Delete'));
+  if (FHandle <> 0) then
+  begin
+    glDeleteTextures(1, @FHandle);
+    FHandle := 0;
+    Assert(_Check('TGLTexture.Delete'));
+  end;
 end;
 
 procedure TGLTexture.GenerateMipmap;
@@ -8095,12 +8111,16 @@ end;
 
 procedure TGLRenderbuffer.Delete;
 begin
-  {$IF Defined(MACOS) and not Defined(IOS)}
-  glDeleteRenderbuffersEXT(1, @FHandle);
-  {$ELSE}
-  glDeleteRenderbuffers(1, @FHandle);
-  {$ENDIF}
-  Assert(_Check('TGLRenderbuffer.Delete'));
+  if (FHandle <> 0) then
+  begin
+    {$IF Defined(MACOS) and not Defined(IOS)}
+    glDeleteRenderbuffersEXT(1, @FHandle);
+    {$ELSE}
+    glDeleteRenderbuffers(1, @FHandle);
+    {$ENDIF}
+    FHandle := 0;
+    Assert(_Check('TGLRenderbuffer.Delete'));
+  end;
 end;
 
 function TGLRenderbuffer.GetAlphaSize: Integer;
@@ -8303,12 +8323,16 @@ end;
 
 procedure TGLFramebuffer.Delete;
 begin
-  {$IF Defined(MACOS) and not Defined(IOS)}
-  glDeleteFramebuffersEXT(1, @FHandle);
-  {$ELSE}
-  glDeleteFramebuffers(1, @FHandle);
-  {$ENDIF}
-  Assert(_Check('TGLFramebuffer.Delete'));
+  if (FHandle <> 0) then
+  begin
+    {$IF Defined(MACOS) and not Defined(IOS)}
+    glDeleteFramebuffersEXT(1, @FHandle);
+    {$ELSE}
+    glDeleteFramebuffers(1, @FHandle);
+    {$ENDIF}
+    FHandle := 0;
+    Assert(_Check('TGLFramebuffer.Delete'));
+  end;
 end;
 
 procedure TGLFramebuffer.DetachRenderbuffer(

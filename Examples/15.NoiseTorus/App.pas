@@ -1,6 +1,6 @@
 unit App;
 
-{ Based on 016_cartoon_torus.cpp example from oglplus (http://oglplus.org/) }
+{ Based on 016_noise_torus.cpp example from oglplus (http://oglplus.org/) }
 
 {$INCLUDE 'Sample.inc'}
 

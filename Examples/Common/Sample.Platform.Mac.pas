@@ -37,6 +37,9 @@ type
     { Allows the delegate to supply a dock menu for the application dynamically.
       We don't need this. }
     function applicationDockMenu(sender: NSApplication): NSMenu; cdecl;
+
+    procedure applicationDidHide(Notification: NSNotification); cdecl;
+    procedure applicationDidUnhide(Notification: NSNotification); cdecl;
   end;
 
 type
@@ -504,6 +507,17 @@ end;
 { TApplicationDelegate }
 
 procedure TApplicationDelegate.applicationDidFinishLaunching(
+  Notification: NSNotification);
+begin
+  { Not interested }
+end;
+
+procedure TApplicationDelegate.applicationDidHide(Notification: NSNotification);
+begin
+  { Not interested }
+end;
+
+procedure TApplicationDelegate.applicationDidUnhide(
   Notification: NSNotification);
 begin
   { Not interested }
